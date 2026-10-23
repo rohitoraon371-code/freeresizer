@@ -330,6 +330,25 @@
 
   :focus-visible{outline:2px solid var(--green);outline-offset:2px;}
   @media (prefers-reduced-motion: reduce){ *{transition:none !important;} }
+/* Fix for hint elements (Lines 478 and 491) */
+.hint {
+    color: #595959 !important;
+}
+
+/* Fix for unit elements inside labels (Lines 436, 440, and 481) */
+.unit {
+    color: #595959 !important;
+}
+
+/* Fix for eyebrow subheaders (Lines 354 and 377) */
+.eyebrow {
+    color: #4d4d4d !important;
+}
+
+/* Fix for metadata text container (Line 397) */
+.original-meta {
+    color: #4d4d4d !important;
+}
 </style>
 </head>
 <body>
@@ -446,8 +465,8 @@
 
           <div class="mode-panel" id="panelPct">
             <div class="field" style="margin-bottom:0;">
-              <label>Scale to</label>
-              <select id="pctSelect">
+             <label for="pctSelect">Scale to</label>
+             <select id="pctSelect">
                 <option value="custom">Custom…</option>
                 <option value="10">10%</option>
                 <option value="25">25%</option>
@@ -466,8 +485,8 @@
 
           <div class="mode-panel" id="panelSize">
             <div class="field" style="margin-bottom:0;">
-              <label>Target size</label>
-              <select id="sizeSelect">
+            <label for="sizeSelect">Target size</label>
+            <select id="sizeSelect">
                 <option value="custom">Custom…</option>
                 <option value="50">50 KB</option>
                 <option value="100" selected>100 KB</option>
