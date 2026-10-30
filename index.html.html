@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>freeresizer – Free Online Image Resizer, Compressor, Watermark & PDF Tools</title>
+<meta name="description" content="freeresizer is a free online image tool. Resize, compress, rotate and convert JPG, PNG and WebP images in your browser. Files never leave your device.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- GOOGLE SEARCH CONSOLE: paste your verification tag below (Search Console > Settings > Ownership verification > HTML tag) -->
+<!-- <meta name="google-site-verification" content="YOUR_CODE_HERE" /> -->
+
+<!-- GOOGLE ADSENSE: paste your AdSense script below, replace ca-pub-XXXXXXXXXXXXXXXX with your publisher ID -->
+<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
+
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+<script>(function(){try{var d=document.documentElement,t=localStorage.getItem('fr-theme')||'auto',a=localStorage.getItem('fr-accent')||'teal',P={teal:['#0a7d78','#3cc4bd'],blue:['#1d5fd1','#6ea8ff'],purple:['#7c3aed','#b794ff'],orange:['#c2410c','#ff9a5c'],green:['#15803d','#5fd38a'],rose:['#be185d','#ff7eb3']},k=t==='dark'||(t==='auto'&&matchMedia('(prefers-color-scheme:dark)').matches);if(!P[a])a='teal';d.dataset.theme=k?'dark':'light';d.style.setProperty('--accent',P[a][k?1:0])}catch(e){}})()</script>
+<style>
+:root{--ink:#10243a;--paper:#f5f8fa;--card:#fff;--line:#d8e1e8;--accent:#0a7d78;--muted:#566b7d;--on:#fff}
+:root{--accent2:color-mix(in srgb,var(--accent) 13%,var(--card))}
+@media (prefers-color-scheme:dark){:root{--ink:#e6eef5;--paper:#0e1a26;--card:#152433;--line:#27394b;--accent:#3cc4bd;--muted:#9bb0c1;--on:#06201f}}
+:root[data-theme=light]{--ink:#10243a;--paper:#f5f8fa;--card:#fff;--line:#d8e1e8;--muted:#566b7d;--on:#fff}
+:root[data-theme=dark]{--ink:#e6eef5;--paper:#0e1a26;--card:#152433;--line:#27394b;--muted:#9bb0c1;--on:#06201f}
+#themebox{position:relative}
+#thbtn{background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:4px 11px;font:inherit;font-size:.8rem;font-weight:600;cursor:pointer}
+#thbtn:hover,#thbtn:focus-visible{border-color:var(--accent)}
+#thpop{position:absolute;right:0;top:calc(100% + 8px);z-index:20;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px;width:230px;box-shadow:0 8px 28px rgba(0,0,0,.18)}
+#thpop[hidden]{display:none}
+#thpop strong{display:block;font-size:.78rem;color:var(--muted);margin:2px 0 6px}
+.throw{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+.throw button{border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:8px;padding:5px 10px;font:inherit;font-size:.8rem;cursor:pointer}
+.throw button[aria-pressed=true]{border-color:var(--accent);background:var(--accent2);font-weight:700}
+.throw .dot{width:28px;height:28px;border-radius:50%;padding:0;border:2px solid var(--card);box-shadow:0 0 0 1px var(--line)}
+.throw .dot[aria-pressed=true]{box-shadow:0 0 0 3px var(--ink)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Manrope,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;background:var(--paper);color:var(--ink);line-height:1.65}
+a{color:var(--accent)}
+header{background:var(--card);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+.bar{max-width:1080px;margin:auto;padding:7px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.logo{font-weight:800;font-size:1.4rem;text-decoration:none;color:var(--ink)}
+.logo b{color:var(--accent)}
+.logo{display:inline-flex;align-items:center;gap:2px;letter-spacing:-.01em}
+.logo img{display:block;width:34px;height:34px;object-fit:contain;margin:0}
+nav a{margin-left:18px;text-decoration:none;color:var(--ink);font-weight:600;font-size:.95rem}
+nav a:hover,nav a:focus{color:var(--accent)}
+main{max-width:1080px;margin:auto;padding:14px 20px 60px}
+.page{display:none}.page.on{display:block}
+h1{font-size:clamp(1.35rem,3.2vw,1.9rem);line-height:1.2;margin:.1em 0 .2em;font-weight:800}
+h2{font-size:1.5rem;margin:1.6em 0 .4em}
+h3{margin:1.2em 0 .3em}
+.lead{color:var(--muted);max-width:70ch;font-size:.95rem;margin:.2em 0}
+.tools{display:flex;flex-wrap:wrap;gap:5px;margin:8px 0}
+.tool{display:inline-flex;align-items:center;gap:4px;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:3px 8px;cursor:pointer;font:inherit;font-size:.74rem;color:inherit;line-height:1.2}
+.tool:hover,.tool[aria-pressed=true]{border-color:var(--accent);background:var(--accent2)}
+.tool strong{font-weight:600;font-size:.74rem}.tool span{display:none}.tool .ic{font-style:normal;font-size:.8rem}
+.drop{border:2px dashed var(--accent);border-radius:14px;background:var(--card);padding:22px 20px;text-align:center}
+.drop.hot{background:var(--accent2)}
+.btn{background:var(--accent);color:var(--on);border:0;border-radius:8px;padding:12px 22px;font:inherit;font-weight:700;cursor:pointer;text-decoration:none;display:inline-block}
+.btn.alt{background:transparent;color:var(--accent);border:1px solid var(--accent)}
+.btn:focus-visible,.tool:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+#work{display:none;grid-template-columns:minmax(0,1fr) 320px;gap:16px;margin-top:14px;align-items:start}
+#work.on{display:grid}
+@media(max-width:800px){#work.on{grid-template-columns:1fr}}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px}
+.preview{display:flex;align-items:center;justify-content:center;min-height:120px;background:repeating-conic-gradient(var(--line) 0 25%,transparent 0 50%) 50%/20px 20px;border-radius:8px;overflow:hidden}
+.preview canvas{max-width:100%;max-height:min(340px,38vh);height:auto}
+label{display:block;font-weight:600;font-size:.9rem;margin:12px 0 4px}
+input[type=number],select{width:100%;padding:9px 10px;border:1px solid var(--line);border-radius:7px;font:inherit;background:var(--paper);color:var(--ink)}
+.row{display:flex;gap:10px}.row>*{flex:1}
+.ctl{display:none}.ctl.on{display:block}
+.info{font-size:.88rem;color:var(--muted);margin:10px 0}
+.xg{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:16px;margin-top:14px;align-items:start}
+#work>.panel:first-child,.xg>.panel:first-child{position:sticky;top:68px;z-index:3}
+@media(max-width:800px){#work>.panel:first-child,.xg>.panel:first-child{top:60px;padding:10px}.preview{min-height:100px}.preview canvas{max-height:26vh}}
+@media(max-width:800px){.xg{grid-template-columns:1fr}}
+textarea{font:inherit}
+.ol{display:flex;align-items:center;gap:8px;padding:6px 0;border-bottom:1px solid var(--line);font-size:.9rem}
+.ol img{width:38px;height:38px;object-fit:cover;border-radius:5px}
+.ol span{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ol button{border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:6px;cursor:pointer;padding:3px 8px}
+.tbl{width:100%;border-collapse:collapse;font-size:.9rem}
+.tbl td,.tbl th{border-bottom:1px solid var(--line);padding:7px 6px;text-align:left;vertical-align:top;word-break:break-word}
+.sw{display:inline-block;width:64px;height:64px;border-radius:8px;border:1px solid var(--line);cursor:pointer;margin:4px;vertical-align:top;font-size:.7rem;color:#fff;text-shadow:0 0 3px #000;padding:3px;border-style:solid}
+.grp{border:1px solid var(--line);border-radius:10px;padding:10px;margin:10px 0}
+.grp img{max-width:110px;max-height:110px;border-radius:6px;margin:4px}
+#work>.panel:last-child,#xctl{display:flex;flex-direction:column}
+.stickybar{order:99;position:static;padding:12px 0 0;margin:14px 0 0;border-top:1px solid var(--line);display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+#xmsg{order:98;margin:10px 0 0}
+.panel>.stickybar.moved{order:0;border:0;padding:10px 0 0;margin:0}
+.panel>#xmsg{order:0;margin:6px 0 0}
+.drop.slim{padding:8px 12px;display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap}
+.drop.slim p{margin:0}
+#drop.slim .info{display:none}
+.ad{margin:28px 0;text-align:center;min-height:90px;border:1px dashed var(--line);border-radius:8px;padding:8px;color:var(--muted);font-size:.75rem}
+.steps li,.faq p{max-width:70ch}
+footer{border-top:1px solid var(--line);background:var(--card)}
+.foot{max-width:1080px;margin:auto;padding:24px 20px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:.92rem}
+.foot a{margin-right:16px}
+.doc{max-width:760px}
+.doc p,.doc li{max-width:70ch}
+input[type=text],input[type=email],textarea{width:100%;padding:10px;border:1px solid var(--line);border-radius:7px;font:inherit;background:var(--paper);color:var(--ink)}
+</style>
+</head>
+<body>
+
+<header>
+ <div class="bar">
+  <a class="logo" href="#home" aria-label="freeresizer home"><img src="data:image/png;base64,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" alt="freeresizer logo" width="36" height="36">free<b>resizer</b></a>
+  <nav aria-label="Main">
+   <a href="#home">Tools</a><a href="#about">About</a><a href="#contact">Contact</a><a href="#privacy">Privacy</a><a href="#terms">Terms</a>
+  </nav>
+  <div id="themebox"><button type="button" id="thbtn" aria-haspopup="true" aria-expanded="false">🎨 Theme</button>
+   <div id="thpop" hidden role="dialog" aria-label="Theme options"><strong>Mode</strong><div class="throw"><button type="button" data-m="light" aria-pressed="false">Light</button><button type="button" data-m="dark" aria-pressed="false">Dark</button><button type="button" data-m="auto" aria-pressed="true">Auto</button></div><strong>Color</strong><div class="throw" id="thcols"></div></div>
+  </div>
+ </div>
+</header>
+
+<main>
+
+<!-- ============ HOME / TOOLS ============ -->
+<section id="home" class="page on">
+ <h1>Resize, compress and convert images online – free</h1>
+ <p class="lead">Pick a tool, drop in a photo and download the result. Everything runs inside your browser, so your pictures are never uploaded to a server.</p>
+
+ <div class="tools" role="group" aria-label="Choose a tool">
+  <button class="tool" data-mode="resize" aria-pressed="true"><strong>Resize</strong><span>Set exact pixels or a percentage</span></button>
+  <button class="tool" data-mode="kb" aria-pressed="false"><strong>Resize to KB</strong><span>Enter a target file size</span></button>
+  <button class="tool" data-mode="compress" aria-pressed="false"><strong>Compress</strong><span>Reduce file size for the web</span></button>
+  <button class="tool" data-mode="rotate" aria-pressed="false"><strong>Rotate &amp; Flip</strong><span>Turn or mirror your image</span></button>
+  <button class="tool" data-mode="convert" aria-pressed="false"><strong>Convert</strong><span>JPG, PNG and WebP</span></button>
+  <button class="tool" data-x="text" aria-pressed="false"><strong>Text &amp; Typography</strong><span>Add styled text to an image</span></button>
+  <button class="tool" data-x="wm" aria-pressed="false"><strong>Watermark</strong><span>Text or logo, single or tiled</span></button>
+  <button class="tool" data-x="merge" aria-pressed="false"><strong>Image Merger</strong><span>Combine images in a row or column</span></button>
+  <button class="tool" data-x="split" aria-pressed="false"><strong>Image Splitter</strong><span>Divide an image into sections</span></button>
+  <button class="tool" data-x="collage" aria-pressed="false"><strong>Collage Maker</strong><span>Combine multiple photos</span></button>
+  <button class="tool" data-x="meta" aria-pressed="false"><strong>Metadata Viewer</strong><span>View image information</span></button>
+  <button class="tool" data-x="exifrm" aria-pressed="false"><strong>EXIF Remover</strong><span>Remove hidden metadata</span></button>
+  <button class="tool" data-x="color" aria-pressed="false"><strong>Color Picker</strong><span>Extract colors from an image</span></button>
+  <button class="tool" data-x="dups" aria-pressed="false"><strong>Duplicate Finder</strong><span>Find duplicate images</span></button>
+  <button class="tool" data-x="scan" aria-pressed="false"><strong>Image Scanner</strong><span>Clean up document photos</span></button>
+  <button class="tool" data-x="upscale" aria-pressed="false"><strong>Image Upscaler</strong><span>Enlarge small images 2x to 4x</span></button>
+  <button class="tool" data-x="meme" aria-pressed="false"><strong>Meme Generator</strong><span>Add top and bottom text</span></button>
+  <button class="tool" data-x="p2pdf" aria-pressed="false"><strong>Photo to PDF</strong><span>Convert photos into a PDF</span></button>
+  <button class="tool" data-x="pdf2jpg" aria-pressed="false"><strong>PDF to JPG</strong><span>Convert PDF pages to images</span></button>
+ </div>
+
+ <div class="drop" id="drop">
+  <p style="margin:0 0 14px;font-weight:700" id="dropTitle">Drag an image here</p>
+  <button class="btn" id="pick" type="button">Choose image</button>
+  <input type="file" id="file" accept="image/jpeg,image/png,image/webp,image/gif,image/bmp" hidden>
+  <p class="info" style="margin-bottom:0">Supports JPG, PNG, WebP, GIF and BMP.</p>
+ </div>
+
+ <div id="work">
+  <div class="panel">
+   <div class="preview"><canvas id="cv" aria-label="Image preview"></canvas></div>
+   <p class="info" id="stats"></p>
+  </div>
+  <div class="panel">
+   <div class="ctl on" data-for="resize">
+    <label for="unit">Resize by</label>
+    <select id="unit"><option value="px">Pixels</option><option value="pct">Percentage</option></select>
+    <div id="pxBox">
+     <div class="row">
+      <div><label for="w">Width</label><input type="number" id="w" min="1" max="12000"></div>
+      <div><label for="h">Height</label><input type="number" id="h" min="1" max="12000"></div>
+     </div>
+     <label><input type="checkbox" id="lock" checked> Keep aspect ratio</label>
+    </div>
+    <div id="pctBox" style="display:none"><label for="pct">Scale (%)</label><input type="number" id="pct" min="1" max="500" value="50"></div>
+   </div>
+   <div class="ctl" data-for="kb">
+    <label for="kbv">Target file size</label>
+    <div class="row">
+     <input type="number" id="kbv" min="1" step="any" value="100" aria-label="Target size">
+     <select id="kbu" aria-label="Unit"><option value="1">KB</option><option value="1024">MB</option></select>
+    </div>
+    <p class="info">Type the size you need, such as 50 KB or 200 KB, then press Apply. We lower quality first, and reduce the dimensions only if needed. Output is JPG or WebP.</p>
+    <button class="btn" id="kbgo" type="button">Apply target size</button>
+   </div>
+   <div class="ctl" data-for="compress">
+    <label for="maxw">Max width (px, optional)</label><input type="number" id="maxw" min="1" placeholder="e.g. 1600">
+    <p class="info">Lower quality below means a smaller file. Compression works best with JPG or WebP.</p>
+   </div>
+   <div class="ctl" data-for="rotate">
+    <div class="row"><button class="btn alt" id="rl" type="button">Rotate left</button><button class="btn alt" id="rr" type="button">Rotate right</button></div>
+    <div class="row" style="margin-top:10px"><button class="btn alt" id="fh" type="button">Flip horizontal</button><button class="btn alt" id="fv" type="button">Flip vertical</button></div>
+   </div>
+   <div class="ctl" data-for="convert"><p class="info">Choose the new format below, then download.</p></div>
+
+   <label for="fmt">Output format</label>
+   <select id="fmt"><option value="image/jpeg">JPG</option><option value="image/png">PNG</option><option value="image/webp">WebP</option></select>
+   <div id="qwrap">
+   <label for="q">Quality: <span id="qv">85</span>%</label>
+   <input type="range" id="q" min="10" max="100" value="85" style="width:100%">
+   </div>
+   <div class="stickybar">
+    <button class="btn" id="dl" type="button">Download</button>
+    <button class="btn alt" id="reset" type="button">Start over</button>
+   </div>
+  </div>
+ </div>
+
+ <div id="xwrap" style="display:none">
+  <h2 id="xtitle" style="margin:6px 0 2px;font-size:1.15rem"></h2>
+  <p class="lead" id="xdesc" style="margin:0 0 10px;font-size:.88rem"></p>
+  <div class="drop" id="xdrop" style="padding:18px 20px">
+   <button class="btn" id="xpick" type="button">Choose file</button>
+   <input type="file" id="xfile" hidden>
+   <p class="info" id="xnames" style="margin-bottom:0">Or drag files here. Everything stays on your device.</p>
+  </div>
+  <div class="xg" id="xgrid" style="display:none">
+   <div class="panel"><div class="preview" id="xpv"><canvas id="xcv" aria-label="Preview"></canvas></div><div id="xinfo"></div></div>
+   <div class="panel" id="xctl"></div>
+  </div>
+ </div>
+
+ <div class="ad" aria-label="Advertisement">
+  Advertisement
+  <!-- ADSENSE AD UNIT: paste your <ins class="adsbygoogle"> code here, then add <script>(adsbygoogle = window.adsbygoogle || []).push({});</script> -->
+ </div>
+
+ <section id="toolinfo" aria-live="polite"></section>
+
+ <h2>Why use freeresizer?</h2>
+ <p>Whether you need a profile photo at an exact size, a lighter picture for a website, or a PNG converted to JPG, freeresizer handles it in seconds. Because processing happens locally in your browser, your photos stay private and there is no waiting for uploads. The service is free and needs no account.</p>
+
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="page doc">
+ <h1>About freeresizer</h1>
+ <p>freeresizer is a simple, free set of image tools built for people who just need a picture to be the right size. We believe basic image editing should be quick, private and free of sign-ups.</p>
+ <h2>What we offer</h2>
+ <ul><li>Resize images by pixels or percentage</li><li>Enlarge small images and make memes</li><li>Add text and watermarks to images</li><li>Merge, split and make collages</li><li>View and remove image metadata (EXIF)</li><li>Pick colors, find duplicate images and clean up document scans</li><li>Convert photos to PDF and PDF pages to JPG</li><li>Resize to a target file size in KB or MB</li><li>Compress images to reduce file size</li><li>Rotate and flip images</li><li>Convert between JPG, PNG and WebP</li></ul>
+ <h2>Our approach to privacy</h2>
+ <p>Your images are processed inside your own browser. They are not sent to or stored on our servers. Read our <a href="#privacy">Privacy Policy</a> for details.</p>
+ <h2>How we are supported</h2>
+ <p>freeresizer is supported by advertising, which lets us keep every tool free. We keep ads clearly separate from the tools and content.</p>
+ <p>Questions or ideas? Visit our <a href="#contact">Contact page</a>.</p>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="page doc">
+ <h1>Contact us</h1>
+ <p>We would like to hear from you, whether you found a bug, have a feature request or have a question about the site.</p>
+ <p><strong>Email:</strong> <a href="mailto:contact@freeresizer.com">contact@freeresizer.com</a></p>
+ <h2>Send a message</h2>
+ <form action="mailto:contact@freeresizer.com" method="post" enctype="text/plain">
+  <label for="cn">Your name</label><input type="text" id="cn" name="name" required>
+  <label for="ce">Your email</label><input type="email" id="ce" name="email" required>
+  <label for="cm">Message</label><textarea id="cm" name="message" rows="6" required></textarea>
+  <p><button class="btn" type="submit">Send message</button></p>
+ </form>
+ <p class="info">We aim to reply within a few business days.</p>
+</section>
+
+<!-- ============ PRIVACY ============ -->
+<section id="privacy" class="page doc">
+ <h1>Privacy Policy</h1>
+ <p><em>Last updated: October 30, 2026</em></p>
+ <p>This Privacy Policy explains how freeresizer ("we", "us", "our") handles information when you visit our website.</p>
+ <h2>Your images</h2>
+ <p>All image processing takes place locally in your web browser. The images you select are not uploaded to, transmitted to or stored on our servers.</p>
+ <h2>Information we collect</h2>
+ <p>We do not require registration and do not ask for personal information to use the tools. If you contact us by email, we receive the details you choose to send and use them only to reply to you.</p>
+ <p>Like most websites, our hosting provider and analytics tools may automatically collect standard technical data such as IP address, browser type, device type, pages viewed and referring pages.</p>
+ <h2>Cookies and advertising</h2>
+ <p>We use Google AdSense to display ads. Third-party vendors, including Google, use cookies to serve ads based on your prior visits to this and other websites. Google's use of advertising cookies enables it and its partners to serve ads to you based on your visit to our site and/or other sites on the Internet.</p>
+ <p>You may opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener">Google Ads Settings</a>. You can also visit <a href="https://www.aboutads.info" target="_blank" rel="noopener">www.aboutads.info</a> to opt out of some third-party vendors' use of cookies for personalized advertising. More about how Google uses data is at <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google uses information from sites that use its services</a>.</p>
+ <p>Where required by law (for example in the European Economic Area, the United Kingdom and Switzerland), we will request your consent before using cookies for personalized advertising.</p>
+ <h2>Third-party links</h2>
+ <p>Our site may link to other websites. We are not responsible for their content or privacy practices.</p>
+ <h2>Children's privacy</h2>
+ <p>Our service is not directed to children under 13, and we do not knowingly collect personal information from children.</p>
+ <h2>Your rights</h2>
+ <p>Depending on where you live, you may have rights to access, correct or delete personal data we hold. Contact us through our <a href="#contact">Contact page</a> to make a request.</p>
+ <h2>Changes to this policy</h2>
+ <p>We may update this policy from time to time. The date at the top shows when it was last revised.</p>
+</section>
+
+<!-- ============ TERMS ============ -->
+<section id="terms" class="page doc">
+ <h1>Terms of Service</h1>
+ <p><em>Last updated: October 30, 2026</em></p>
+ <p>By using freeresizer you agree to these terms. If you do not agree, please do not use the site.</p>
+ <h2>Use of the service</h2>
+ <p>freeresizer provides free online image tools for personal and commercial use. You agree not to use the site for any unlawful purpose or in a way that could damage or overload it.</p>
+ <h2>Your content</h2>
+ <p>You keep all rights to your images. Because images are processed in your browser, we do not receive or store them. You are responsible for making sure you have the right to edit and use any image you process.</p>
+ <h2>No warranty</h2>
+ <p>The service is provided "as is" without warranties of any kind. We do not guarantee that it will be uninterrupted or error-free, or that results will meet your needs. Keep a copy of your original files.</p>
+ <h2>Limitation of liability</h2>
+ <p>To the fullest extent permitted by law, freeresizer is not liable for any indirect or consequential loss arising from your use of the site.</p>
+ <h2>Advertising</h2>
+ <p>The site displays third-party advertising. We are not responsible for the content of advertisers' websites or products.</p>
+ <h2>Intellectual property</h2>
+ <p>The freeresizer name, design and code are owned by us. You may not copy or resell the site without permission.</p>
+ <h2>Changes</h2>
+ <p>We may update these terms at any time. Continued use of the site means you accept the updated terms.</p>
+ <h2>Contact</h2>
+ <p>Questions about these terms? Use our <a href="#contact">Contact page</a>.</p>
+</section>
+
+</main>
+
+<footer>
+ <div class="foot">
+  <div>
+   <a href="#home">Tools</a><a href="#about">About</a><a href="#contact">Contact</a><a href="#privacy">Privacy Policy</a><a href="#terms">Terms</a>
+  </div>
+  <div>© 2026 freeresizer. All rights reserved.</div>
+ </div>
+</footer>
+
+<script>
+(function(){
+ // ----- page routing (hash) -----
+ var pages=['home','about','contact','privacy','terms'];
+ function route(){
+  var h=(location.hash||'#home').slice(1);
+  if(pages.indexOf(h)<0)h='home';
+  pages.forEach(function(p){document.getElementById(p).classList.toggle('on',p===h)});
+  window.scrollTo(0,0);
+ }
+ window.addEventListener('hashchange',route);route();
+
+ // ----- tool logic -----
+ var $=function(id){return document.getElementById(id)};
+ var img=null,name='image',mode='resize',rot=0,fh=false,fv=false,origSize=0,kbBlob=null,kbMsg='';
+ var cv=$('cv'),ctx=cv.getContext('2d');
+
+ document.querySelectorAll('.tool[data-mode]').forEach(function(b){
+  b.addEventListener('click',function(){
+   mode=b.dataset.mode;
+   document.querySelectorAll('.tool').forEach(function(x){x.setAttribute('aria-pressed',x===b)});
+   document.querySelectorAll('.ctl').forEach(function(c){c.classList.toggle('on',c.dataset.for===mode)});
+   if((mode==='compress'||mode==='kb')&&$('fmt').value==='image/png')$('fmt').value='image/jpeg';
+   $('qwrap').style.display=(mode==='kb')?'none':'block';
+   kbBlob=null;kbMsg='';
+   if(img)render();
+  });
+ });
+
+ var drop=$('drop'),file=$('file');
+ $('pick').onclick=function(){file.click()};
+ file.onchange=function(){if(file.files[0])load(file.files[0])};
+ ['dragenter','dragover'].forEach(function(e){drop.addEventListener(e,function(ev){ev.preventDefault();drop.classList.add('hot')})});
+ ['dragleave','drop'].forEach(function(e){drop.addEventListener(e,function(ev){ev.preventDefault();drop.classList.remove('hot')})});
+ drop.addEventListener('drop',function(ev){var f=ev.dataTransfer.files[0];if(f)load(f)});
+
+ function load(f){
+  if(!/^image\//.test(f.type)){alert('Please choose an image file.');return}
+  origSize=f.size;name=f.name.replace(/\.[^.]+$/,'')||'image';
+  var url=URL.createObjectURL(f),i=new Image();
+  i.onload=function(){
+   img=i;rot=0;fh=fv=false;
+   $('w').value=i.naturalWidth;$('h').value=i.naturalHeight;
+   if(f.type==='image/png')$('fmt').value='image/png';
+   else if(f.type==='image/webp')$('fmt').value='image/webp';
+   else $('fmt').value='image/jpeg';
+   $('work').classList.add('on');$('drop').classList.add('slim');$('dropTitle').textContent='Choose a different image';
+   render();
+  };
+  i.onerror=function(){alert('This image could not be opened.')};
+  i.src=url;
+ }
+
+ function outSize(){
+  var sw=img.naturalWidth,sh=img.naturalHeight,cx=0,cy=0,cw=sw,ch=sh,w,h;
+  w=cw;h=ch;
+  if(mode==='resize'){
+   if($('unit').value==='pct'){var p=Math.max(1,parseFloat($('pct').value)||100)/100;w=Math.round(cw*p);h=Math.round(ch*p)}
+   else{w=Math.max(1,parseInt($('w').value)||cw);h=Math.max(1,parseInt($('h').value)||ch)}
+  }
+  if(mode==='compress'){var m=parseInt($('maxw').value);if(m>0&&m<w){h=Math.round(h*m/w);w=m}}
+  w=Math.min(w,12000);h=Math.min(h,12000);
+  return{cx:cx,cy:cy,cw:cw,ch:ch,w:w,h:h};
+ }
+
+ var timer;
+ function render(){
+  if(!img)return;
+  var o=outSize(),swap=(rot%180!==0),W=swap?o.h:o.w,H=swap?o.w:o.h;
+  cv.width=W;cv.height=H;
+  ctx.save();
+  if($('fmt').value==='image/jpeg'){ctx.fillStyle='#fff';ctx.fillRect(0,0,W,H)}
+  ctx.translate(W/2,H/2);ctx.rotate(rot*Math.PI/180);ctx.scale(fh?-1:1,fv?-1:1);
+  ctx.drawImage(img,o.cx,o.cy,o.cw,o.ch,-o.w/2,-o.h/2,o.w,o.h);
+  ctx.restore();
+  clearTimeout(timer);
+  if(mode==='kb'){
+   kbBlob=null;kbMsg='';
+   $('stats').textContent='Original: '+img.naturalWidth+' × '+img.naturalHeight+' px, '+Math.round(origSize/1024)+' KB. Enter a target size and press Apply.';
+   return;
+  }
+  timer=setTimeout(function(){
+   cv.toBlob(function(b){
+    if(!b)return;
+    var kb=function(n){return n>1048576?(n/1048576).toFixed(2)+' MB':Math.round(n/1024)+' KB'};
+    $('stats').textContent='Original: '+img.naturalWidth+' × '+img.naturalHeight+' px, '+kb(origSize)+'  →  New: '+W+' × '+H+' px, about '+kb(b.size);
+   },$('fmt').value,$('q').value/100);
+  },200);
+ }
+
+ var ratio=1;
+ $('w').oninput=function(){ratio=img.naturalWidth/img.naturalHeight;if($('lock').checked)$('h').value=Math.round($('w').value/ratio);render()};
+ $('h').oninput=function(){ratio=img.naturalWidth/img.naturalHeight;if($('lock').checked)$('w').value=Math.round($('h').value*ratio);render()};
+ $('unit').onchange=function(){var p=$('unit').value==='pct';$('pxBox').style.display=p?'none':'block';$('pctBox').style.display=p?'block':'none';render()};
+ ['pct','maxw','fmt'].forEach(function(id){$(id).oninput=render;$(id).onchange=render});
+ $('q').oninput=function(){$('qv').textContent=this.value;render()};
+ $('rl').onclick=function(){rot=(rot+270)%360;render()};
+ $('rr').onclick=function(){rot=(rot+90)%360;render()};
+ $('fh').onclick=function(){fh=!fh;render()};
+ $('fv').onclick=function(){fv=!fv;render()};
+
+ $('dl').onclick=function(){
+  if(!img)return;
+  if(mode==='kb'){
+   if(!kbBlob){alert('Press "Apply target size" first.');return}
+   var a2=document.createElement('a');a2.href=URL.createObjectURL(kbBlob);
+   a2.download=name+'-'+Math.round(kbBlob.size/1024)+'kb-freeresizer.'+($('fmt').value==='image/webp'?'webp':'jpg');
+   document.body.appendChild(a2);a2.click();a2.remove();return;
+  }
+  var f=$('fmt').value,ext=f==='image/png'?'png':f==='image/webp'?'webp':'jpg';
+  cv.toBlob(function(b){
+   var a=document.createElement('a');a.href=URL.createObjectURL(b);
+   a.download=name+'-freeresizer.'+ext;document.body.appendChild(a);a.click();a.remove();
+  },f,$('q').value/100);
+ };
+
+ function blobAt(scale,q,f){
+  var c=document.createElement('canvas');
+  c.width=Math.max(1,Math.round(img.naturalWidth*scale));c.height=Math.max(1,Math.round(img.naturalHeight*scale));
+  var x=c.getContext('2d');x.fillStyle='#fff';x.fillRect(0,0,c.width,c.height);
+  x.drawImage(img,0,0,c.width,c.height);
+  return new Promise(function(r){c.toBlob(function(b){r({b:b,w:c.width,h:c.height})},f,q)});
+ }
+ $('kbgo').onclick=async function(){
+  if(!img)return;
+  var target=(parseFloat($('kbv').value)||0)*parseFloat($('kbu').value)*1024;
+  if(target<2048){alert('Please enter a target of at least 2 KB.');return}
+  if($('fmt').value==='image/png')$('fmt').value='image/jpeg';
+  var f=$('fmt').value,btn=this;btn.disabled=true;btn.textContent='Working…';
+  var scale=1,best=null,bq=0;
+  try{
+   while(scale>=0.05&&!best){
+    var lo=0.1,hi=0.95,r=await blobAt(scale,lo,f);
+    if(r.b&&r.b.size<=target){
+     best=r;bq=lo;
+     for(var i=0;i<7;i++){
+      var mid=(lo+hi)/2,t=await blobAt(scale,mid,f);
+      if(t.b.size<=target){best=t;bq=mid;lo=mid}else{hi=mid}
+     }
+    }else{scale*=0.85}
+   }
+  }catch(e){}
+  btn.disabled=false;btn.textContent='Apply target size';
+  if(!best){$('stats').textContent='Could not reach that size. Try a larger target.';return}
+  kbBlob=best.b;
+  var kb=Math.round(best.b.size/1024);
+  kbMsg='Result: '+best.w+' × '+best.h+' px, '+kb+' KB (target '+Math.round(target/1024)+' KB), quality '+Math.round(bq*100)+'%.';
+  $('stats').textContent=kbMsg+' Press Download to save.';
+  var u=URL.createObjectURL(best.b),pi=new Image();
+  pi.onload=function(){cv.width=pi.naturalWidth;cv.height=pi.naturalHeight;ctx.drawImage(pi,0,0)};pi.src=u;
+ };
+ ['kbv','kbu','fmt'].forEach(function(id){$(id).addEventListener('input',function(){kbBlob=null})});
+ $('reset').onclick=function(){img=null;$('work').classList.remove('on');$('drop').classList.remove('slim');file.value='';$('dropTitle').textContent='Drag an image here';window.scrollTo({top:0,behavior:'smooth'})};
+})();
+</script>
+
+<script>
+(function(){
+var $=function(id){return document.getElementById(id)};
+var cur=null,files=[],wmImg=null,base=null,T={},xres=[];
+var FONTS=['Arial','Georgia','Times New Roman','Courier New','Verdana','Trebuchet MS','Impact','Comic Sans MS'];
+function esc(t){return String(t).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function kb(n){return n>1048576?(n/1048576).toFixed(2)+' MB':Math.max(1,Math.round(n/1024))+' KB'}
+function mk(w,h){var c=document.createElement('canvas');c.width=Math.max(1,Math.round(w));c.height=Math.max(1,Math.round(h));return c}
+function cvBlob(c,t,q){return new Promise(function(r){c.toBlob(r,t,q)})}
+function dl(b,n){var a=document.createElement('a');a.href=URL.createObjectURL(b);a.download=n;document.body.appendChild(a);a.click();a.remove()}
+function ext(t){return t==='image/png'?'png':t==='image/webp'?'webp':'jpg'}
+function copy(t){try{navigator.clipboard.writeText(t)}catch(e){}$('xmsg')&&($('xmsg').textContent='Copied '+t)}
+function loadImg(f){return new Promise(function(res,rej){var u=URL.createObjectURL(f),i=new Image();i.onload=function(){res({name:f.name.replace(/\.[^.]+$/,''),img:i,file:f,url:u})};i.onerror=function(){rej(f.name)};i.src=u})}
+function bytes(b){return b.arrayBuffer().then(function(a){return new Uint8Array(a)})}
+function rng(id,l,a,b,v){return '<label for="'+id+'">'+l+': <span id="'+id+'v">'+v+'</span></label><input type="range" id="'+id+'" min="'+a+'" max="'+b+'" value="'+v+'" style="width:100%">'}
+function opt(a){return a.map(function(o){return '<option value="'+o[0]+'">'+o[1]+'</option>'}).join('')}
+function watch(ids,fn){ids.forEach(function(id){var e=$(id);if(!e)return;['input','change'].forEach(function(ev){e.addEventListener(ev,function(){var v=$(id+'v');if(v)v.textContent=e.value;fn()})})})}
+var FMT='<label for="xfmt">Save as</label><select id="xfmt">'+opt([['image/jpeg','JPG'],['image/png','PNG'],['image/webp','WebP']])+'</select>';
+var DLB='<p class="stickybar"><button class="btn" id="xdl" type="button">Download</button></p><p class="info" id="xmsg"></p>';
+
+// ---------- ZIP (store) ----------
+var CT=(function(){var t=[],c,n,k;for(n=0;n<256;n++){c=n;for(k=0;k<8;k++)c=c&1?0xEDB88320^(c>>>1):c>>>1;t[n]=c>>>0}return t})();
+function crc(b){var c=-1,i;for(i=0;i<b.length;i++)c=CT[(c^b[i])&255]^(c>>>8);return(c^-1)>>>0}
+function zip(items){
+ var parts=[],cen=[],off=0,enc=new TextEncoder(),cs=0;
+ items.forEach(function(it){
+  var nm=enc.encode(it.name),cr=crc(it.data),sz=it.data.length,h=new DataView(new ArrayBuffer(30)),c=new DataView(new ArrayBuffer(46));
+  h.setUint32(0,0x04034b50,true);h.setUint16(4,20,true);h.setUint16(6,0x0800,true);h.setUint16(12,0x21,true);h.setUint32(14,cr,true);h.setUint32(18,sz,true);h.setUint32(22,sz,true);h.setUint16(26,nm.length,true);
+  parts.push(h.buffer,nm,it.data);
+  c.setUint32(0,0x02014b50,true);c.setUint16(4,20,true);c.setUint16(6,20,true);c.setUint16(8,0x0800,true);c.setUint16(14,0x21,true);c.setUint32(16,cr,true);c.setUint32(20,sz,true);c.setUint32(24,sz,true);c.setUint16(28,nm.length,true);c.setUint32(42,off,true);
+  cen.push(c.buffer,nm);off+=30+nm.length+sz;cs+=46+nm.length;
+ });
+ var e=new DataView(new ArrayBuffer(22));e.setUint32(0,0x06054b50,true);e.setUint16(8,items.length,true);e.setUint16(10,items.length,true);e.setUint32(12,cs,true);e.setUint32(16,off,true);
+ return new Blob(parts.concat(cen,[e.buffer]),{type:'application/zip'});
+}
+async function saveMany(list,zname){ // list:[{name,blob}]
+ if(list.length===1){dl(list[0].blob,list[0].name);return}
+ var it=[],i;for(i=0;i<list.length;i++)it.push({name:list[i].name,data:await bytes(list[i].blob)});
+ dl(zip(it),zname);
+}
+
+// ---------- PDF writer ----------
+function makePDF(pgs){
+ var enc=new TextEncoder(),ch=[],len=0,offs=[],N=pgs.length,kids=[],i;
+ function put(x){var b=typeof x==='string'?enc.encode(x):x;ch.push(b);len+=b.length}
+ function obj(n,body){offs[n]=len;put(n+' 0 obj\n'+body+'\nendobj\n')}
+ put('%PDF-1.4\n');
+ for(i=0;i<N;i++)kids.push((3+i*3)+' 0 R');
+ obj(1,'<< /Type /Catalog /Pages 2 0 R >>');
+ obj(2,'<< /Type /Pages /Kids ['+kids.join(' ')+'] /Count '+N+' >>');
+ pgs.forEach(function(p,i){
+  var pn=3+i*3,cn=pn+1,im=pn+2,cs='q '+p.dw.toFixed(2)+' 0 0 '+p.dh.toFixed(2)+' '+p.x.toFixed(2)+' '+p.y.toFixed(2)+' cm /Im0 Do Q';
+  obj(pn,'<< /Type /Page /Parent 2 0 R /MediaBox [0 0 '+p.w.toFixed(2)+' '+p.h.toFixed(2)+'] /Resources << /XObject << /Im0 '+im+' 0 R >> >> /Contents '+cn+' 0 R >>');
+  obj(cn,'<< /Length '+cs.length+' >>\nstream\n'+cs+'\nendstream');
+  offs[im]=len;put(im+' 0 obj\n<< /Type /XObject /Subtype /Image /Width '+p.iw+' /Height '+p.ih+' /ColorSpace /DeviceRGB /BitsPerComponent 8 /Filter /DCTDecode /Length '+p.jpg.length+' >>\nstream\n');put(p.jpg);put('\nendstream\nendobj\n');
+ });
+ var total=3+N*3,xs=len;
+ put('xref\n0 '+total+'\n0000000000 65535 f \n');
+ for(i=1;i<total;i++)put(('0000000000'+offs[i]).slice(-10)+' 00000 n \n');
+ put('trailer\n<< /Size '+total+' /Root 1 0 R >>\nstartxref\n'+xs+'\n%%EOF');
+ return new Blob(ch,{type:'application/pdf'});
+}
+async function toPdf(cs,o){
+ var pgs=[],i,c,w,h,pw,ph,m=o.margin*2.835,k,jc,jb;
+ for(i=0;i<cs.length;i++){
+  c=cs[i];jc=mk(c.width,c.height);var x=jc.getContext('2d');x.fillStyle='#fff';x.fillRect(0,0,jc.width,jc.height);x.drawImage(c,0,0);
+  jb=await bytes(await cvBlob(jc,'image/jpeg',o.q));
+  w=c.width;h=c.height;
+  if(o.size==='fit'){pw=w*.75+2*m;ph=h*.75+2*m}
+  else{pw=o.size==='letter'?612:595.28;ph=o.size==='letter'?792:841.89;
+   var land=o.orient==='l'||(o.orient==='auto'&&w>h);if(land){var t=pw;pw=ph;ph=t}}
+  k=Math.min((pw-2*m)/w,(ph-2*m)/h);
+  pgs.push({w:pw,h:ph,jpg:jb,iw:w,ih:h,dw:w*k,dh:h*k,x:(pw-w*k)/2,y:(ph-h*k)/2});
+ }
+ return makePDF(pgs);
+}
+
+// ---------- overlay (text / watermark) ----------
+function ovSize(ctx,W,o){
+ var fs=W*o.size/100,lines=(o.text||'').split('\n'),tw=0,th;
+ if(o.type==='img'){tw=fs;th=tw*o.wm.height/o.wm.width}
+ else{ctx.font=(o.italic?'italic ':'')+(o.bold?'bold ':'')+fs+'px "'+o.font+'",sans-serif';lines.forEach(function(l){tw=Math.max(tw,ctx.measureText(l).width)});th=fs*1.2*lines.length}
+ return{tw:tw,th:th,fs:fs,lines:lines};
+}
+function drawOv(ctx,W,H,o){
+ if(o.type==='img'&&!o.wm)return;
+ if(o.type==='text'&&!(o.text||'').trim())return;
+ var z=ovSize(ctx,W,o),tw=z.tw,th=z.th,fs=z.fs,lines=z.lines;
+ ctx.save();ctx.globalAlpha=o.alpha;
+ function one(cx,cy){
+  ctx.save();ctx.translate(cx,cy);ctx.rotate(o.rot*Math.PI/180);
+  if(o.type==='img')ctx.drawImage(o.wm,-tw/2,-th/2,tw,th);
+  else{
+   ctx.textAlign='center';ctx.textBaseline='middle';ctx.lineJoin='round';
+   if(o.shadow){ctx.shadowColor='rgba(0,0,0,.55)';ctx.shadowBlur=fs/8;ctx.shadowOffsetX=fs/20;ctx.shadowOffsetY=fs/20}
+   lines.forEach(function(l,k){var y=(k-(lines.length-1)/2)*fs*1.2;
+    if(o.ow>0){ctx.lineWidth=fs*o.ow/40;ctx.strokeStyle=o.oc;ctx.strokeText(l,0,y)}
+    ctx.fillStyle=o.color;ctx.fillText(l,0,y)});
+  }
+  ctx.restore();
+ }
+ if(o.tile){
+  var gx=Math.max(20,tw+W*o.gap/100),gy=Math.max(20,th+W*o.gap/100),x,y,r=0;
+  for(y=-th;y<H+th*2;y+=gy,r++)for(x=-tw+(r%2?gx/2:0);x<W+tw*2;x+=gx)one(x,y);
+ }else one(o.x/100*W,o.y/100*H);
+ ctx.restore();
+}
+function ovOpts(){
+ var wm=cur==='wm';
+ return{type:wm&&$('xtype').value==='img'?'img':'text',wm:wmImg,text:$('xt').value,font:$('xf').value,size:+$('xs').value,color:$('xc').value,oc:$('xo').value,ow:+$('xow').value,bold:$('xb').checked,italic:$('xi').checked,shadow:$('xsh').checked,rot:+$('xr').value,alpha:$('xa').value/100,x:+$('xx').value,y:+$('xy').value,tile:wm&&$('xpos').value==='tile',gap:wm?+$('xgap').value:0};
+}
+function ovHtml(wm){
+ return (wm?'<label for="xtype">Watermark type</label><select id="xtype">'+opt([['text','Text'],['img','Image / logo']])+'</select><div id="xwmbox" style="display:none"><label for="xwf">Watermark image</label><input type="file" id="xwf" accept="image/*"></div>':'')
+ +'<div id="xtxt"><label for="xt">Text</label><textarea id="xt" rows="2" style="width:100%;padding:8px;border:1px solid var(--line);border-radius:7px;background:var(--paper);color:var(--ink)">'+(wm?'© freeresizer':'Your text here')+'</textarea>'
+ +'<label for="xf">Font</label><select id="xf">'+FONTS.map(function(f){return '<option>'+f+'</option>'}).join('')+'</select>'
+ +'<div class="row"><div><label for="xc">Color</label><input type="color" id="xc" value="#ffffff"></div><div><label for="xo">Outline</label><input type="color" id="xo" value="#000000"></div></div>'
+ +rng('xow','Outline width',0,10,wm?0:2)
+ +'<label><input type="checkbox" id="xb"'+(wm?'':' checked')+'> Bold</label><label><input type="checkbox" id="xi"> Italic</label><label><input type="checkbox" id="xsh"> Shadow</label></div>'
+ +rng('xs','Size (% of image width)',2,80,wm?14:10)+rng('xr','Rotation (degrees)',-180,180,0)+rng('xa','Opacity (%)',5,100,wm?50:100)
+ +(wm?'<label for="xpos">Position</label><select id="xpos">'+opt([['c','Center'],['tl','Top left'],['tr','Top right'],['bl','Bottom left'],['br','Bottom right'],['tile','Tile across image'],['custom','Custom (use X and Y)']])+'</select>'+rng('xgap','Tile spacing (%)',0,50,10):'')
+ +rng('xx','X position (%)',0,100,50)+rng('xy','Y position (%)',0,100,50);
+}
+function ovSetup(draw){
+ var ids=['xt','xf','xc','xo','xow','xb','xi','xsh','xs','xr','xa','xx','xy'];
+ if(cur==='wm'){
+  ids.push('xtype','xpos','xgap');
+  $('xtype').addEventListener('change',function(){var im=this.value==='img';$('xwmbox').style.display=im?'block':'none';$('xtxt').style.display=im?'none':'block'});
+  $('xwf').onchange=function(){if(this.files[0])loadImg(this.files[0]).then(function(r){wmImg=r.img;draw()})};
+  $('xpos').addEventListener('change',function(){
+   var v=this.value;if(v==='tile'||v==='custom'){draw();return}
+   var c=mk(10,10).getContext('2d'),W=files[0].img.naturalWidth,H=files[0].img.naturalHeight,z=ovSize(c,W,ovOpts()),m=W*.03,
+    L=(z.tw/2+m)/W*100,R=100-L,Tp=(z.th/2+m)/H*100,B=100-Tp;
+   var pos={c:[50,50],tl:[L,Tp],tr:[R,Tp],bl:[L,B],br:[R,B]}[v];
+   $('xx').value=Math.max(0,Math.min(100,pos[0]));$('xy').value=Math.max(0,Math.min(100,pos[1]));
+   $('xxv').textContent=Math.round($('xx').value);$('xyv').textContent=Math.round($('xy').value);draw();
+  });
+  ['xx','xy'].forEach(function(i){$(i).addEventListener('input',function(){if($('xpos').value!=='tile')$('xpos').value='custom'})});
+ }
+ watch(ids,draw);
+}
+
+// ---------- tools ----------
+T.text={title:'Text & Typography',desc:'Type text, choose font, color and outline, then place it with the sliders or by dragging on the image.',canvas:1,
+ ctl:function(){return ovHtml(0)+'<div class="row" style="margin-top:12px"><button class="btn alt" id="xapply" type="button">Apply text</button><button class="btn alt" id="xreset" type="button">Remove all text</button></div><p class="info">Apply text keeps it on the image so you can add more text.</p>'+FMT+DLB},
+ files:function(){var i=files[0].img;base=mk(i.naturalWidth,i.naturalHeight);base.getContext('2d').drawImage(i,0,0)},
+ setup:function(){
+  var cv=$('xcv');
+  function draw(){cv.width=base.width;cv.height=base.height;var c=cv.getContext('2d');c.drawImage(base,0,0);drawOv(c,cv.width,cv.height,ovOpts())}
+  T.text.upd=draw;ovSetup(draw);
+  $('xapply').onclick=function(){drawOv(base.getContext('2d'),base.width,base.height,ovOpts());$('xt').value='';draw()};
+  $('xreset').onclick=function(){T.text.files();draw()};
+  var dr=false;function mv(e){var r=cv.getBoundingClientRect();$('xx').value=Math.max(0,Math.min(100,(e.clientX-r.left)/r.width*100));$('xy').value=Math.max(0,Math.min(100,(e.clientY-r.top)/r.height*100));$('xxv').textContent=Math.round($('xx').value);$('xyv').textContent=Math.round($('xy').value);draw()}
+  cv.style.cursor='move';cv.style.touchAction='none';
+  cv.onpointerdown=function(e){dr=true;try{cv.setPointerCapture(e.pointerId)}catch(x){}mv(e)};
+  cv.onpointermove=function(e){if(dr)mv(e)};cv.onpointerup=cv.onpointercancel=function(){dr=false};
+  $('xdl').onclick=async function(){var t=$('xfmt').value;dl(await cvBlob(cv,t,.92),files[0].name+'-text.'+ext(t))};
+ }};
+
+T.wm={title:'Watermark',desc:'Add a text or logo watermark to one or many images. Place it in a corner, in the center, or tile it across the whole image.',canvas:1,multi:1,
+ ctl:function(){return ovHtml(1)+FMT+DLB},
+ setup:function(){
+  var cv=$('xcv');
+  function draw(){var i=files[0].img;cv.width=i.naturalWidth;cv.height=i.naturalHeight;var c=cv.getContext('2d');c.drawImage(i,0,0);drawOv(c,cv.width,cv.height,ovOpts())}
+  T.wm.upd=draw;ovSetup(draw);
+  $('xdl').onclick=async function(){
+   var t=$('xfmt').value,o=ovOpts(),out=[],i,c,x;$('xmsg').textContent='Working…';
+   for(i=0;i<files.length;i++){var im=files[i].img;c=mk(im.naturalWidth,im.naturalHeight);x=c.getContext('2d');x.drawImage(im,0,0);drawOv(x,c.width,c.height,o);out.push({name:files[i].name+'-watermark.'+ext(t),blob:await cvBlob(c,t,.92)})}
+   await saveMany(out,'watermarked-images.zip');$('xmsg').textContent='Done.';
+  };
+ }};
+
+function mergeCanvas(){
+ var dir=$('xd').value,gap=+$('xg').value,match=$('xmt').checked,n=files.length,ref=files[0].img,W=0,H=0,k;
+ var dims=files.map(function(f){var w=f.img.naturalWidth,h=f.img.naturalHeight,s;
+  if(match){if(dir==='h'){s=ref.naturalHeight/h;return[w*s,ref.naturalHeight]}s=ref.naturalWidth/w;return[ref.naturalWidth,h*s]}
+  return[w,h]});
+ dims.forEach(function(d){if(dir==='h'){W+=d[0];H=Math.max(H,d[1])}else{H+=d[1];W=Math.max(W,d[0])}});
+ if(dir==='h')W+=gap*(n-1);else H+=gap*(n-1);
+ k=Math.min(1,12000/Math.max(W,H));
+ var c=mk(W*k,H*k),x=c.getContext('2d'),p=0;
+ x.fillStyle=$('xbg').value;x.fillRect(0,0,c.width,c.height);
+ files.forEach(function(f,i){var d=dims[i];
+  if(dir==='h'){x.drawImage(f.img,p*k,(H-d[1])/2*k,d[0]*k,d[1]*k);p+=d[0]+gap}
+  else{x.drawImage(f.img,(W-d[0])/2*k,p*k,d[0]*k,d[1]*k);p+=d[1]+gap}});
+ return c;
+}
+T.merge={title:'Image Merger',desc:'Combine several images into one, side by side or stacked. Reorder with the arrows.',canvas:1,multi:1,
+ ctl:function(){return '<div id="xlist"></div><label for="xd">Direction</label><select id="xd">'+opt([['h','Side by side (horizontal)'],['v','Stacked (vertical)']])+'</select>'+rng('xg','Gap (px)',0,200,0)+'<label for="xbg">Background</label><input type="color" id="xbg" value="#ffffff"><label><input type="checkbox" id="xmt" checked> Match sizes</label>'+FMT+DLB},
+ files:function(){olist($('xlist'),T.merge.upd)},
+ setup:function(){
+  function draw(){var c=mergeCanvas(),cv=$('xcv');cv.width=c.width;cv.height=c.height;cv.getContext('2d').drawImage(c,0,0);$('xmsg').textContent=c.width+' × '+c.height+' px'}
+  T.merge.upd=draw;watch(['xd','xg','xbg','xmt'],draw);
+  $('xdl').onclick=async function(){var t=$('xfmt').value;dl(await cvBlob(mergeCanvas(),t,.92),'merged.'+ext(t))};
+ }};
+
+T.split={title:'Image Splitter',desc:'Cut an image into equal rows and columns. All pieces download together as a ZIP file.',canvas:1,
+ ctl:function(){return rng('xrw','Rows',1,10,2)+rng('xcl','Columns',1,10,2)+FMT+DLB},
+ setup:function(){
+  function draw(){var i=files[0].img,cv=$('xcv'),c;cv.width=i.naturalWidth;cv.height=i.naturalHeight;c=cv.getContext('2d');c.drawImage(i,0,0);
+   var r=+$('xrw').value,k=+$('xcl').value,a;c.strokeStyle='#ff2d55';c.lineWidth=Math.max(2,cv.width/300);
+   for(a=1;a<k;a++){c.beginPath();c.moveTo(cv.width*a/k,0);c.lineTo(cv.width*a/k,cv.height);c.stroke()}
+   for(a=1;a<r;a++){c.beginPath();c.moveTo(0,cv.height*a/r);c.lineTo(cv.width,cv.height*a/r);c.stroke()}
+   $('xmsg').textContent=(r*k)+' pieces of about '+Math.round(cv.width/k)+' × '+Math.round(cv.height/r)+' px'}
+  T.split.upd=draw;watch(['xrw','xcl'],draw);
+  $('xdl').onclick=async function(){
+   var i=files[0].img,r=+$('xrw').value,k=+$('xcl').value,t=$('xfmt').value,out=[],a,b,c,pw=Math.floor(i.naturalWidth/k),ph=Math.floor(i.naturalHeight/r);
+   for(a=0;a<r;a++)for(b=0;b<k;b++){
+    c=mk(pw,ph);var x=c.getContext('2d');
+    if(t==='image/jpeg'){x.fillStyle='#fff';x.fillRect(0,0,pw,ph)}
+    x.drawImage(i,b*pw,a*ph,pw,ph,0,0,pw,ph);
+    out.push({name:files[0].name+'-r'+(a+1)+'-c'+(b+1)+'.'+ext(t),blob:await cvBlob(c,t,.92)});
+   }
+   await saveMany(out,files[0].name+'-pieces.zip');
+  };
+ }};
+
+function rr(x,px,py,w,h,r){x.beginPath();x.moveTo(px+r,py);x.arcTo(px+w,py,px+w,py+h,r);x.arcTo(px+w,py+h,px,py+h,r);x.arcTo(px,py+h,px,py,r);x.arcTo(px,py,px+w,py,r);x.closePath()}
+function collageCanvas(){
+ var n=files.length,cols=Math.min(+$('xcol').value,n),r=+$('xr').value,g=+$('xg').value,W=+$('xw').value,rad=+$('xrd').value,
+  cw=(W-g*(cols+1))/cols,ch=cw/r,rows=Math.ceil(n/cols),H=g*(rows+1)+rows*ch,c=mk(W,H),x=c.getContext('2d');
+ x.fillStyle=$('xbg').value;x.fillRect(0,0,W,H);
+ files.forEach(function(f,i){
+  var px=g+(i%cols)*(cw+g),py=g+Math.floor(i/cols)*(ch+g),im=f.img,s=Math.max(cw/im.naturalWidth,ch/im.naturalHeight),sw=cw/s,sh=ch/s;
+  x.save();rr(x,px,py,cw,ch,Math.min(rad,cw/2,ch/2));x.clip();
+  x.drawImage(im,(im.naturalWidth-sw)/2,(im.naturalHeight-sh)/2,sw,sh,px,py,cw,ch);x.restore();
+ });
+ return c;
+}
+T.collage={title:'Image Collage Maker',desc:'Arrange several photos in a neat grid. Set columns, spacing, corner radius and background.',canvas:1,multi:1,
+ ctl:function(){return '<div id="xlist"></div>'+rng('xcol','Columns',1,6,2)+'<label for="xr">Cell shape</label><select id="xr">'+opt([['1','Square'],['1.3333','Landscape 4:3'],['1.7778','Wide 16:9'],['0.75','Portrait 3:4']])+'</select>'+rng('xg','Spacing (px)',0,80,12)+rng('xrd','Corner radius (px)',0,100,0)+'<label for="xw">Width</label><select id="xw">'+opt([['1200','1200 px'],['1600','1600 px'],['2400','2400 px']])+'</select><label for="xbg">Background</label><input type="color" id="xbg" value="#ffffff">'+FMT+DLB},
+ files:function(){olist($('xlist'),T.collage.upd)},
+ setup:function(){
+  function draw(){var c=collageCanvas(),cv=$('xcv');cv.width=c.width;cv.height=c.height;cv.getContext('2d').drawImage(c,0,0);$('xmsg').textContent=c.width+' × '+c.height+' px'}
+  T.collage.upd=draw;watch(['xcol','xr','xg','xrd','xw','xbg'],draw);
+  $('xdl').onclick=async function(){var t=$('xfmt').value;dl(await cvBlob(collageCanvas(),t,.92),'collage.'+ext(t))};
+ }};
+
+// ---------- EXIF ----------
+function exif(buf){
+ var o={found:false,t:{}};
+ try{
+  var v=new DataView(buf),p=2;if(v.getUint16(0)!==0xFFD8)return o;
+  while(p<v.byteLength-4){
+   var m=v.getUint16(p),l=v.getUint16(p+2);
+   if(m===0xFFE1&&v.getUint32(p+4)===0x45786966){o.found=true;tiff(v,p+10,o);break}
+   if((m&0xFF00)!==0xFF00||m===0xFFDA)break;p+=2+l;
+  }
+ }catch(e){}
+ return o;
+}
+function tiff(v,s,o){
+ var le=v.getUint16(s)===0x4949;
+ function g16(a){return v.getUint16(a,le)}function g32(a){return v.getUint32(a,le)}
+ function val(e){
+  var t=g16(e+2),n=g32(e+4),sz=[0,1,1,2,4,8,1,1,2,4,8,4,8][t]||1,a=n*sz>4?s+g32(e+8):e+8,out=[],i,str='';
+  if(t===2){for(i=0;i<n-1;i++)str+=String.fromCharCode(v.getUint8(a+i));return str.trim()}
+  for(i=0;i<Math.min(n,8);i++){
+   if(t===1||t===7)out.push(v.getUint8(a+i));else if(t===3)out.push(v.getUint16(a+i*2,le));else if(t===4)out.push(v.getUint32(a+i*4,le));
+   else if(t===5)out.push(v.getUint32(a+i*8,le)/(v.getUint32(a+i*8+4,le)||1));else if(t===9)out.push(v.getInt32(a+i*4,le));
+   else if(t===10)out.push(v.getInt32(a+i*8,le)/(v.getInt32(a+i*8+4,le)||1));
+   else if(t===11)out.push(v.getFloat32(a+i*4,le));else if(t===12)out.push(v.getFloat64(a+i*8,le));
+  }
+  return out.length===1?out[0]:out;
+ }
+ function ifd(off,st){var n=g16(s+off),i,e;for(i=0;i<n;i++){e=s+off+2+i*12;try{st[g16(e)]=val(e)}catch(x){}}}
+ var a={},b={},c={};
+ ifd(g32(s+4),a);if(a[0x8769])ifd(a[0x8769],b);if(a[0x8825])ifd(a[0x8825],c);
+ o.t={i:a,e:b,g:c};
+}
+function gpsVal(c,k,r){var d=c[k];if(!Array.isArray(d)||!c[r])return null;var x=d[0]+d[1]/60+d[2]/3600;return(c[r]==='S'||c[r]==='W')?-x:x}
+function exifRows(ex,f,im){
+ var r=[],a=ex.t.i||{},b=ex.t.e||{},c=ex.t.g||{};
+ function add(k,v){if(v!==undefined&&v!==''&&v!==null)r.push([k,v])}
+ add('File name',f.file.name);add('File type',f.file.type||'unknown');add('File size',kb(f.file.size)+' ('+f.file.size.toLocaleString()+' bytes)');
+ add('Dimensions',im.naturalWidth+' × '+im.naturalHeight+' px');add('Megapixels',(im.naturalWidth*im.naturalHeight/1e6).toFixed(2)+' MP');
+ add('Last modified',f.file.lastModified?new Date(f.file.lastModified).toLocaleString():'');
+ if(!ex.found){r.push(['EXIF data','None found (common for PNG, WebP and edited or social-media images)']);return r}
+ add('Camera make',a[0x010F]);add('Camera model',a[0x0110]);add('Lens',b[0xA434]);add('Software',a[0x0131]);
+ add('Date taken',b[0x9003]||a[0x0132]);
+ if(b[0x829A]>0)add('Exposure time',b[0x829A]<1?'1/'+Math.round(1/b[0x829A])+' s':b[0x829A]+' s');
+ if(b[0x829D]>0)add('Aperture','f/'+(+b[0x829D]).toFixed(1));
+ add('ISO',b[0x8827]);if(b[0x920A])add('Focal length',(+b[0x920A]).toFixed(1)+' mm');
+ add('Orientation',a[0x0112]);
+ var la=gpsVal(c,2,1),lo=gpsVal(c,4,3);
+ if(la!==null&&lo!==null)add('GPS location',la.toFixed(6)+', '+lo.toFixed(6)+'  (this shows where the photo was taken)');
+ add('EXIF tags found',Object.keys(a).length+Object.keys(b).length+Object.keys(c).length);
+ return r;
+}
+T.meta={title:'Image Metadata Viewer',desc:'See the hidden information stored in a photo, such as camera, date, settings and GPS location. Your file is read on your device only.',
+ ctl:function(){return '<p class="info">Details appear on the left. EXIF is stored mainly in JPG photos.</p><button class="btn alt" id="xcp" type="button">Copy details</button><p class="info" id="xmsg"></p>'},
+ setup:function(){
+  var txt='';
+  T.meta.upd=async function(){
+   var f=files[0],ex=exif(await f.file.arrayBuffer()),rows=exifRows(ex,f,f.img);
+   $('xinfo').innerHTML='<table class="tbl">'+rows.map(function(r){return '<tr><th>'+esc(r[0])+'</th><td>'+esc(r[1])+'</td></tr>'}).join('')+'</table>';
+   txt=rows.map(function(r){return r[0]+': '+r[1]}).join('\n');
+  };
+  $('xcp').onclick=function(){copy(txt.slice(0,40))};
+  $('xcp').onclick=function(){try{navigator.clipboard.writeText(txt)}catch(e){}$('xmsg').textContent='Details copied.'};
+ }};
+
+T.exifrm={title:'EXIF Remover',desc:'Strip location, camera and other hidden data from your photos. Pixels are copied into a clean new file on your device.',multi:1,
+ ctl:function(){return '<label for="xfmt">Save as</label><select id="xfmt">'+opt([['same','Same as original'],['image/jpeg','JPG'],['image/png','PNG'],['image/webp','WebP']])+'</select>'+rng('xq','JPG / WebP quality',50,100,92)+'<p class="stickybar"><button class="btn" id="xdl" type="button">Remove metadata &amp; download</button></p><p class="info" id="xmsg"></p>'},
+ setup:function(){
+  T.exifrm.upd=async function(){
+   var h='<table class="tbl"><tr><th>File</th><th>Size</th><th>EXIF</th><th>GPS</th></tr>',i,ex;
+   for(i=0;i<files.length;i++){ex=exif(await files[i].file.arrayBuffer());var g=ex.t.g&&ex.t.g[2]?'Yes':'No';
+    h+='<tr><td>'+esc(files[i].file.name)+'</td><td>'+kb(files[i].file.size)+'</td><td>'+(ex.found?'Found':'None')+'</td><td>'+g+'</td></tr>'}
+   $('xinfo').innerHTML=h+'</table>';
+  };
+  $('xdl').onclick=async function(){
+   var out=[],i,f,t,c;$('xmsg').textContent='Working…';
+   for(i=0;i<files.length;i++){
+    f=files[i];t=$('xfmt').value;if(t==='same')t=/png|webp/.test(f.file.type)?f.file.type:'image/jpeg';
+    c=mk(f.img.naturalWidth,f.img.naturalHeight);var x=c.getContext('2d');
+    if(t==='image/jpeg'){x.fillStyle='#fff';x.fillRect(0,0,c.width,c.height)}
+    x.drawImage(f.img,0,0);
+    out.push({name:f.name+'-clean.'+ext(t),blob:await cvBlob(c,t,$('xq').value/100)});
+   }
+   await saveMany(out,'clean-images.zip');$('xmsg').textContent='Done. The new files contain no EXIF data.';
+  };
+ }};
+
+// ---------- color picker ----------
+function hex(r,g,b){return '#'+[r,g,b].map(function(v){return ('0'+v.toString(16)).slice(-2)}).join('').toUpperCase()}
+function hsl(r,g,b){r/=255;g/=255;b/=255;var M=Math.max(r,g,b),m=Math.min(r,g,b),h=0,s=0,l=(M+m)/2,d=M-m;
+ if(d){s=d/(1-Math.abs(2*l-1));h=M===r?((g-b)/d)%6:M===g?(b-r)/d+2:(r-g)/d+4;h=Math.round(h*60);if(h<0)h+=360}
+ return 'hsl('+h+', '+Math.round(s*100)+'%, '+Math.round(l*100)+'%)'}
+T.color={title:'Image Color Picker',desc:'Click anywhere on the image to pick a color, or use the palette of main colors found in the picture. Click a value to copy it.',canvas:1,
+ ctl:function(){return '<div id="xcur" class="sw" style="width:100%;height:60px;margin:0 0 8px;background:#fff;color:#000;text-shadow:none">Click the image</div><div id="xvals"></div><label>Main colors in this image</label><div id="xpal"></div><p class="info" id="xmsg"></p>'},
+ setup:function(){
+  var cv=$('xcv');cv.style.cursor='crosshair';
+  function show(r,g,b){var h=hex(r,g,b),vs=[h,'rgb('+r+', '+g+', '+b+')',hsl(r,g,b)];
+   $('xcur').style.background=h;$('xcur').style.color=(r*.299+g*.587+b*.114)>150?'#000':'#fff';$('xcur').textContent=h;
+   $('xvals').innerHTML=vs.map(function(v){return '<button class="btn alt" style="margin:3px 3px 3px 0;padding:6px 10px" type="button" data-c="'+esc(v)+'">'+esc(v)+'</button>'}).join('')}
+  function px(e){var r=cv.getBoundingClientRect(),x=Math.floor((e.clientX-r.left)*cv.width/r.width),y=Math.floor((e.clientY-r.top)*cv.height/r.height);
+   x=Math.max(0,Math.min(cv.width-1,x));y=Math.max(0,Math.min(cv.height-1,y));return cv.getContext('2d').getImageData(x,y,1,1).data}
+  cv.onclick=function(e){var d=px(e);show(d[0],d[1],d[2])};
+  cv.onpointermove=function(e){if(e.buttons===0&&e.pointerType==='mouse'){var d=px(e);$('xcur').style.background=hex(d[0],d[1],d[2]);$('xcur').textContent=hex(d[0],d[1],d[2]);$('xcur').style.color=(d[0]*.299+d[1]*.587+d[2]*.114)>150?'#000':'#fff'}};
+  $('xctl').onclick=function(e){var c=e.target.dataset&&e.target.dataset.c;if(c)copy(c)};
+  T.color.upd=function(){
+   var i=files[0].img;cv.width=i.naturalWidth;cv.height=i.naturalHeight;cv.getContext('2d').drawImage(i,0,0);
+   var k=Math.min(1,100/Math.max(cv.width,cv.height)),s=mk(cv.width*k,cv.height*k),sx=s.getContext('2d');sx.drawImage(i,0,0,s.width,s.height);
+   var d=sx.getImageData(0,0,s.width,s.height).data,B={},j,key,b;
+   for(j=0;j<d.length;j+=4){if(d[j+3]<128)continue;key=(d[j]>>4)+','+(d[j+1]>>4)+','+(d[j+2]>>4);b=B[key]||(B[key]={n:0,r:0,g:0,b:0});b.n++;b.r+=d[j];b.g+=d[j+1];b.b+=d[j+2]}
+   var arr=Object.keys(B).map(function(q){var z=B[q];return[Math.round(z.r/z.n),Math.round(z.g/z.n),Math.round(z.b/z.n),z.n]}).sort(function(p,q){return q[3]-p[3]}),pick=[];
+   arr.forEach(function(c){if(pick.length<8&&pick.every(function(p){return Math.hypot(p[0]-c[0],p[1]-c[1],p[2]-c[2])>45}))pick.push(c)});
+   $('xpal').innerHTML=pick.map(function(c){var h=hex(c[0],c[1],c[2]);return '<button class="sw" type="button" data-c="'+h+'" style="background:'+h+'">'+h+'</button>'}).join('');
+   if(pick[0])show(pick[0][0],pick[0][1],pick[0][2]);
+  };
+ }};
+
+// ---------- duplicates ----------
+function dhash(img){var c=mk(9,8),x=c.getContext('2d');x.drawImage(img,0,0,9,8);var d=x.getImageData(0,0,9,8).data,h=[],r,q,g=function(i){return d[i]*.299+d[i+1]*.587+d[i+2]*.114};
+ for(r=0;r<8;r++)for(q=0;q<8;q++)h.push(g((r*9+q)*4)>g((r*9+q+1)*4)?1:0);return h}
+T.dups={title:'Duplicate Image Finder',desc:'Choose many images. Exact copies and look-alike images (resized or re-saved) are grouped together. Nothing is uploaded.',multi:1,
+ ctl:function(){return rng('xth','Similarity tolerance',0,16,6)+'<p class="info">0 finds only near-identical pictures. Higher values also match edited or resized versions.</p><p class="info" id="xmsg"></p>'},
+ files:function(){files.forEach(function(f){f.h=null})},
+ setup:function(){
+  async function upd(){
+   if(files.length<2){$('xinfo').innerHTML='<p>Add at least two images to compare.</p>';return}
+   var i,j;$('xmsg').textContent='Scanning…';
+   for(i=0;i<files.length;i++){var f=files[i];if(!f.h){f.h=dhash(f.img);try{var dg=await crypto.subtle.digest('SHA-256',await f.file.arrayBuffer());f.sha=Array.prototype.map.call(new Uint8Array(dg),function(b){return b.toString(16)}).join('')}catch(e){f.sha='n'+f.file.size+f.file.name}}}
+   var th=+$('xth').value,par=files.map(function(_,k){return k});
+   function fd(a){while(par[a]!==a)a=par[a]=par[par[a]];return a}
+   for(i=0;i<files.length;i++)for(j=i+1;j<files.length;j++){
+    var d=0,k;for(k=0;k<64;k++)if(files[i].h[k]!==files[j].h[k])d++;
+    if(files[i].sha===files[j].sha||d<=th)par[fd(i)]=fd(j);
+   }
+   var G={};files.forEach(function(f,k){(G[fd(k)]=G[fd(k)]||[]).push(f)});
+   var gs=Object.keys(G).map(function(k){return G[k]}).filter(function(g){return g.length>1});
+   $('xinfo').innerHTML=gs.length?gs.map(function(g,n){return '<div class="grp"><strong>Group '+(n+1)+'</strong> ('+g.length+' images)<br>'+g.map(function(f){var exact=g.some(function(o){return o!==f&&o.sha===f.sha});
+     return '<div style="display:inline-block;vertical-align:top;font-size:.8rem;max-width:130px"><img src="'+f.url+'" alt=""><br>'+esc(f.file.name)+'<br>'+f.img.naturalWidth+'×'+f.img.naturalHeight+', '+kb(f.file.size)+'<br>'+(exact?'Exact copy':'Similar')+'</div>'}).join('')+'</div>'}).join(''):'<p>No duplicates found among '+files.length+' images.</p>';
+   $('xmsg').textContent=gs.length+' group(s) of duplicates found among '+files.length+' images.';
+  }
+  T.dups.upd=upd;watch(['xth'],upd);
+ }};
+
+// ---------- scanner ----------
+var scanRot=0,scanSrc=null;
+function scanBuild(){var i=files[0].img,k=Math.min(1,2500/Math.max(i.naturalWidth,i.naturalHeight)),w=i.naturalWidth*k,h=i.naturalHeight*k,sw=scanRot%180!==0,c=mk(sw?h:w,sw?w:h),x=c.getContext('2d');
+ x.translate(c.width/2,c.height/2);x.rotate(scanRot*Math.PI/180);x.drawImage(i,-w/2,-h/2,w,h);scanSrc=c}
+function scanDraw(){
+ if(!scanSrc)scanBuild();
+ var cv=$('xcv'),W=scanSrc.width,H=scanSrc.height;cv.width=W;cv.height=H;var x=cv.getContext('2d');x.drawImage(scanSrc,0,0);
+ var id=x.getImageData(0,0,W,H),d=id.data,mode=$('xmode').value,br=+$('xbr').value*2.55,ct=+$('xct').value,f=(259*(ct+255))/(255*(259-ct)),i,ch,n=W*H;
+ if(mode==='enh'){
+  for(ch=0;ch<3;ch++){var hist=new Uint32Array(256),lo=0,hi=255,acc=0;
+   for(i=0;i<n;i++)hist[d[i*4+ch]]++;
+   while(lo<254&&(acc+=hist[lo])<n*.01)lo++;acc=0;while(hi>lo+1&&(acc+=hist[hi])<n*.01)hi--;
+   for(i=0;i<n;i++)d[i*4+ch]=(d[i*4+ch]-lo)*255/Math.max(1,hi-lo)}
+ }
+ var g=new Float32Array(n);
+ for(i=0;i<n;i++){
+  var r=d[i*4],gg=d[i*4+1],b=d[i*4+2];
+  if(mode==='gray'||mode==='bw'){r=gg=b=.299*r+.587*gg+.114*b}
+  r=f*(r+br-128)+128;gg=f*(gg+br-128)+128;b=f*(b+br-128)+128;
+  d[i*4]=r;d[i*4+1]=gg;d[i*4+2]=b;g[i]=mode==='bw'?Math.max(0,Math.min(255,r)):0;
+ }
+ if(mode==='bw'){
+  var Wp=W+1,I=new Float64Array(Wp*(H+1)),y,xx,rad=Math.max(7,Math.round(Math.min(W,H)/16)),t=1-(+$('xsens').value)/100;
+  for(y=0;y<H;y++){var rs=0;for(xx=0;xx<W;xx++){rs+=g[y*W+xx];I[(y+1)*Wp+xx+1]=I[y*Wp+xx+1]+rs}}
+  for(y=0;y<H;y++)for(xx=0;xx<W;xx++){
+   var x0=Math.max(0,xx-rad),x1=Math.min(W,xx+rad+1),y0=Math.max(0,y-rad),y1=Math.min(H,y+rad+1),
+    mean=(I[y1*Wp+x1]-I[y0*Wp+x1]-I[y1*Wp+x0]+I[y0*Wp+x0])/((x1-x0)*(y1-y0)),v=g[y*W+xx]<mean*t?0:255,p=(y*W+xx)*4;
+   d[p]=d[p+1]=d[p+2]=v;
+  }
+ }
+ x.putImageData(id,0,0);
+}
+T.scan={title:'Image Scanner',desc:'Turn a photo of a document into a clean scan. Straighten with rotate, boost the contrast, or switch to crisp black and white. Save as an image or PDF.',canvas:1,
+ ctl:function(){return '<label for="xmode">Scan mode</label><select id="xmode">'+opt([['enh','Color, auto-enhanced'],['bw','Black &amp; white document'],['gray','Grayscale'],['color','Original color']])+'</select>'+rng('xbr','Brightness',-100,100,0)+rng('xct','Contrast',-100,100,20)+rng('xsens','Black &amp; white sensitivity',2,40,12)+'<div class="row" style="margin-top:10px"><button class="btn alt" id="xrl" type="button">Rotate left</button><button class="btn alt" id="xrr" type="button">Rotate right</button></div>'+FMT+'<div class="row stickybar"><button class="btn" id="xdl" type="button">Download image</button><button class="btn alt" id="xpdf" type="button">Save as PDF</button></div><p class="info" id="xmsg"></p>'},
+ files:function(){scanRot=0;scanSrc=null},
+ setup:function(){
+  T.scan.upd=scanDraw;watch(['xmode','xbr','xct','xsens'],scanDraw);
+  $('xrl').onclick=function(){scanRot=(scanRot+270)%360;scanBuild();scanDraw()};
+  $('xrr').onclick=function(){scanRot=(scanRot+90)%360;scanBuild();scanDraw()};
+  $('xdl').onclick=async function(){var t=$('xfmt').value;dl(await cvBlob($('xcv'),t,.92),files[0].name+'-scan.'+ext(t))};
+  $('xpdf').onclick=async function(){dl(await toPdf([$('xcv')],{size:'a4',orient:'auto',margin:8,q:.92}),files[0].name+'-scan.pdf')};
+ }};
+
+// ---------- photo to pdf ----------
+T.p2pdf={title:'Photo to PDF',desc:'Put one or many photos into a single PDF. Reorder with the arrows, then choose page size and margins.',multi:1,
+ ctl:function(){return '<div id="xlist"></div><label for="xps">Page size</label><select id="xps">'+opt([['a4','A4'],['letter','US Letter'],['fit','Same as image']])+'</select><label for="xor">Orientation</label><select id="xor">'+opt([['auto','Automatic'],['p','Portrait'],['l','Landscape']])+'</select>'+rng('xmg','Margin (mm)',0,30,10)+rng('xq','JPEG quality (%)',50,100,90)+'<p class="stickybar"><button class="btn" id="xdl" type="button">Create PDF</button></p><p class="info" id="xmsg"></p>'},
+ files:function(){olist($('xlist'),function(){$('xmsg').textContent=files.length+' page(s)'})},
+ setup:function(){
+  T.p2pdf.upd=function(){$('xmsg').textContent=files.length+' page(s)'};
+  $('xdl').onclick=async function(){
+   $('xmsg').textContent='Creating PDF…';var cs=files.map(function(f){var k=Math.min(1,3000/Math.max(f.img.naturalWidth,f.img.naturalHeight)),c=mk(f.img.naturalWidth*k,f.img.naturalHeight*k);c.getContext('2d').drawImage(f.img,0,0,c.width,c.height);return c});
+   var b=await toPdf(cs,{size:$('xps').value,orient:$('xor').value,margin:+$('xmg').value,q:$('xq').value/100});
+   dl(b,'photos.pdf');$('xmsg').textContent='Done: '+files.length+' page(s), '+kb(b.size);
+  };
+ }};
+
+// ---------- pdf to jpg ----------
+var pdfP=null;
+function pdfLib(){
+ return pdfP||(pdfP=new Promise(function(res,rej){
+  var s=document.createElement('script');s.src='https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js';
+  s.onload=function(){fetch('https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js').then(function(r){return r.text()}).then(function(t){window.pdfjsLib.GlobalWorkerOptions.workerSrc=URL.createObjectURL(new Blob([t],{type:'text/javascript'}));res(window.pdfjsLib)}).catch(function(e){pdfP=null;rej(e)})};
+  s.onerror=function(e){pdfP=null;rej(e)};document.head.appendChild(s);
+ }));
+}
+function pageList(str,n){
+ if(!str.trim()){var a=[],i;for(i=1;i<=n;i++)a.push(i);return a}
+ var out=[];str.split(',').forEach(function(p){var m=p.trim().match(/^(\d+)(?:\s*-\s*(\d+))?$/);if(!m)return;var a=+m[1],b=+(m[2]||m[1]);for(;a<=b;a++)if(a>=1&&a<=n&&out.indexOf(a)<0)out.push(a)});
+ return out;
+}
+T.pdf2jpg={title:'PDF to JPG',desc:'Turn every page of a PDF (or the pages you choose) into JPG or PNG images. The PDF is processed on your device.',raw:1,accept:'application/pdf',
+ ctl:function(){return '<label for="xsc">Quality / size</label><select id="xsc">'+opt([['1','Standard (1x)'],['1.5','Good (1.5x)'],['2','High (2x)'],['3','Very high (3x)']])+'</select><label for="xfmt">Save as</label><select id="xfmt">'+opt([['image/jpeg','JPG'],['image/png','PNG']])+'</select>'+rng('xq','JPG quality (%)',50,100,90)+'<label for="xpg">Pages (blank for all, e.g. 1-3,5)</label><input type="text" id="xpg" placeholder="All pages"><p class="stickybar"><button class="btn" id="xgo" type="button">Convert</button> <button class="btn alt" id="xall" type="button" style="display:none">Download all (ZIP)</button></p><p class="info" id="xmsg"></p>'},
+ setup:function(){
+  T.pdf2jpg.upd=function(){$('xinfo').innerHTML='<p>'+esc(files[0].name)+' is ready ('+kb(files[0].size)+'). Press Convert.</p>'};
+  $('xgo').onclick=async function(){
+   var btn=this;btn.disabled=true;xres=[];$('xall').style.display='none';$('xinfo').innerHTML='';
+   try{
+    $('xmsg').textContent='Loading PDF reader…';var lib=await pdfLib();
+    var pdf=await lib.getDocument({data:new Uint8Array(await files[0].arrayBuffer())}).promise,pages=pageList($('xpg').value,pdf.numPages),t=$('xfmt').value,i;
+    if(!pages.length){$('xmsg').textContent='No valid pages in that range. The PDF has '+pdf.numPages+' page(s).';btn.disabled=false;return}
+    for(i=0;i<pages.length;i++){
+     $('xmsg').textContent='Converting page '+pages[i]+' ('+(i+1)+' of '+pages.length+')…';
+     var pg=await pdf.getPage(pages[i]),vp=pg.getViewport({scale:1.333*(+$('xsc').value)}),c=mk(vp.width,vp.height),x=c.getContext('2d');
+     x.fillStyle='#fff';x.fillRect(0,0,c.width,c.height);
+     await pg.render({canvasContext:x,viewport:vp}).promise;
+     var b=await cvBlob(c,t,$('xq').value/100),nm=files[0].name.replace(/\.pdf$/i,'')+'-page-'+pages[i]+'.'+ext(t);
+     xres.push({name:nm,blob:b});
+     var d=document.createElement('div');d.className='grp';d.innerHTML='<img src="'+URL.createObjectURL(b)+'" alt="Page '+pages[i]+'" style="max-width:160px"><br>Page '+pages[i]+' · '+kb(b.size)+'<br>';
+     var a=document.createElement('button');a.className='btn alt';a.style.cssText='padding:5px 10px;margin-top:6px';a.textContent='Download';a.onclick=(function(r){return function(){dl(r.blob,r.name)}})(xres[xres.length-1]);d.appendChild(a);
+     $('xinfo').appendChild(d);
+    }
+    $('xmsg').textContent='Done: '+xres.length+' image(s).';if(xres.length>1)$('xall').style.display='inline-block';
+   }catch(e){
+    $('xmsg').textContent=(e&&e.name==='PasswordException')?'This PDF is password protected.':'Could not read this PDF. If it is valid, check your internet connection (the PDF reader loads from a CDN) and try again.';
+   }
+   btn.disabled=false;
+  };
+  $('xall').onclick=function(){saveMany(xres,files[0].name.replace(/\.pdf$/i,'')+'-pages.zip')};
+ }};
+
+
+// ---------- upscale ----------
+var upT;
+T.upscale={title:'Image Upscaler',desc:'Enlarge a small image 2x, 3x or 4x with smooth resampling and optional sharpening. This is classic upscaling, not AI, so it cannot invent missing detail.',canvas:1,
+ ctl:function(){return '<label for="xsc">Enlarge by</label><select id="xsc">'+opt([['2','2x'],['3','3x'],['4','4x'],['custom','Custom width']])+'</select><div id="xcw" style="display:none"><label for="xw">Target width (px)</label><input type="number" id="xw" min="16" max="8000" value="2000"></div>'+rng('xsh','Sharpness',0,100,40)+'<label><input type="checkbox" id="xorig"> Show original (no sharpening)</label>'+FMT+DLB},
+ setup:function(){
+  function draw(){
+   var im=files[0].img,iw=im.naturalWidth,ih=im.naturalHeight,v=$('xsc').value,k=v==='custom'?(+$('xw').value||iw)/iw:+v,capped=false,lim;
+   $('xcw').style.display=v==='custom'?'block':'none';
+   lim=Math.min(8000/Math.max(iw,ih),Math.sqrt(25e6/(iw*ih)));
+   if(k>lim){k=lim;capped=true}
+   if(k<1)k=1;
+   var tw=Math.round(iw*k),th=Math.round(ih*k),c=document.createElement('canvas'),w=iw,h=ih,cur=im;
+   if(tw<=iw){c=mk(iw,ih);c.getContext('2d').drawImage(im,0,0)}
+   else{
+    while(w<tw){var nw=Math.min(tw,w*2),nh=Math.round(nw*ih/iw),n=mk(nw,nh),x=n.getContext('2d');x.imageSmoothingEnabled=!$('xorig').checked;x.imageSmoothingQuality='high';x.drawImage(cur,0,0,nw,nh);cur=n;w=nw;h=nh}
+    c=cur;
+   }
+   var a=(+$('xsh').value)/100*1.1;
+   if(a>0&&!$('xorig').checked){
+    var x2=c.getContext('2d'),id=x2.getImageData(0,0,c.width,c.height),d=id.data,o=new Uint8ClampedArray(d),W=c.width,H=c.height,y,xx,p,ch;
+    for(y=1;y<H-1;y++)for(xx=1;xx<W-1;xx++){p=(y*W+xx)*4;
+     for(ch=0;ch<3;ch++)o[p+ch]=d[p+ch]*(1+4*a)-a*(d[p+ch-4]+d[p+ch+4]+d[p+ch-W*4]+d[p+ch+W*4])}
+    id.data.set(o);x2.putImageData(id,0,0);
+   }
+   var cv=$('xcv');cv.width=c.width;cv.height=c.height;cv.getContext('2d').drawImage(c,0,0);
+   $('xmsg').textContent=iw+' × '+ih+' px  →  '+c.width+' × '+c.height+' px'+(capped?' (limited to 8000 px or 25 megapixels)':'');
+  }
+  function later(){clearTimeout(upT);upT=setTimeout(draw,180)}
+  T.upscale.upd=draw;watch(['xsc','xw','xsh','xorig'],later);
+  $('xdl').onclick=async function(){var t=$('xfmt').value;dl(await cvBlob($('xcv'),t,.92),files[0].name+'-upscaled.'+ext(t))};
+ }};
+
+// ---------- meme ----------
+function memeText(ctx,W,H,txt,fs,off,top,o){
+ if(!txt.trim())return;
+ if(o.up)txt=txt.toUpperCase();
+ ctx.font=fs+'px "'+o.font+'",Impact,sans-serif';ctx.textAlign='center';ctx.textBaseline='top';ctx.lineJoin='round';
+ var words=txt.split(/\s+/),lines=[],cur='',i;
+ words.forEach(function(w){var t=cur?cur+' '+w:w;if(ctx.measureText(t).width>W*.94&&cur){lines.push(cur);cur=w}else cur=t});
+ lines.push(cur);
+ var lh=fs*1.08,y=top?off:H-off-lines.length*lh;
+ ctx.lineWidth=fs*o.sw/30;ctx.strokeStyle=o.oc;ctx.fillStyle=o.c;
+ lines.forEach(function(l,k){if(o.sw>0)ctx.strokeText(l,W/2,y+k*lh);ctx.fillText(l,W/2,y+k*lh)});
+}
+T.meme={title:'Meme Generator',desc:'Upload any picture and add classic top and bottom text. Move the text with the sliders and download your meme.',canvas:1,
+ ctl:function(){return '<label for="xt1">Top text</label><input type="text" id="xt1" value="WHEN THE WEBSITE WORKS">'+'<label for="xt2">Bottom text</label><input type="text" id="xt2" value="FIRST TRY">'+'<label for="xf">Font</label><select id="xf">'+opt([['Impact','Impact (classic)'],['Arial','Arial'],['Comic Sans MS','Comic Sans'],['Georgia','Georgia']])+'</select>'+rng('xs',' Text size (% of width)',4,20,10)+rng('xsw','Outline thickness',0,10,5)+'<div class="row"><div><label for="xc">Text</label><input type="color" id="xc" value="#ffffff"></div><div><label for="xo">Outline</label><input type="color" id="xo" value="#000000"></div></div><label><input type="checkbox" id="xup" checked> UPPERCASE</label>'+rng('xto','Top text position (%)',0,40,2)+rng('xbo','Bottom text position (%)',0,40,2)+FMT+DLB},
+ setup:function(){
+  function draw(){
+   var im=files[0].img,k=Math.min(1,2000/Math.max(im.naturalWidth,im.naturalHeight)),cv=$('xcv');cv.width=Math.round(im.naturalWidth*k);cv.height=Math.round(im.naturalHeight*k);
+   var c=cv.getContext('2d'),W=cv.width,H=cv.height,fs=W*(+$('xs').value)/100,o={font:$('xf').value,sw:+$('xsw').value,c:$('xc').value,oc:$('xo').value,up:$('xup').checked};
+   c.drawImage(im,0,0,W,H);
+   memeText(c,W,H,$('xt1').value,fs,H*(+$('xto').value)/100,true,o);
+   memeText(c,W,H,$('xt2').value,fs,H*(+$('xbo').value)/100,false,o);
+  }
+  T.meme.upd=draw;watch(['xt1','xt2','xf','xs','xsw','xc','xo','xup','xto','xbo'],draw);
+  $('xdl').onclick=async function(){var t=$('xfmt').value;dl(await cvBlob($('xcv'),t,.92),'meme.'+ext(t))};
+ }};
+
+// ---------- tool info: steps, size limits, FAQ ----------
+var INFO={};
+function I(k,steps,sub,rows,faq){INFO[k]={steps:steps,sub:sub,rows:rows,faq:faq}}
+I('resize',["Choose Resize, then add your image.","Type a new width or height in pixels, or switch to percentage. Keep the lock on to avoid stretching.","Pick JPG, PNG or WebP and press Download."],
+ "Pixel sizes that popular sites ask for. Always check the current rules on the site you are uploading to.",
+ [["Instagram square post","1080 × 1080 px (1:1)"],["Instagram portrait post","1080 × 1350 px (4:5)"],["Instagram Story or Reel","1080 × 1920 px (9:16)"],["Instagram profile photo","320 × 320 px"],["LinkedIn profile photo","400 × 400 px minimum"],["LinkedIn profile banner","1584 × 396 px (4:1)"],["YouTube thumbnail","1280 × 720 px (16:9)"]],
+ [["How do I resize an image without losing quality?","Making an image smaller keeps it sharp. Keep the aspect ratio locked, and save as PNG or high-quality JPG. Enlarging a small image beyond its original size cannot add real detail."],["How do I resize a photo to exact pixels?","Choose Resize by Pixels, untick Keep aspect ratio if you need an exact width and height, type both values and download."],["How do I resize an image for Instagram?","Use 1080 px wide: 1080 × 1350 for portrait posts, 1080 × 1080 for square, or 1080 × 1920 for Stories."],["Does resizing change the file size?","Yes. Fewer pixels usually means a smaller file. If you need a specific size in KB, use the Resize to KB tool instead."],["Is it safe to resize private photos here?","Yes. The image is resized inside your browser and is not uploaded to our servers."]]);
+I('kb',["Choose Resize to KB and add your image.","Type the file size you need, for example 50 KB or 1 MB, and press Apply target size.","Check the result shown under the preview, then press Download."],
+ "File-size caps you may run into. Forms and portals change their rules, so read the instructions on the page you are filling in.",
+ [["Gmail attachments","25 MB total per email"],["LinkedIn photos","Up to 8 MB"],["YouTube thumbnail","2 MB has been the usual cap; YouTube has been raising it, so stay under 2 MB to be safe"],["Job, exam and government forms","Often 20–50 KB for a photo and 10–20 KB for a signature, but each form differs"],["US passport online photo","JPEG, roughly 240 KB or less, 600–1200 px square"]],
+ [["How do I reduce a photo to 50 KB?","Type 50 in the target box with KB selected and press Apply. The tool lowers the quality first and shrinks the dimensions only if it has to."],["How do I reduce an image to 20 KB or 100 KB?","Enter 20 or 100 as the target. Very small targets on large photos will make the image smaller and softer, so crop or choose a smaller photo first."],["Why is my file still too big after resizing?","PNG files do not shrink with quality settings. This tool switches PNG to JPG automatically so the size target can be met."],["Does the tool make the image blurry?","Slightly, at very low targets. It always picks the highest quality that still fits under your limit."],["Can I increase a file to a minimum size, such as 100 KB?","Some forms need a minimum size. Choose a larger target; if the image is already smaller, upscale it first with the Image Upscaler."]]);
+I('compress',["Choose Compress and add your image.","Lower the quality slider (80–85% is a good start) and optionally set a maximum width.","Compare the estimated size, then Download."],
+ "Where compression is most often needed.",
+ [["Gmail attachments","25 MB total per email"],["LinkedIn photos","Up to 8 MB each"],["WhatsApp photos and videos","About 16 MB each"],["Fast web pages","A common guideline is under 200 KB per image"],["Email signatures and newsletters","Under 1 MB per image keeps messages light"]],
+ [["How do I compress a JPG without losing quality?","Use 80–90% quality. The difference is hard to see, and the file is often 50–70% smaller."],["What is the best format for small files?","WebP is usually the smallest, JPG is best for photos, and PNG is best for graphics with sharp text."],["Why won’t quality reduce my PNG?","PNG is lossless, so it ignores the quality setting. Switch the output to JPG or WebP."],["Is compressing an image the same as resizing?","No. Compression reduces detail inside the same pixel size, while resizing changes the number of pixels. Doing both gives the smallest file."],["Can I compress many photos at once?","Right now one at a time. For several photos, repeat the steps for each file."]]);
+I('rotate',["Choose Rotate & Flip and add your image.","Use Rotate left or right and the flip buttons until it looks correct.","Download the corrected image."],
+ "The orientation each place expects.",
+ [["Instagram Stories and Reels","Vertical, 9:16"],["YouTube thumbnails","Horizontal, 16:9"],["LinkedIn and Instagram profile photos","Square, shown as a circle"],["Phone photos","Often stored sideways with an orientation flag that some sites ignore"],["Scans and ID photos","Upright, text readable left to right"]],
+ [["Why is my photo sideways after upload?","Phones save an orientation flag that some websites ignore. Rotate the image here and save it so the pixels themselves are upright."],["What is the difference between rotate and flip?","Rotate turns the picture by 90 degrees. Flip mirrors it like a reflection, left to right or top to bottom."],["Does rotating reduce quality?","Rotating by 90 degrees does not lose detail, but saving as JPG recompresses slightly. Use PNG to avoid any change."],["How do I mirror a selfie?","Press Flip horizontal. Text on the photo will then appear reversed, which is normal."],["Can I rotate by a custom angle?","This tool turns images in 90-degree steps, which covers sideways and upside-down photos."]]);
+I('convert',["Choose Convert and add your image.","Select JPG, PNG or WebP as the output format.","Press Download to save the converted file."],
+ "Formats accepted by common uploads.",
+ [["LinkedIn profile photo","JPG or PNG (GIF not accepted)"],["Instagram posts","JPG or PNG"],["YouTube thumbnail","JPG, PNG, GIF or BMP"],["Most government and job portals","JPG or JPEG only"],["Modern websites","WebP gives smaller files and works in current browsers"]],
+ [["How do I convert PNG to JPG?","Choose Convert, upload the PNG, select JPG and download. Transparent areas turn white."],["How do I convert JPG to PNG?","Select PNG as the output. The file may get larger, because PNG is lossless."],["Is WebP better than JPG?","WebP is usually 25–35% smaller at similar quality, but some older apps and forms do not accept it. Use JPG when in doubt."],["Why does my PNG lose its transparent background?","JPG has no transparency. Keep PNG or WebP to preserve it."],["Is converting free and private?","Yes. Conversion happens in your browser and nothing is uploaded."]]);
+I('text',["Choose Text & Typography and add your image.","Type your text, then choose font, size, color and outline. Drag on the image or use the X/Y sliders to place it.","Press Apply text to keep it and add more, then Download."],
+ "Safe areas for text so nothing gets cut off.",
+ [["Instagram Stories","Leave about 250 px free at the top and bottom of 1080 × 1920"],["YouTube thumbnail","Keep text away from the bottom-right corner where the video time sits"],["LinkedIn banner","Keep text in the central area; your profile photo covers the lower left"],["Instagram profile photo","Shown as a small circle, so avoid text near the edges"],["Readable text on phones","Use bold fonts and a dark outline on busy photos"]],
+ [["How do I add text to a photo online?","Upload the photo, type your text, choose a font and color, place it on the image and download it."],["How can I make text readable on any background?","Add an outline in a contrasting color or turn on the shadow. White text with a thin dark outline works on most photos."],["Can I add more than one line of text?","Yes, press Enter inside the text box. To add a second block elsewhere, press Apply text and type the next one."],["Which font should I choose for posters or thumbnails?","Impact and Arial Bold are easy to read at small sizes. Georgia suits quotes."],["Will my text look sharp after download?","Yes. Text is drawn at the full resolution of your image, not the preview size."]]);
+I('wm',["Choose Watermark and add one or more images.","Pick text or a logo, set size and opacity, then choose a corner, center or tile.","Download. Several images arrive together as a ZIP file."],
+ "Keep watermarked files within the limits of where you will post them.",
+ [["Instagram feed","Width of 1080 px is enough"],["LinkedIn","Up to 8 MB per image"],["Gmail attachments","25 MB total per email"],["YouTube thumbnail","1280 × 720 px, keep the file small"],["Online portfolios","Often 1600–2400 px on the long side"]],
+ [["How do I add a watermark to a photo?","Upload the image, type your text or choose your logo, set position and opacity, and download."],["What opacity should a watermark have?","Between 30% and 50% is a common balance: visible, but not distracting."],["Can I watermark many photos at once?","Yes. Select several files and Download; they are saved in a ZIP file."],["Does a watermark stop people copying my photos?","It discourages copying but can be cropped out. A tiled watermark across the image is harder to remove."],["Can I use my logo as a watermark?","Yes. Choose Image / logo and upload a PNG with a transparent background for the best look."]]);
+I('merge',["Choose Image Merger and add your images.","Use the arrows to set the order, then choose side by side or stacked, plus gap and background.","Download the merged image."],
+ "Output sizes that fit common uploads.",
+ [["Instagram carousel or post","1080 px wide"],["LinkedIn post image","About 1200 × 627 px"],["Gmail attachments","25 MB total per email"],["This tool’s maximum output","12000 px on the long side"],["Before and after comparisons","Side by side at the same height"]],
+ [["How do I combine two photos into one?","Add both images, choose side by side or stacked and download the merged picture."],["How do I put photos in a specific order?","Use the up and down arrows next to each photo in the list."],["Why do my merged images look different sizes?","Tick Match sizes so every image is scaled to the same height or width."],["Can I add space between images?","Yes. Use the Gap slider and choose a background color."],["Is there a limit on how many images I can merge?","There is no fixed count. Very large merges depend on your device memory."]]);
+I('split',["Choose Image Splitter and add your image.","Set the number of rows and columns. The red lines show where the image will be cut.","Press Download to get all pieces in a ZIP file."],
+ "Slice sizes for popular uses.",
+ [["Instagram grid preview","Profiles now preview posts at 3:4"],["Instagram portrait post","Each slice 1080 × 1350 px (4:5)"],["Instagram square slice","1080 × 1080 px"],["3-part panorama","Image about 3240 px wide and 1350 px tall, 3 columns × 1 row"],["Printing in sections","Equal tiles from a large photo"]],
+ [["How do I split an image into 4 equal parts?","Set 2 rows and 2 columns, then download the ZIP."],["How do I make a panorama for Instagram?","Use 3 columns and 1 row on a wide image, then post the pieces in order as a carousel."],["Will the pieces lose quality?","No. Each piece is cut from your full-size image."],["What format are the pieces saved in?","Whichever you choose: JPG, PNG or WebP."],["Can I split into uneven parts?","This tool cuts equal parts. For custom sizes, resize the image first so the parts divide evenly."]]);
+I('collage',["Choose Collage Maker and add your photos.","Pick columns, cell shape, spacing, corner radius and background. Reorder with the arrows.","Download the finished collage."],
+ "Collage sizes for popular places.",
+ [["Instagram square post","1080 × 1080 px"],["Instagram portrait post","1080 × 1350 px"],["Instagram Story","1080 × 1920 px"],["LinkedIn post","About 1200 × 627 px"],["Printing a photo grid","2400 px wide prints well at around 8 inches"]],
+ [["How do I make a photo collage online for free?","Add your photos, choose the number of columns and download the result. No sign-up is needed."],["How many photos can I include?","As many as you like. A 2 or 3 column grid works best for 4–9 photos."],["Why are my photos cropped?","Each cell is filled edge to edge. Change the cell shape to Landscape or Portrait to match your photos."],["Can I add rounded corners and borders?","Yes. Use Corner radius and Spacing, and pick a background color for the border."],["What size is the finished collage?","1200, 1600 or 2400 px wide, as you choose; the height follows the layout."]]);
+I('meta',["Choose Metadata Viewer and add one photo.","Read the details shown: file info, camera, date, settings and GPS if present.","Press Copy details to save the list."],
+ "Facts about metadata and file sizes.",
+ [["Where EXIF is stored","Mostly JPG photos from cameras and phones"],["EXIF block size","Limited to about 64 KB in a JPG"],["Typical phone photo","Roughly 2–6 MB at 12 megapixels"],["Gmail attachments","25 MB total per email"],["PNG and WebP","Often have little or no camera data"]],
+ [["How do I see the location where a photo was taken?","If the photo has GPS data, it appears as GPS location (latitude and longitude) in the list."],["What is EXIF data?","Hidden information saved in a photo: camera model, date, exposure, ISO, lens and sometimes location."],["Why is there no EXIF data in my image?","Screenshots, PNGs and images saved by social apps often have it removed."],["Can others see my photo’s location?","If you send the original file by email or a link, yes. Use the EXIF Remover first."],["Is my photo uploaded to read it?","No. The file is read in your browser only."]]);
+I('exifrm',["Choose EXIF Remover and add one or more photos.","Review which files contain EXIF or GPS data.","Press Remove metadata & download. Several files come as a ZIP."],
+ "Limits to keep in mind when sharing cleaned photos.",
+ [["LinkedIn photos","Up to 8 MB"],["Gmail attachments","25 MB total per email"],["Typical size change","Usually a few KB smaller"],["Best format for photos","JPG at 90% or higher to keep quality"],["Keep the original","Save a copy if you need the camera data later"]],
+ [["How do I remove location data from a photo?","Add the photo, press Remove metadata & download. The new file has no GPS, camera or date information."],["Does removing EXIF reduce image quality?","The picture is saved again, so choose 90% or higher for JPG to keep it looking the same."],["Do social networks remove EXIF automatically?","Many do on public posts, but email, cloud links and messages can keep it, so clean photos before sharing."],["Does the tool change my original photo?","No. It creates a new file and leaves the original untouched."],["Can I clean many photos at once?","Yes. Add several and download them together in a ZIP."]]);
+I('color',["Choose Color Picker and add your image.","Click any point on the image, or choose one of the main colors in the palette.","Click a HEX, RGB or HSL value to copy it."],
+ "Color and size notes for web and profile images.",
+ [["Color profile for web","sRGB is accepted everywhere"],["LinkedIn profile photo","400 × 400 px minimum, sRGB recommended"],["Instagram profile photo","320 × 320 px"],["Palette scan","Done on a small copy of the image for speed"],["HEX codes","Used in CSS and design tools, for example #1D78C7"]],
+ [["How do I find the color code of a color in an image?","Click it. The HEX, RGB and HSL values appear and can be copied."],["What is the difference between HEX and RGB?","They describe the same color. HEX is a six-character code like #FF0000; RGB lists red, green and blue values from 0 to 255."],["How do I get a color palette from a photo?","Open the photo and look at the main colors list. Click any swatch to copy its code."],["Why does the color look different on another screen?","Screens and color profiles differ. Use sRGB images for the most consistent results."],["Is the color picker accurate?","It reads the exact pixel you click from your image."]]);
+I('dups',["Choose Duplicate Finder and add several images.","Adjust the similarity tolerance if needed.","Review the groups and delete the extra copies from your device."],
+ "Why duplicates matter when you are close to upload or storage limits.",
+ [["Gmail attachments","25 MB total, so duplicates fill it quickly"],["Typical phone photo","About 2–6 MB each"],["100 duplicates","Can waste several hundred megabytes"],["Exact copies","Identical file content"],["Similar images","Resized, re-saved or slightly edited versions"]],
+ [["How do I find duplicate photos on my computer?","Select the folder’s images in this tool. Exact copies and look-alikes are grouped together."],["What does the similarity setting do?","Zero finds near-identical images. Higher values also match resized or re-saved versions."],["Does the tool delete files for me?","No. It only shows the groups. You decide which files to remove."],["Are my pictures uploaded?","No. Comparison happens in your browser."],["Why are different photos grouped together?","A high similarity tolerance can match similar scenes. Lower the setting to be stricter."]]);
+I('scan',["Choose Image Scanner and add a photo of your document.","Pick a scan mode, adjust brightness and contrast, and rotate if needed.","Download as an image or press Save as PDF."],
+ "Scan sizes and typical upload caps for documents.",
+ [["A4 at 150 dpi","1240 × 1754 px"],["A4 at 200 dpi","1654 × 2339 px"],["A4 at 300 dpi","2480 × 3508 px"],["Gmail attachments","25 MB total per email"],["Many online portals","Often 100 KB–2 MB per document, so check the instructions"]],
+ [["How do I scan a document with my phone camera?","Photograph the page in good light, upload it here, choose Black & white document and save as image or PDF."],["How do I make a scan look clean and white?","Use Black & white document mode and raise the sensitivity until the background turns white and text stays dark."],["Can I save a scan as a PDF?","Yes. Press Save as PDF for an A4 page."],["Which dpi is best for scanning documents?","150–200 dpi is enough for reading and uploads; 300 dpi suits printing."],["Does this tool fix perspective?","No. It improves contrast and color and lets you rotate. Take the photo straight above the page for best results."]]);
+I('p2pdf',["Choose Photo to PDF and add your photos.","Reorder the pages and choose page size, orientation and margin.","Press Create PDF to download."],
+ "Page sizes and document limits.",
+ [["A4 page","595 × 842 points (210 × 297 mm)"],["US Letter page","612 × 792 points (8.5 × 11 in)"],["Gmail attachments","25 MB total per email"],["Many job and government portals","Often 1–5 MB per PDF, so lower the JPEG quality if needed"],["Photos in the PDF","Each photo becomes one page"]],
+ [["How do I convert a JPG to PDF?","Add the JPG, choose a page size and press Create PDF."],["How do I combine several photos into one PDF?","Add them all, put them in order with the arrows and create the PDF."],["How do I make the PDF file smaller?","Lower JPEG quality. 70–85% still looks good and can cut the size a lot."],["Which page size should I choose?","A4 for most countries and US Letter for the United States and Canada. Same as image keeps each photo whole."],["Are my photos uploaded?","No. The PDF is created on your device."]]);
+I('pdf2jpg',["Choose PDF to JPG and add your PDF.","Pick quality, JPG or PNG, and optionally a page range such as 1-3,5.","Press Convert, then download pages one by one or all as a ZIP."],
+ "How big the images will be for an A4 page.",
+ [["Standard (1x)","About 794 × 1123 px"],["High (2x)","About 1588 × 2246 px"],["Very high (3x)","About 2381 × 3369 px"],["LinkedIn images","Up to 8 MB"],["Gmail attachments","25 MB total per email"]],
+ [["How do I convert PDF pages to JPG?","Add the PDF, press Convert and download the images."],["How do I convert only some pages?","Type a range such as 2-4,7 in the Pages box."],["Which quality should I choose?","Use 1x or 1.5x for screens and 2x or 3x for printing or zooming in."],["Why can’t my PDF be opened?","It may be password protected or damaged. Remove the password and try again."],["Does it need an internet connection?","Yes, to load the PDF reader library the first time. The file itself stays on your device."]]);
+I('upscale',["Choose Image Upscaler and add a small image.","Pick 2x, 3x, 4x or a custom width and set the sharpness.","Check the preview, then Download."],
+ "Minimum sizes and print sizes to aim for.",
+ [["LinkedIn profile photo","400 × 400 px minimum"],["YouTube thumbnail","1280 × 720 px recommended, 640 px wide minimum"],["4 × 6 inch print at 300 dpi","1200 × 1800 px"],["8 × 10 inch print at 300 dpi","2400 × 3000 px"],["A4 print at 300 dpi","2480 × 3508 px"],["This tool’s limit","8000 px on the long side or 25 megapixels"]],
+ [["How do I make a small image bigger without blur?","Use 2x steps and a little sharpness. Smooth resampling keeps edges clean, but real detail cannot be created."],["Is this AI upscaling?","No. It uses high-quality resampling and sharpening, which works well for moderate enlargements."],["How much can I enlarge a photo?","2x is usually clean. 4x works for graphics and web images; very small photos stay soft."],["How big should an image be for printing?","Aim for 300 pixels per inch: 1200 × 1800 px for a 4 × 6 inch print."],["Will upscaling make the file bigger?","Yes. The file grows with the pixel count. Use Compress or Resize to KB afterwards if needed."]]);
+I('meme',["Choose Meme Generator and add any picture.","Type the top and bottom text and adjust font, size, outline and position.","Press Download to save your meme."],
+ "Sizes that work for sharing memes.",
+ [["Square meme for Instagram","1080 × 1080 px"],["Portrait meme","1080 × 1350 px"],["Story-size meme","1080 × 1920 px"],["WhatsApp sticker","512 × 512 px, WebP, small file"],["Group chats and email","Under 1 MB loads fast"]],
+ [["How do I make a meme online for free?","Upload an image, type the top and bottom text, and download. No account or watermark."],["Which font is used for memes?","Impact in white with a black outline is the classic meme look. It is the default here."],["How do I make the text bigger?","Increase Text size. Long captions wrap onto extra lines automatically."],["Can I use my own picture?","Yes. Use pictures you took or have the right to use."],["What size should a meme be?","Square 1080 × 1080 px works almost everywhere. Use 1080 × 1350 px for portrait posts."]]);
+
+function renderInfo(k,title){
+ var d=INFO[k],el=$('toolinfo');if(!d||!el)return;
+ el.innerHTML='<h2>How to use '+esc(title)+'</h2><ol class="steps">'+d.steps.map(function(x){return '<li>'+esc(x)+'</li>'}).join('')+'</ol>'
+  +'<h2>Common photo upload size limits</h2><p class="info">'+esc(d.sub)+'</p><div style="overflow-x:auto"><table class="tbl">'+d.rows.map(function(r){return '<tr><th>'+esc(r[0])+'</th><td>'+esc(r[1])+'</td></tr>'}).join('')+'</table></div>'
+  +'<h2>Frequently asked questions</h2><div class="faq">'+d.faq.map(function(q){return '<h3 style="font-size:1rem">'+esc(q[0])+'</h3><p>'+esc(q[1])+'</p>'}).join('')+'</div>';
+}
+document.querySelectorAll('.tool').forEach(function(c){c.addEventListener('click',function(){renderInfo(c.dataset.mode||c.dataset.x,c.querySelector('strong').textContent)})});
+renderInfo('resize','Resize');
+
+// ---------- ordering list ----------
+function olist(el,cb){
+ el.innerHTML='';
+ files.forEach(function(f,i){
+  var r=document.createElement('div');r.className='ol';
+  r.innerHTML='<img src="'+f.url+'" alt=""><span>'+esc(f.name)+'</span><button type="button" data-a="u" aria-label="Move up">↑</button><button type="button" data-a="d" aria-label="Move down">↓</button><button type="button" data-a="x" aria-label="Remove">✕</button>';
+  r.onclick=function(e){var a=e.target.dataset&&e.target.dataset.a;if(!a)return;
+   if(a==='u'&&i>0)files.splice(i-1,0,files.splice(i,1)[0]);
+   else if(a==='d'&&i<files.length-1)files.splice(i+1,0,files.splice(i,1)[0]);
+   else if(a==='x'&&files.length>1)files.splice(i,1);
+   olist(el,cb);cb();};
+  el.appendChild(r);
+ });
+}
+
+// ---------- framework ----------
+function openTool(key){
+ cur=key;var t=T[key];files=[];wmImg=null;base=null;xres=[];
+ $('xtitle').textContent=t.title.replace('&amp;','&');$('xdesc').textContent=t.desc;
+ var f=$('xfile');f.multiple=!!t.multi;f.accept=t.accept||'image/*';
+ $('xpick').textContent=t.multi?'Choose files':'Choose file';
+ $('xnames').textContent='Or drag files here. Everything stays on your device.';
+ [].slice.call($('xpv').parentNode.querySelectorAll('.stickybar,#xmsg')).forEach(function(e){e.remove()});
+ $('xctl').innerHTML=t.ctl();$('xinfo').innerHTML='';
+ $('xpv').style.display=t.canvas?'flex':'none';
+ var cv=$('xcv');cv.onclick=cv.onpointerdown=cv.onpointermove=cv.onpointerup=cv.onpointercancel=null;cv.style.cursor='';cv.style.touchAction='';
+ $('xgrid').style.display='none';$('xdrop').classList.remove('slim');$('xwrap').style.display='block';
+ $('drop').style.display='none';$('work').style.display='none';
+ t.setup();
+ var bar=$('xctl').querySelector('.stickybar');
+ if(bar){
+  var b1=document.createElement('button'),b2=document.createElement('button');
+  b1.type=b2.type='button';b1.className=b2.className='btn alt';b1.textContent='Start over';b2.textContent='↻ Refresh';
+  b1.onclick=function(){openTool(cur)};b2.onclick=function(){location.reload()};
+  bar.appendChild(b1);bar.appendChild(b2);
+ }
+}
+async function onFiles(list){
+ var t=T[cur],fl=[].slice.call(list);if(!fl.length)return;
+ var n;
+ try{n=t.raw?fl:await Promise.all(fl.map(loadImg))}catch(e){alert('Could not open '+e+'. Please choose a valid file.');return}
+ files=t.multi?files.concat(n):n;
+ $('xgrid').style.display='grid';$('xdrop').classList.add('slim');
+ if(t.files)t.files();
+ t.upd();
+ $('xnames').textContent=files.length+' file(s) loaded'+(t.multi?'. Choose more files to add to the list.':'. Choose another file to replace it.');
+}
+$('xpick').onclick=function(){$('xfile').click()};
+$('xfile').onchange=function(){var l=[].slice.call(this.files);this.value='';onFiles(l)};
+var xd=$('xdrop');
+['dragenter','dragover'].forEach(function(e){xd.addEventListener(e,function(ev){ev.preventDefault();xd.classList.add('hot')})});
+['dragleave','drop'].forEach(function(e){xd.addEventListener(e,function(ev){ev.preventDefault();xd.classList.remove('hot')})});
+xd.addEventListener('drop',function(ev){onFiles(ev.dataTransfer.files)});
+document.querySelectorAll('.tool[data-x]').forEach(function(c){
+ c.addEventListener('click',function(){
+  document.querySelectorAll('.tool').forEach(function(x){x.setAttribute('aria-pressed',x===c)});
+  openTool(c.dataset.x);
+ });
+});
+document.querySelectorAll('.tool[data-mode]').forEach(function(c){
+ c.addEventListener('click',function(){$('xwrap').style.display='none';$('drop').style.display='';$('work').style.display='';cur=null});
+});
+(function(){
+ var b=$('dl').parentNode,st=$('stats'),r=document.createElement('button');
+ r.type='button';r.className='btn alt';r.textContent='↻ Refresh';r.onclick=function(){location.reload()};
+ b.appendChild(r);
+})();
+(function(){
+ var PAL={teal:['#0a7d78','#3cc4bd'],blue:['#1d5fd1','#6ea8ff'],purple:['#7c3aed','#b794ff'],orange:['#c2410c','#ff9a5c'],green:['#15803d','#5fd38a'],rose:['#be185d','#ff7eb3']},
+  d=document.documentElement,mq=window.matchMedia?window.matchMedia('(prefers-color-scheme:dark)'):{matches:false},mode='auto',acc='teal';
+ function get(k){try{return localStorage.getItem(k)}catch(e){return null}}
+ function put(k,v){try{localStorage.setItem(k,v)}catch(e){}}
+ mode=get('fr-theme')||'auto';acc=get('fr-accent')||'teal';if(!PAL[acc])acc='teal';
+ var pop=$('thpop'),btn=$('thbtn');
+ Object.keys(PAL).forEach(function(k){var c=document.createElement('button');c.type='button';c.className='dot';c.dataset.a=k;c.title=k.charAt(0).toUpperCase()+k.slice(1);c.setAttribute('aria-label',c.title+' color');c.style.background=PAL[k][0];c.setAttribute('aria-pressed','false');$('thcols').appendChild(c)});
+ function apply(){
+  var dark=mode==='dark'||(mode==='auto'&&mq.matches);
+  d.dataset.theme=dark?'dark':'light';d.style.setProperty('--accent',PAL[acc][dark?1:0]);
+  [].forEach.call(pop.querySelectorAll('[data-m]'),function(b){b.setAttribute('aria-pressed',b.dataset.m===mode)});
+  [].forEach.call(pop.querySelectorAll('[data-a]'),function(b){b.setAttribute('aria-pressed',b.dataset.a===acc)});
+ }
+ pop.addEventListener('click',function(e){var m=e.target.dataset&&e.target.dataset.m,a=e.target.dataset&&e.target.dataset.a;
+  if(m){mode=m;put('fr-theme',m)}if(a){acc=a;put('fr-accent',a)}if(m||a)apply()});
+ btn.addEventListener('click',function(e){e.stopPropagation();var o=pop.hidden;pop.hidden=!o;btn.setAttribute('aria-expanded',o)});
+ document.addEventListener('click',function(e){if(!pop.hidden&&!$('themebox').contains(e.target)){pop.hidden=true;btn.setAttribute('aria-expanded','false')}});
+ document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!pop.hidden){pop.hidden=true;btn.setAttribute('aria-expanded','false');btn.focus()}});
+ if(mq.addEventListener)mq.addEventListener('change',apply);else if(mq.addListener)mq.addListener(apply);
+ apply();
+})();
+var IC={upscale:'🔍',meme:'😂',resize:'↔️',kb:'📏',compress:'🗜️',rotate:'🔄',convert:'🔁',text:'🔤',wm:'💧',merge:'🧩',split:'✂️',collage:'🖼️',meta:'ℹ️',exifrm:'🛡️',color:'🎨',dups:'👯',scan:'📄',p2pdf:'📑',pdf2jpg:'🖼️'};
+document.querySelectorAll('.tool').forEach(function(c){var k=c.dataset.mode||c.dataset.x,i=document.createElement('i'),sp=c.querySelector('span');i.className='ic';i.textContent=IC[k]||'•';i.setAttribute('aria-hidden','true');c.insertBefore(i,c.firstChild);if(sp)c.title=sp.textContent});
+window.__fr={T:T,files:function(){return files}};
+})();
+</script>
+</body>
+</html>
