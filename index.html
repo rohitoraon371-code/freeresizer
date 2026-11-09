@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>FreeResizer – Free Online Image Resizer, Compressor &amp; PDF Tools</title>
+<meta name="description" content="FreeResizer is a free online image toolkit. Resize, compress, convert and watermark images, and turn photos into PDF right in your browser. Files never leave your device.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#0a7d78">
+<meta name="google-adsense-account" content="ca-pub-7701744033752473">
+<link rel="canonical" href="https://www.freeresizer.online/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="FreeResizer">
+<meta property="og:url" content="https://www.freeresizer.online/">
+<meta property="og:title" content="FreeResizer – Free Online Image Resizer, Compressor &amp; PDF Tools">
+<meta property="og:description" content="Resize, compress, convert and watermark images, pick colors, scan documents and work with PDFs for free. Everything runs in your browser, so your photos stay private.">
+<meta property="og:image" content="https://www.freeresizer.online/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="FreeResizer – free browser-based image resizer, compressor and PDF tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="FreeResizer – Free Online Image Resizer, Compressor &amp; PDF Tools">
+<meta name="twitter:description" content="Resize, compress, convert and watermark images, pick colors, scan documents and work with PDFs for free. Everything runs in your browser, so your photos stay private.">
+<meta name="twitter:image" content="https://www.freeresizer.online/og-image.png">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='15'%20fill='%230a7d78'/%3E%3Cg%20fill='none'%20stroke='%23fff'%20stroke-width='5'%20stroke-linecap='round'%20stroke-linejoin='round'%3E%3Cpath%20d='M18%2027V18h9M46%2037v9h-9'/%3E%3Cpath%20d='M27%2037L37%2027'/%3E%3Cpath%20d='M37%2027h-7M37%2027v7'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+<script>(function(){try{var d=document.documentElement,t=localStorage.getItem('fr-theme')||'auto',a=localStorage.getItem('fr-accent')||'teal',P={teal:['#0a7d78','#3cc4bd'],blue:['#1d5fd1','#6ea8ff'],purple:['#7c3aed','#b794ff'],orange:['#c2410c','#ff9a5c'],green:['#15803d','#5fd38a'],rose:['#be185d','#ff7eb3']},k=t==='dark'||(t==='auto'&&matchMedia('(prefers-color-scheme:dark)').matches);if(!P[a])a='teal';d.dataset.theme=k?'dark':'light';d.style.setProperty('--accent',P[a][k?1:0])}catch(e){}})()</script>
+<!-- Google AdSense site code -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7701744033752473"
+     crossorigin="anonymous"></script>
+<style>
+:root{
+ --ink:#10243a;--paper:#f4f7f9;--card:#ffffff;--line:#dbe4ea;--accent:#0a7d78;--muted:#54687a;--on:#fff;
+ --radius:18px;--shadow:0 10px 30px rgba(16,36,58,.09);
+}
+:root{--accent2:color-mix(in srgb,var(--accent) 12%,var(--card))}
+@media (prefers-color-scheme:dark){:root{--ink:#e6eef5;--paper:#0c1722;--card:#14222f;--line:#27394b;--accent:#3cc4bd;--muted:#9bb0c1;--on:#06201f;--shadow:0 10px 30px rgba(0,0,0,.35)}}
+:root[data-theme=light]{--ink:#10243a;--paper:#f4f7f9;--card:#fff;--line:#dbe4ea;--muted:#54687a;--on:#fff;--shadow:0 10px 30px rgba(16,36,58,.09)}
+:root[data-theme=dark]{--ink:#e6eef5;--paper:#0c1722;--card:#14222f;--line:#27394b;--muted:#9bb0c1;--on:#06201f;--shadow:0 10px 30px rgba(0,0,0,.35)}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:Manrope,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;background:var(--paper);color:var(--ink);line-height:1.65;font-size:16px}
+img{max-width:100%}
+a{color:var(--accent)}
+p{margin:.6em 0}
+h1,h2,h3{letter-spacing:-.015em}
+h1{font-size:clamp(1.4rem,3.2vw,1.95rem);line-height:1.18;margin:.1em 0 .3em;font-weight:800}
+h2{font-size:1.35rem;margin:1.7em 0 .5em;font-weight:800}
+h3{font-size:1.05rem;margin:1.2em 0 .3em;font-weight:800}
+.lead{color:var(--muted);max-width:70ch;font-size:.97rem;margin:.2em 0}
+.skip{position:absolute;left:-9999px;top:0;background:var(--accent);color:var(--on);padding:10px 16px;z-index:100;border-radius:0 0 10px 0;font-weight:700}
+.skip:focus{left:0}
+
+/* ---------- header ---------- */
+header{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--card) 92%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar{max-width:1120px;margin:auto;padding:10px 20px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.logo{display:inline-flex;align-items:center;gap:8px;font-weight:800;font-size:1.3rem;text-decoration:none;color:var(--ink);letter-spacing:-.02em}
+.logo .word{text-transform:lowercase;white-space:nowrap}
+.logo b{color:var(--accent);font-weight:800}
+.logo .mark{width:34px;height:34px;display:block;flex:none}
+nav{margin-left:auto;display:flex;gap:2px;flex-wrap:wrap}
+nav a{padding:7px 11px;border-radius:9px;text-decoration:none;color:var(--muted);font-weight:600;font-size:.92rem;transition:.15s}
+nav a:hover,nav a:focus-visible{color:var(--accent);background:var(--accent2);outline:none}
+nav a[aria-current=page]{color:var(--accent);background:var(--accent2)}
+#themebox{position:relative}
+#thbtn{background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:6px 12px;font:inherit;font-size:.82rem;font-weight:700;cursor:pointer;transition:.15s}
+#thbtn:hover,#thbtn:focus-visible{border-color:var(--accent);outline:none}
+#thpop{position:absolute;right:0;top:calc(100% + 8px);z-index:40;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px;width:232px;box-shadow:var(--shadow)}
+#thpop[hidden]{display:none}
+#thpop strong{display:block;font-size:.74rem;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);margin:2px 0 6px}
+.throw{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+.throw button{border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:8px;padding:5px 10px;font:inherit;font-size:.8rem;cursor:pointer}
+.throw button[aria-pressed=true]{border-color:var(--accent);background:var(--accent2);font-weight:700}
+.throw .dot{width:28px;height:28px;border-radius:50%;padding:0;border:2px solid var(--card);box-shadow:0 0 0 1px var(--line)}
+.throw .dot[aria-pressed=true]{box-shadow:0 0 0 3px var(--ink)}
+
+/* ---------- layout ---------- */
+main{max-width:1120px;margin:auto;padding:18px 20px 60px}
+.page{display:none}
+.page.on{display:block}
+
+/* ---------- hero ---------- */
+.hero{position:relative;overflow:hidden;border:1px solid var(--line);border-radius:24px;padding:30px 28px;margin:4px 0 26px;
+ background:radial-gradient(900px 320px at 8% -30%,var(--accent2),transparent 65%),var(--card)}
+.eyebrow{display:inline-flex;align-items:center;gap:6px;font-size:.74rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);background:var(--accent2);border:1px solid var(--line);padding:4px 11px;border-radius:999px;margin:0 0 14px}
+.hero h1{font-size:clamp(1.65rem,4.2vw,2.55rem);letter-spacing:-.03em;max-width:20ch}
+.hero .lead{font-size:1rem;max-width:60ch;margin-top:6px}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
+.badge{font-size:.82rem;font-weight:700;color:var(--muted);background:var(--card);border:1px solid var(--line);padding:5px 12px;border-radius:999px}
+.badge::before{content:"✓";color:var(--accent);font-weight:800;margin-right:6px}
+
+.sec-h{display:flex;align-items:center;gap:12px;font-size:.82rem;text-transform:uppercase;letter-spacing:.11em;color:var(--muted);margin:26px 0 12px;font-weight:800}
+.sec-h::after{content:"";flex:1;height:1px;background:var(--line)}
+
+/* ---------- tool cards ---------- */
+.toolgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(178px,1fr));gap:12px;margin:0 0 22px}
+.tool{appearance:none;display:flex;flex-direction:column;align-items:flex-start;gap:4px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:15px;cursor:pointer;font:inherit;color:inherit;text-align:left;transition:transform .16s ease,box-shadow .16s ease,border-color .16s ease;position:relative}
+.tool:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:var(--accent)}
+.tool:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.tool[aria-pressed=true]{border-color:var(--accent);background:var(--accent2);box-shadow:0 0 0 1px var(--accent) inset}
+.tool .ic{display:grid;place-items:center;width:60px;height:60px;border-radius:16px;font-size:2rem;line-height:1;font-style:normal;background:var(--accent2);border:1px solid var(--line);margin-bottom:8px;font-family:"Segoe UI Emoji","Apple Color Emoji","Noto Color Emoji",sans-serif}
+.tool[aria-pressed=true] .ic{background:var(--card)}
+.tool strong{font-size:.98rem;font-weight:800;letter-spacing:-.01em}
+.tool span{display:block;font-size:.79rem;line-height:1.4;color:var(--muted);font-weight:600}
+
+/* ---------- drop zone ---------- */
+.drop{display:flex;flex-direction:column;align-items:center;justify-content:center;max-width:820px;margin:0 auto;border:2px dashed color-mix(in srgb,var(--accent) 55%,var(--line));border-radius:20px;background:var(--card);padding:30px 22px;text-align:center;transition:.18s}
+.drop.hot{background:var(--accent2);border-color:var(--accent)}
+.drop .big{display:grid;place-items:center;width:78px;height:78px;margin:0 0 12px;border-radius:22px;background:var(--accent2);border:1px solid var(--line);font-size:2.6rem;line-height:1;font-family:"Segoe UI Emoji","Apple Color Emoji","Noto Color Emoji",sans-serif}
+.drop .btn{margin:0 0 10px}
+.drop p{max-width:70ch;margin-left:auto;margin-right:auto}
+.drop.slim{flex-direction:row;padding:10px 16px;gap:12px;flex-wrap:wrap}
+.drop.slim .big{width:44px;height:44px;margin:0;border-radius:12px;font-size:1.5rem;flex:none}
+.drop.slim .btn{margin:0}
+.drop.slim p{margin:0}
+#drop.slim .info{display:none}
+
+/* ---------- buttons ---------- */
+.btn{background:var(--accent);color:var(--on);border:0;border-radius:10px;padding:11px 20px;font:inherit;font-weight:800;font-size:.95rem;cursor:pointer;text-decoration:none;display:inline-block;transition:.15s}
+.btn:hover{filter:brightness(1.06)}
+.btn.alt{background:transparent;color:var(--accent);border:1px solid var(--accent)}
+.btn.alt:hover{background:var(--accent2);filter:none}
+.btn.sm{padding:6px 12px;font-size:.82rem;border-radius:8px}
+.btn:disabled{opacity:.6;cursor:progress}
+.btn:focus-visible,.tool:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+
+/* ---------- workspace ---------- */
+#work{display:none;grid-template-columns:minmax(0,1fr) 340px;gap:16px;margin-top:16px;align-items:start;scroll-margin-top:86px}
+#xwrap{scroll-margin-top:86px}
+#work.on{display:grid}
+@media(max-width:820px){#work.on{grid-template-columns:1fr}}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px}
+.preview{display:flex;align-items:center;justify-content:center;min-height:130px;background:repeating-conic-gradient(var(--line) 0 25%,transparent 0 50%) 50%/20px 20px;border-radius:10px;overflow:hidden}
+.preview canvas{max-width:100%;max-height:min(380px,42vh);height:auto}
+label{display:block;font-weight:700;font-size:.87rem;margin:12px 0 4px}
+input[type=number],select{width:100%;padding:9px 10px;border:1px solid var(--line);border-radius:9px;font:inherit;background:var(--paper);color:var(--ink)}
+.row{display:flex;gap:10px}
+.row>*{flex:1}
+.ctl{display:none}
+.ctl.on{display:block}
+.info{font-size:.86rem;color:var(--muted);margin:10px 0}
+.xg{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:16px;margin-top:16px;align-items:start}
+#work>.panel:first-child,.xg>.panel:first-child{position:sticky;top:76px;z-index:3}
+@media(max-width:820px){
+ #work>.panel:first-child,.xg>.panel:first-child{position:static}
+ .xg{grid-template-columns:1fr}
+ .preview{min-height:110px}
+ .preview canvas{max-height:30vh}
+}
+textarea{font:inherit}
+.ol{display:flex;align-items:center;gap:8px;padding:6px 0;border-bottom:1px solid var(--line);font-size:.88rem}
+.ol img{width:40px;height:40px;object-fit:cover;border-radius:6px;flex:none}
+.ol span{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ol button{border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:7px;cursor:pointer;padding:3px 9px;font:inherit;line-height:1.4}
+.ol button:hover{border-color:var(--accent)}
+.tbl{width:100%;border-collapse:collapse;font-size:.88rem}
+.tbl td,.tbl th{border-bottom:1px solid var(--line);padding:8px 6px;text-align:left;vertical-align:top;word-break:break-word}
+.tbl th{font-weight:700;color:var(--muted);width:42%}
+.sw{display:inline-block;width:64px;height:64px;border-radius:10px;border:1px solid var(--line);cursor:pointer;margin:4px;vertical-align:top;font-size:.68rem;color:#fff;text-shadow:0 0 3px #000;padding:3px;font-weight:700;font-family:inherit}
+.grp{border:1px solid var(--line);border-radius:12px;padding:10px;margin:10px 0}
+.grp img{max-width:110px;max-height:110px;border-radius:8px;margin:4px}
+#work>.panel:last-child,#xctl{display:flex;flex-direction:column}
+.stickybar{order:99;position:static;padding:12px 0 0;margin:14px 0 0;border-top:1px solid var(--line);display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+#xmsg{order:98;margin:10px 0 0}
+.xbar{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 12px;padding:0 0 10px;border-bottom:1px solid var(--line)}
+.xbar .btn{flex:none}
+
+/* ---------- content blocks ---------- */
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:14px 0 8px}
+.fcard{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px}
+.fcard .ic{display:grid;place-items:center;width:48px;height:48px;border-radius:14px;background:var(--accent2);font-size:1.55rem;margin-bottom:8px;font-family:"Segoe UI Emoji","Apple Color Emoji","Noto Color Emoji",sans-serif}
+.fcard h3{margin:.2em 0 .2em;font-size:1rem}
+.fcard p{margin:0;font-size:.88rem;color:var(--muted)}
+a.fcard{display:block;text-decoration:none;color:var(--ink);transition:.15s}
+a.fcard:hover{border-color:var(--accent)}
+a.fcard:hover h3{color:var(--accent)}
+a.fcard p{display:block}
+.steps{max-width:72ch;padding-left:20px}
+.steps li{margin:6px 0}
+.faq{max-width:78ch}
+.faq h3{font-size:1rem;margin:1.3em 0 .2em}
+.faq p{margin:.2em 0;color:var(--muted);font-size:.95rem}
+#toolinfo{margin-top:30px}
+#toolinfo h2:first-child{margin-top:0}
+#toolinfo table{margin:10px 0 4px}
+
+/* ---------- docs ---------- */
+.doc{max-width:820px}
+.doc p,.doc li{max-width:72ch}
+.doc ul{padding-left:20px}
+.doc h2{border-top:1px solid var(--line);padding-top:1.1em}
+.meta-note{font-size:.82rem;color:var(--muted)}
+.notice{background:var(--accent2);border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-size:.9rem}
+input[type=text],input[type=email],textarea{width:100%;padding:10px 11px;border:1px solid var(--line);border-radius:9px;font:inherit;background:var(--paper);color:var(--ink)}
+.cform{max-width:560px;margin-top:8px}
+.cform p{margin:0}
+
+/* ---------- footer ---------- */
+footer{border-top:1px solid var(--line);background:var(--card);margin-top:46px}
+.foot{max-width:1120px;margin:auto;padding:30px 20px 22px;display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:24px}
+.foot h3{font-size:.76rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin:0 0 8px}
+.foot a{display:block;margin:5px 0;text-decoration:none;font-size:.9rem;color:var(--ink)}
+.foot a:hover{color:var(--accent)}
+.foot p{font-size:.88rem;color:var(--muted);max-width:42ch;margin:6px 0 0}
+.copy{max-width:1120px;margin:0 auto;padding:16px 20px 22px;border-top:1px solid var(--line);color:var(--muted);font-size:.83rem;text-align:center}
+.copy strong{color:var(--ink);font-weight:800;letter-spacing:.06em;text-transform:lowercase}
+@media(max-width:720px){.foot{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){
+ .foot{grid-template-columns:1fr}
+ .bar{padding:9px 14px}
+ nav{order:3;width:100%;margin-left:0;overflow-x:auto;flex-wrap:nowrap;padding-bottom:2px}
+ nav a{white-space:nowrap}
+ main{padding:14px 14px 44px}
+ .hero{padding:22px 18px;border-radius:18px}
+ .toolgrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+ .tool{padding:12px;border-radius:14px}
+ .tool .ic{width:50px;height:50px;font-size:1.65rem;border-radius:14px}
+ .tool strong{font-size:.9rem}
+ .tool span{font-size:.74rem}
+ .xbar{position:sticky;top:56px;background:var(--card);z-index:2;padding-top:4px}
+}
+
+/* ---------- cookie notice ---------- */
+#cookie{position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px}
+#cookie[hidden]{display:none}
+#cookie .inner{max-width:1120px;margin:auto;background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);padding:12px 16px;display:flex;gap:12px;align-items:center;flex-wrap:wrap;font-size:.85rem}
+#cookie p{margin:0;flex:1 1 320px;color:var(--muted)}
+#cookie .btn{padding:7px 14px;font-size:.85rem}
+</style>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header>
+ <div class="bar">
+  <a class="logo" href="#home" aria-label="FreeResizer home">
+   <svg class="mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+    <rect width="64" height="64" rx="15" fill="var(--accent)"/>
+    <g fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+     <path d="M18 27V18h9M46 37v9h-9"/>
+     <path d="M27 37L37 27"/>
+     <path d="M37 27h-7M37 27v7"/>
+    </g>
+   </svg>
+   <span class="word">free<b>resizer</b></span>
+  </a>
+  <nav aria-label="Main">
+   <a href="#home">Tools</a><a href="guides/index.html">Guides</a><a href="#about">About</a><a href="#contact">Contact</a><a href="#privacy">Privacy</a><a href="#terms">Terms</a>
+  </nav>
+  <div id="themebox"><button type="button" id="thbtn" aria-haspopup="true" aria-expanded="false">🎨 Theme</button>
+   <div id="thpop" hidden role="dialog" aria-label="Theme options"><strong>Mode</strong><div class="throw"><button type="button" data-m="light" aria-pressed="false">Light</button><button type="button" data-m="dark" aria-pressed="false">Dark</button><button type="button" data-m="auto" aria-pressed="true">Auto</button></div><strong>Color</strong><div class="throw" id="thcols"></div></div>
+  </div>
+ </div>
+</header>
+
+<main id="main">
+
+<!-- ============ HOME / TOOLS ============ -->
+<section id="home" class="page on">
+
+ <div class="hero">
+  <p class="eyebrow">Free · Private · No sign-up</p>
+  <h1>Resize, compress &amp; convert images right in your browser</h1>
+  <p class="lead">Eight free tools for photos, documents and PDFs. Pick a tool, drop in a file and download the result. Everything runs on your own device, so your pictures are never uploaded to a server.</p>
+  <div class="badges">
+   <span class="badge">No uploads</span>
+   <span class="badge">No account needed</span>
+   <span class="badge">No watermark</span>
+   <span class="badge">Works on mobile</span>
+  </div>
+ </div>
+
+ <h2 class="sec-h">All tools</h2>
+
+ <div class="toolgrid" role="group" aria-label="Choose a tool">
+  <button class="tool" data-mode="resize" aria-pressed="true"><i class="ic" aria-hidden="true">↔️</i><strong>Resize</strong><span>Set exact pixels or a percentage</span></button>
+  <button class="tool" data-mode="kb" aria-pressed="false"><i class="ic" aria-hidden="true">📏</i><strong>Resize to KB</strong><span>Hit a target file size</span></button>
+  <button class="tool" data-mode="convert" aria-pressed="false"><i class="ic" aria-hidden="true">🔁</i><strong>Convert</strong><span>JPG, PNG and WebP</span></button>
+  <button class="tool" data-x="wm" aria-pressed="false"><i class="ic" aria-hidden="true">💧</i><strong>Watermark</strong><span>Text or logo, single or tiled</span></button>
+  <button class="tool" data-x="color" aria-pressed="false"><i class="ic" aria-hidden="true">🎨</i><strong>Color Picker</strong><span>Extract colors and HEX codes</span></button>
+  <button class="tool" data-x="scan" aria-pressed="false"><i class="ic" aria-hidden="true">📄</i><strong>Image Scanner</strong><span>Clean up document photos</span></button>
+  <button class="tool" data-x="p2pdf" aria-pressed="false"><i class="ic" aria-hidden="true">📑</i><strong>Photo to PDF</strong><span>Turn photos into a PDF</span></button>
+  <button class="tool" data-x="pdf2jpg" aria-pressed="false"><i class="ic" aria-hidden="true">📕</i><strong>PDF to JPG</strong><span>Save PDF pages as images</span></button>
+ </div>
+
+ <div class="drop" id="drop">
+  <span class="big" aria-hidden="true">🖼️</span>
+  <p style="margin:0 0 14px;font-weight:800" id="dropTitle">Drag an image here</p>
+  <button class="btn" id="pick" type="button">Choose image</button>
+  <input type="file" id="file" accept="image/jpeg,image/png,image/webp,image/gif,image/bmp" hidden>
+  <p class="info" style="margin-bottom:0">Supports JPG, PNG, WebP, GIF and BMP. Nothing is uploaded.</p>
+ </div>
+
+ <div id="work">
+  <div class="panel">
+   <div class="preview"><canvas id="cv" aria-label="Image preview"></canvas></div>
+   <p class="info" id="stats" aria-live="polite"></p>
+  </div>
+  <div class="panel">
+   <div class="ctl on" data-for="resize">
+    <label for="unit">Resize by</label>
+    <select id="unit"><option value="px">Pixels</option><option value="pct">Percentage</option></select>
+    <div id="pxBox">
+     <div class="row">
+      <div><label for="w">Width</label><input type="number" id="w" min="1" max="12000"></div>
+      <div><label for="h">Height</label><input type="number" id="h" min="1" max="12000"></div>
+     </div>
+     <label><input type="checkbox" id="lock" checked> Keep aspect ratio</label>
+    </div>
+    <div id="pctBox" style="display:none"><label for="pct">Scale (%)</label><input type="number" id="pct" min="1" max="500" value="50"></div>
+   </div>
+   <div class="ctl" data-for="kb">
+    <label for="kbv">Target file size</label>
+    <div class="row">
+     <input type="number" id="kbv" min="1" step="any" value="100" aria-label="Target size">
+     <select id="kbu" aria-label="Unit"><option value="1">KB</option><option value="1024">MB</option></select>
+    </div>
+    <p class="info">Type the size you need, such as 50 KB or 200 KB, then press Apply. We lower quality first and reduce the dimensions only if needed. Output is JPG or WebP.</p>
+    <button class="btn" id="kbgo" type="button">Apply target size</button>
+   </div>
+   <div class="ctl" data-for="convert"><p class="info">Choose the new format below, then download.</p></div>
+
+   <label for="fmt">Output format</label>
+   <select id="fmt"><option value="image/jpeg">JPG</option><option value="image/png">PNG</option><option value="image/webp">WebP</option></select>
+   <div id="qwrap">
+   <label for="q">Quality: <span id="qv">85</span>%</label>
+   <input type="range" id="q" min="10" max="100" value="85" style="width:100%">
+   </div>
+   <div class="stickybar">
+    <button class="btn" id="dl" type="button">Download</button>
+   </div>
+  </div>
+ </div>
+
+ <div id="xwrap" style="display:none">
+  <h2 id="xtitle" style="margin:8px 0 2px;font-size:1.2rem"></h2>
+  <p class="lead" id="xdesc" style="margin:0 0 12px;font-size:.9rem"></p>
+  <div class="drop" id="xdrop">
+   <span class="big" aria-hidden="true" id="xicon">🖼️</span>
+   <button class="btn" id="xpick" type="button">Choose file</button>
+   <input type="file" id="xfile" hidden>
+   <p class="info" id="xnames" style="margin-bottom:0">Or drag files here. Everything stays on your device.</p>
+  </div>
+  <div class="xg" id="xgrid" style="display:none">
+   <div class="panel"><div class="preview" id="xpv"><canvas id="xcv" aria-label="Preview"></canvas></div><div id="xinfo"></div></div>
+   <div class="panel" id="xctl"></div>
+  </div>
+ </div>
+
+ <section id="toolinfo" aria-live="polite"></section>
+
+ <h2 class="sec-h">Why FreeResizer</h2>
+ <div class="grid3">
+  <div class="fcard"><div class="ic" aria-hidden="true">🔒</div><h3>Private by design</h3><p>Your files are read by your own browser. No upload, no server copy, no waiting in a queue.</p></div>
+  <div class="fcard"><div class="ic" aria-hidden="true">⚡</div><h3>Instant results</h3><p>Resize, compress and convert in seconds, even for large photos, because the work happens on your device.</p></div>
+  <div class="fcard"><div class="ic" aria-hidden="true">🆓</div><h3>Free, no account</h3><p>Every tool is free to use. There is nothing to install, no sign-up and no watermark added to your files.</p></div>
+ </div>
+
+ <h2>How it works</h2>
+ <ol class="steps">
+  <li><strong>Pick a tool</strong> from the grid above — resize, convert, watermark, PDF and more.</li>
+  <li><strong>Add your file</strong> by dragging it in or choosing it from your device.</li>
+  <li><strong>Adjust and download</strong> your result. The original file on your device is never changed.</li>
+ </ol>
+
+ <h2 class="sec-h">Guides &amp; how-tos</h2>
+ <p class="lead" style="margin:0 0 14px">Eight detailed guides for the jobs people get stuck on: format conversion, colour values, printable PDFs, social media dimensions, watermarks, phone scans and resizing without quality loss. <a href="guides/index.html">Browse all guides</a>.</p>
+ <div class="grid3">
+  <a class="fcard" href="guides/resize-image-without-losing-quality.html">
+   <div class="ic" aria-hidden="true">↔️</div>
+   <h3>Resize without quality loss</h3>
+   <p>Pixels versus DPI, downscaling versus upscaling, and the sizes people ask for most.</p>
+  </a>
+  <a class="fcard" href="guides/convert-images-jpg-png-webp.html">
+   <div class="ic" aria-hidden="true">🔁</div>
+   <h3>Convert JPG, PNG and WebP</h3>
+   <p>What changes when you convert, and which format suits a form, a website or a logo.</p>
+  </a>
+  <a class="fcard" href="guides/pick-colors-from-an-image.html">
+   <div class="ic" aria-hidden="true">🎨</div>
+   <h3>Pick colors and copy HEX</h3>
+   <p>Sample any pixel, copy HEX, RGB or HSL, and read the main palette of an image.</p>
+  </a>
+  <a class="fcard" href="guides/photo-to-pdf.html">
+   <div class="ic" aria-hidden="true">📑</div>
+   <h3>Photos to PDF</h3>
+   <p>Page size, margins, orientation and resolution for a PDF that prints correctly.</p>
+  </a>
+  <a class="fcard" href="guides/pdf-to-jpg.html">
+   <div class="ic" aria-hidden="true">📕</div>
+   <h3>PDF pages to JPG</h3>
+   <p>Resolution, page ranges and quality for turning document pages into images.</p>
+  </a>
+  <a class="fcard" href="guides/social-media-image-sizes.html">
+   <div class="ic" aria-hidden="true">📱</div>
+   <h3>Social media sizes</h3>
+   <p>Current dimensions for Instagram, YouTube, LinkedIn, Facebook, X and WhatsApp.</p>
+  </a>
+  <a class="fcard" href="guides/watermark-images.html">
+   <div class="ic" aria-hidden="true">💧</div>
+   <h3>Watermark images</h3>
+   <p>Placement, opacity and a batch workflow that survives platform compression.</p>
+  </a>
+  <a class="fcard" href="guides/scan-documents-with-phone.html">
+   <div class="ic" aria-hidden="true">📄</div>
+   <h3>Scan documents</h3>
+   <p>Capture and clean-up steps that turn a phone photo into a readable scan.</p>
+  </a>
+ </div>
+
+ <h2>Frequently asked questions</h2>
+ <div class="faq">
+  <h3>Is FreeResizer really free?</h3>
+  <p>Yes. Every tool is free and there is no account, trial or hidden limit. The site is supported by advertising, which keeps the tools free for everyone.</p>
+  <h3>Are my photos uploaded to a server?</h3>
+  <p>No. Images are opened and processed inside your browser. Your files are not sent to us and are not stored on our servers.</p>
+  <h3>Do I need to create an account?</h3>
+  <p>No. Open the site, choose a tool and start working. No email address or password is needed.</p>
+  <h3>Which file formats are supported?</h3>
+  <p>JPG, PNG, WebP, GIF and BMP images are supported. Results can be saved as JPG, PNG or WebP, and photos can be combined into a PDF or exported from one.</p>
+  <h3>Can I use the tools on my phone?</h3>
+  <p>Yes. The site is responsive and works in current mobile browsers on Android and iPhone.</p>
+  <h3>Do the tools add a watermark?</h3>
+  <p>No watermark is ever added automatically. The Watermark tool only adds one when you choose to.</p>
+  <h3>How large can my images be?</h3>
+  <p>Most photos from a phone or camera work without trouble. Extremely large files, such as stitched panoramas or scans above roughly 100 megapixels, can run out of memory on a phone and fail to open. In that case resize the original on a computer first.</p>
+  <h3>Can I use the results commercially?</h3>
+  <p>Yes. You keep the rights to your own images and to the files you create with these tools. We do not add watermarks, claim ownership or receive your files.</p>
+ </div>
+
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="page doc">
+ <h1>About FreeResizer</h1>
+ <p class="meta-note"><em>Reviewed 9 November 2026</em></p>
+ <p>FreeResizer is a simple, free set of browser-based image tools built for people who just need a picture to be the right size, the right format or a bit smaller. No sign-up, no software and no uploads.</p>
+ <p>The project started as a small resize tool for the many forms and social networks that ask for very specific dimensions. It grew into a full toolkit for everyday image and document jobs.</p>
+ <h2>What we offer</h2>
+ <ul>
+  <li>Resize images by pixels or percentage</li>
+  <li>Compress to a target file size in KB or MB</li>
+  <li>Convert between JPG, PNG and WebP</li>
+  <li>Add text or logo watermarks to images</li>
+  <li>Pick colors from any image</li>
+  <li>Clean up photos of documents with the scanner</li>
+  <li>Convert photos to PDF and PDF pages to JPG</li>
+ </ul>
+ <h2>Our approach to privacy</h2>
+ <p>Your images are processed inside your own browser using the HTML canvas and file APIs. They are not uploaded to or stored on our servers. Read our <a href="#privacy">Privacy Policy</a> for details about cookies and advertising.</p>
+ <h2>How we are supported</h2>
+ <p>FreeResizer is supported by advertising, which lets us keep every tool free. Ads are kept clearly separate from the tools and content, and they never change how your files are processed.</p>
+ <h2>Who runs freeresizer</h2>
+ <p>freeresizer is an independent project maintained by a small team of one. It is not a company product, an agency service or a marketplace. The site exists because the alternative — uploading personal photos to an unknown server just to change their dimensions — never sat right.</p>
+ <h2 id="testing">How the tools are tested</h2>
+ <p>Every tool is checked with real files before release, on desktop and on a phone. Test files cover each accepted format, transparent PNGs, very tall and very wide images, and photos with EXIF rotation. A tool is only listed on the home page when it produces a correct, downloadable file.</p>
+ <p>The written guides are tested the same way: every step refers to a control that exists in the live interface, with the same wording a visitor sees. Platform dimensions and upload limits are checked against current help pages and revisited when a platform announces a change.</p>
+ <h2 id="editorial">Editorial standards and corrections</h2>
+ <p>Guides are written for everyday users and avoid advice that cannot be verified. Where a number depends on the device — file sizes, memory limits, DPI equivalents — the guide explains the reasoning instead of presenting a single magic value. Each guide shows the date it was last reviewed.</p>
+ <p>We do not publish scraped articles, auto-generated filler or pages that exist only to repeat a keyword. Every guide is written for a specific job, links to the tool it describes, and is corrected or removed when it stops being accurate.</p>
+ <p>If something is wrong, out of date or confusing, tell us on the <a href="#contact">Contact page</a>. Corrections are published in the guide itself, not buried in a changelog.</p>
+ <h2 id="updates">How the site changes</h2>
+ <p>The toolkit is deliberately small. In November 2026 the standalone Compress tool was retired and target-size compression was kept in Resize to KB, so there is one clear place to do each job. The guide set was rewritten at the same time around the eight tools that remain, and the guides were reviewed together so their numbers agree.</p>
+ <p>Tools are not added to fill a grid. A new tool is published only when it does something the existing set cannot, and it gets a written guide before it is linked from the home page. When a guide is corrected, the review date on that page changes; the sitemap dates follow the same review.</p>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="page doc">
+ <h1>Contact us</h1>
+ <p>We would like to hear from you, whether you found a bug, have a feature request, or have a question about the site or its advertising.</p>
+ <p><strong>Email:</strong> <a href="mailto:rohitoraon371@gmail.com">rohitoraon371@gmail.com</a></p>
+ <h2>Send a message</h2>
+ <form class="cform" id="cform" action="mailto:rohitoraon371@gmail.com" method="post" enctype="text/plain">
+  <label for="cn">Your name</label>
+  <input type="text" id="cn" name="name" required maxlength="80" autocomplete="name">
+  <label for="ce">Your email</label>
+  <input type="email" id="ce" name="email" required maxlength="120" autocomplete="email">
+  <label for="cm">Message</label>
+  <textarea id="cm" name="message" rows="6" required maxlength="2000"></textarea>
+  <p style="margin-top:14px"><button class="btn" type="submit">Send message</button></p>
+  <p class="info" id="cmsg" role="status"></p>
+ </form>
+ <p class="info">The form opens your email app with the message ready to send. We aim to reply within a few business days.</p>
+</section>
+
+<!-- ============ PRIVACY ============ -->
+<section id="privacy" class="page doc">
+ <h1>Privacy Policy</h1>
+ <p class="meta-note"><em>Last updated: 9 November 2026</em></p>
+ <p>This Privacy Policy explains how FreeResizer ("we", "us", "our") handles information when you visit this website. We keep data collection to the minimum needed to run and fund the service.</p>
+
+ <h2>Your images and files</h2>
+ <p>All image and PDF processing takes place locally in your web browser. The files you select are not uploaded to, transmitted to or stored on our servers. When you close the page, the files are gone from memory.</p>
+
+ <h2>Information we collect</h2>
+ <p>We do not require registration and do not ask for personal information to use the tools. If you contact us by email, we receive the details you choose to send and use them only to reply to you.</p>
+ <p>Our hosting provider (GitHub Pages) may process standard technical data such as IP address, browser type and requested pages in order to deliver the site securely. We do not run a third-party analytics service and do not build visitor profiles.</p>
+ <p>Loading the page also causes your browser to request web fonts and advertising scripts from Google. Those requests share your IP address with Google and are described in the sections below.</p>
+
+ <h2>Cookies</h2>
+ <p>Cookies are small text files stored by your browser. We use a small amount of local storage to remember your theme preference and your cookie notice choice. Advertising partners also use cookies, as described below. You can clear or block cookies in your browser settings.</p>
+
+ <h2>Web fonts and third-party requests</h2>
+ <p>The site uses Google Fonts to display the Manrope typeface. When a page loads, your browser requests the font files from fonts.googleapis.com and fonts.gstatic.com. That request automatically shares your IP address, browser and operating system details, and the time of the request with Google, even if you do not interact with the site or accept the cookie notice.</p>
+ <p>Google states that this request does not set cookies and is not used for advertising or profiling. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a> and the <a href="https://developers.google.com/fonts/faq/privacy" target="_blank" rel="noopener">Google Fonts privacy FAQ</a> for details. If you block these requests with a browser setting or extension, every tool still works and the site falls back to a font already installed on your device.</p>
+
+ <h2>Advertising and third parties</h2>
+ <p>We use Google AdSense to display ads. Third-party vendors, including Google, use cookies to serve ads based on your prior visits to this and other websites. Google's use of advertising cookies enables it and its partners to serve ads to you based on your visit to our site and/or other sites on the Internet.</p>
+ <p>You may opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener">Google Ads Settings</a>. You can also visit <a href="https://www.aboutads.info" target="_blank" rel="noopener">www.aboutads.info</a> to opt out of some third-party vendors' use of cookies for personalized advertising. More about how Google uses data is at <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google uses information from sites that use its services</a>.</p>
+ <p>Third-party vendors and ad networks may also place or read cookies on your browser, and may collect your IP address, browser information and the pages you view on this site. We do not control those cookies; please review each vendor's privacy policy.</p>
+
+ <h2>Consent</h2>
+ <p>Where required by law (for example in the European Economic Area, the United Kingdom and Switzerland), we will request your consent before using cookies for personalized advertising. You can change your choice at any time by clearing the site data in your browser and reloading the page.</p>
+
+ <h2>Children's privacy</h2>
+ <p>Our service is not directed to children under 13, and we do not knowingly collect personal information from children. If you believe a child has provided us with personal data, please contact us and we will delete it.</p>
+
+ <h2>Data retention</h2>
+ <p>We do not store your images or files. Contact emails are kept only as long as needed to answer your message. Hosting logs are handled by GitHub under its own retention policy.</p>
+
+ <h2>Your rights</h2>
+ <p>Depending on where you live, including under the Digital Personal Data Protection Act, 2023 (India) and the GDPR (European Union), you may have rights to access, correct, delete or restrict the use of personal data we hold. Contact us through our <a href="#contact">Contact page</a> to make a request.</p>
+
+ <h2>Third-party links</h2>
+ <p>Our site may link to other websites. We are not responsible for their content or privacy practices.</p>
+
+ <h2>Changes to this policy</h2>
+ <p>We may update this policy from time to time. The date at the top shows when it was last revised. Continued use of the site after a change means you accept the updated policy.</p>
+
+ <h2>Contact</h2>
+ <p>Questions about this policy? Email <a href="mailto:rohitoraon371@gmail.com">rohitoraon371@gmail.com</a> or use our <a href="#contact">Contact page</a>.</p>
+</section>
+
+<!-- ============ TERMS ============ -->
+<section id="terms" class="page doc">
+ <h1>Terms of Service</h1>
+ <p class="meta-note"><em>Last updated: 9 November 2026</em></p>
+ <p>By using FreeResizer you agree to these terms. If you do not agree, please do not use the site.</p>
+
+ <h2>Use of the service</h2>
+ <p>FreeResizer provides free online image and PDF tools for personal and commercial use. You agree not to use the site for any unlawful purpose or in a way that could damage, disable or overload it, including automated scraping or attempts to bypass security measures.</p>
+
+ <h2>Your content</h2>
+ <p>You keep all rights to your images and documents. Because files are processed in your browser, we do not receive or store them. You are responsible for making sure you have the right to edit and use any file you process.</p>
+
+ <h2>Acceptable use</h2>
+ <p>You may not use the tools to create or distribute illegal content, to infringe copyright or trademark rights, to impersonate another person, or to produce material that is harassing, hateful or sexually exploitative. We may refuse service to anyone who breaks these rules.</p>
+
+ <h2>No warranty</h2>
+ <p>The service is provided "as is" without warranties of any kind. We do not guarantee that it will be uninterrupted or error-free, or that results will meet your needs. Keep a copy of your original files.</p>
+
+ <h2>Limitation of liability</h2>
+ <p>To the fullest extent permitted by law, FreeResizer is not liable for any indirect or consequential loss arising from your use of the site, including lost files, lost profits or business interruption.</p>
+
+ <h2>Advertising and third-party content</h2>
+ <p>The site displays third-party advertising. We are not responsible for the content of advertisers' websites or products. Advertisers are responsible for the accuracy of their own claims.</p>
+
+ <h2>Intellectual property</h2>
+ <p>The FreeResizer name, design, text and code are owned by us and protected by copyright. You may not copy, republish or resell the site or its content without permission.</p>
+
+ <h2>Governing law</h2>
+ <p>These terms are governed by the laws of India. Any dispute will be subject to the exclusive jurisdiction of the courts in India.</p>
+
+ <h2>Changes</h2>
+ <p>We may update these terms at any time. Continued use of the site means you accept the updated terms.</p>
+
+ <h2>Contact</h2>
+ <p>Questions about these terms? Use our <a href="#contact">Contact page</a> or email <a href="mailto:rohitoraon371@gmail.com">rohitoraon371@gmail.com</a>.</p>
+</section>
+
+</main>
+
+<footer>
+ <div class="foot">
+  <div>
+   <a href="#home" style="font-weight:800;font-size:1.1rem;color:var(--ink);margin-bottom:6px">free<b style="color:var(--accent)">resizer</b></a>
+   <p>Free browser-based image and PDF tools. Your files never leave your device.</p>
+  </div>
+  <div>
+   <h3>Tools</h3>
+   <a href="#home">Image resizer</a>
+   <a href="#home">Compressor</a>
+   <a href="#home">Photo to PDF</a>
+   <a href="#home">Watermark</a>
+  </div>
+  <div>
+   <h3>Site</h3>
+   <a href="guides/index.html">Guides</a>
+   <a href="#about">About</a>
+   <a href="#contact">Contact</a>
+   <a href="#privacy">Privacy Policy</a>
+   <a href="#terms">Terms of Service</a>
+  </div>
+ </div>
+ <div class="copy">© 2026 <strong>freeresizer</strong>. All rights reserved.</div>
+</footer>
+
+<div id="cookie" hidden>
+ <div class="inner">
+  <p>We use cookies and local storage to remember your settings. Third-party advertising partners, including Google, may use cookies to show ads. <a href="#privacy">Privacy Policy</a></p>
+  <button class="btn" type="button" id="caccept">Got it</button>
+ </div>
+</div>
+
+<noscript>
+ <p style="max-width:820px;margin:20px auto;padding:0 20px">The image tools need JavaScript to run, but you can still read our <a href="#about">About</a>, <a href="#contact">Contact</a>, <a href="#privacy">Privacy Policy</a> and <a href="#terms">Terms</a> pages, or browse the <a href="guides/index.html">guides</a>.</p>
+</noscript>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "name": "freeresizer",
+      "url": "https://www.freeresizer.online/",
+      "logo": "https://www.freeresizer.online/og-image.png",
+      "email": "rohitoraon371@gmail.com",
+      "description": "An independent site offering free, browser-based image and PDF tools, with written guides explaining how to use them."
+    },
+    {
+      "@type": "WebApplication",
+      "name": "FreeResizer",
+      "url": "https://www.freeresizer.online/",
+      "isAccessibleForFree": true,
+      "applicationCategory": "MultimediaApplication",
+      "operatingSystem": "Any (web browser)",
+      "browserRequirements": "Requires JavaScript",
+      "description": "Free online tools to resize, compress, convert and watermark images, and to convert photos to PDF.",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Is FreeResizer really free?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Every tool is free and there is no account, trial or hidden limit. The site is supported by advertising." } },
+        { "@type": "Question", "name": "Are my photos uploaded to a server?", "acceptedAnswer": { "@type": "Answer", "text": "No. Images are opened and processed inside your browser and are not sent to our servers." } },
+        { "@type": "Question", "name": "Do I need to create an account?", "acceptedAnswer": { "@type": "Answer", "text": "No. Open the site, choose a tool and start working." } },
+        { "@type": "Question", "name": "Which file formats are supported?", "acceptedAnswer": { "@type": "Answer", "text": "JPG, PNG, WebP, GIF and BMP images are supported, with output as JPG, PNG or WebP, plus PDF export and import." } },
+        { "@type": "Question", "name": "Can I use the tools on my phone?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. The site is responsive and works in current mobile browsers on Android and iPhone." } },
+        { "@type": "Question", "name": "How large can my images be?", "acceptedAnswer": { "@type": "Answer", "text": "Most photos from a phone or camera work without trouble. Extremely large files, such as stitched panoramas or scans above roughly 100 megapixels, can run out of memory on a phone and fail to open." } },
+        { "@type": "Question", "name": "Can I use the results commercially?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. You keep the rights to your own images and to the files you create with these tools. The site does not add watermarks or claim ownership." } },
+        { "@type": "Question", "name": "Do the tools add a watermark?", "acceptedAnswer": { "@type": "Answer", "text": "No watermark is added automatically. The Watermark tool only adds one when you choose to." } }
+      ]
+    }
+  ]
+}
+</script>
+
+<script>
+(function(){
+ // ----- page routing (hash) + per-page title -----
+ var pages=['home','about','contact','privacy','terms'];
+ var ALIAS={testing:'about',editorial:'about'};
+ var TOOLHASH={resize:'mode:resize',kb:'mode:kb',convert:'mode:convert',watermark:'x:wm',color:'x:color',scan:'x:scan','photo-pdf':'x:p2pdf','pdf-jpg':'x:pdf2jpg'};
+ var PAGE={
+  home:['FreeResizer – Free Online Image Resizer, Compressor & PDF Tools','FreeResizer is a free online image toolkit. Resize, compress, convert and watermark images, and turn photos into PDF right in your browser. Files never leave your device.'],
+  about:['About FreeResizer – Free private image tools','Learn what FreeResizer offers and how your images stay private in your browser.'],
+  contact:['Contact FreeResizer','Contact the FreeResizer team with a bug report, a feature request or a question.'],
+  privacy:['Privacy Policy – FreeResizer','How FreeResizer handles your files, cookies and advertising data.'],
+  terms:['Terms of Service – FreeResizer','The terms that apply when you use the FreeResizer website and tools.']
+ };
+ function route(){
+  var h=(location.hash||'#home').slice(1);
+  var tool=TOOLHASH[h]||null;
+  var anchor=ALIAS[h]?h:null;
+  if(tool)h='home';
+  if(anchor)h=ALIAS[h];
+  if(pages.indexOf(h)<0)h='home';
+  pages.forEach(function(p){var el=document.getElementById(p);if(el)el.classList.toggle('on',p===h)});
+  var m=PAGE[h];
+  if(m){
+   document.title=m[0];
+   var md=document.querySelector('meta[name="description"]');
+   if(md)md.setAttribute('content',m[1]);
+  }
+  document.querySelectorAll('nav a').forEach(function(a){
+   var t=a.getAttribute('href')==='#'+h;
+   if(t)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');
+  });
+  window.scrollTo(0,0);
+  if(anchor)setTimeout(function(){var el=document.getElementById(anchor);if(el)el.scrollIntoView({block:'start'})},0);
+  if(tool)setTimeout(function(){
+   var p=tool.split(':'),b=document.querySelector(p[0]==='mode'?'.tool[data-mode="'+p[1]+'"]':'.tool[data-x="'+p[1]+'"]');
+   if(!b)return;
+   b.click();
+   var t=document.getElementById(p[0]==='x'?'xwrap':'drop');
+   if(t)t.scrollIntoView({block:'start'});
+  },0);
+ }
+ window.addEventListener('hashchange',route);setTimeout(route,0);
+
+ // ----- contact form (no backend, opens the visitor's mail app) -----
+ var cf=document.getElementById('cform');
+ if(cf)cf.addEventListener('submit',function(e){
+  e.preventDefault();
+  var n=document.getElementById('cn').value.trim(),
+      em=document.getElementById('ce').value.trim(),
+      msg=document.getElementById('cm').value.trim(),
+      out=document.getElementById('cmsg');
+  if(!n||msg.length<5||!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(em)){
+   out.textContent='Please add your name, a valid email address and a short message.';
+   return;
+  }
+  var body='Name: '+n+'\nEmail: '+em+'\n\n'+msg;
+  window.location.href='mailto:rohitoraon371@gmail.com?subject='+encodeURIComponent('Website enquiry from '+n)+'&body='+encodeURIComponent(body);
+  out.textContent='Your email app should open with the message ready to send. If it does not, email us directly at rohitoraon371@gmail.com.';
+ });
+
+ // ----- cookie notice -----
+ (function(){
+  var el=document.getElementById('cookie');
+  if(!el)return;
+  var ok=null;try{ok=localStorage.getItem('fr-cookie')}catch(e){}
+  if(ok==='1'){return}
+  el.hidden=false;
+  document.getElementById('caccept').onclick=function(){try{localStorage.setItem('fr-cookie','1')}catch(e){}el.hidden=true};
+ })();
+
+ // ----- main image tools -----
+ var $=function(id){return document.getElementById(id)};
+ var img=null,name='image',mode='resize',origSize=0,kbBlob=null;
+ var cv=$('cv'),ctx=cv.getContext('2d');
+
+ document.querySelectorAll('.tool[data-mode]').forEach(function(b){
+  b.addEventListener('click',function(){
+   mode=b.dataset.mode;
+   document.querySelectorAll('.tool').forEach(function(x){x.setAttribute('aria-pressed',x===b)});
+   document.querySelectorAll('.ctl').forEach(function(c){c.classList.toggle('on',c.dataset.for===mode)});
+   if(mode==='kb'&&$('fmt').value==='image/png')$('fmt').value='image/jpeg';
+   $('qwrap').style.display=(mode==='kb')?'none':'block';
+   kbBlob=null;
+   if(img)render();
+  });
+ });
+
+ var drop=$('drop'),file=$('file');
+ $('pick').onclick=function(){file.click()};
+ file.onchange=function(){if(file.files[0])load(file.files[0])};
+ ['dragenter','dragover'].forEach(function(e){drop.addEventListener(e,function(ev){ev.preventDefault();drop.classList.add('hot')})});
+ ['dragleave','drop'].forEach(function(e){drop.addEventListener(e,function(ev){ev.preventDefault();drop.classList.remove('hot')})});
+ drop.addEventListener('drop',function(ev){var f=ev.dataTransfer.files[0];if(f)load(f)});
+
+ function load(f){
+  if(!/^image\//.test(f.type)){alert('Please choose an image file.');return}
+  origSize=f.size;name=f.name.replace(/\.[^.]+$/,'')||'image';
+  var url=URL.createObjectURL(f),i=new Image();
+  i.onload=function(){
+   img=i;
+   $('w').value=i.naturalWidth;$('h').value=i.naturalHeight;
+   if(f.type==='image/png')$('fmt').value='image/png';
+   else if(f.type==='image/webp')$('fmt').value='image/webp';
+   else $('fmt').value='image/jpeg';
+   $('work').classList.add('on');$('drop').classList.add('slim');$('dropTitle').textContent='Choose a different image';
+   render();
+  };
+  i.onerror=function(){alert('This image could not be opened.')};
+  i.src=url;
+ }
+
+ function outSize(){
+  var sw=img.naturalWidth,sh=img.naturalHeight,cx=0,cy=0,cw=sw,ch=sh,w,h;
+  w=cw;h=ch;
+  if(mode==='resize'){
+   if($('unit').value==='pct'){var p=Math.max(1,parseFloat($('pct').value)||100)/100;w=Math.round(cw*p);h=Math.round(ch*p)}
+   else{w=Math.max(1,parseInt($('w').value)||cw);h=Math.max(1,parseInt($('h').value)||ch)}
+  }
+  w=Math.min(w,12000);h=Math.min(h,12000);
+  return{cx:cx,cy:cy,cw:cw,ch:ch,w:w,h:h};
+ }
+
+ var timer;
+ function render(){
+  if(!img)return;
+  var o=outSize(),W=o.w,H=o.h;
+  cv.width=W;cv.height=H;
+  ctx.save();
+  if($('fmt').value==='image/jpeg'){ctx.fillStyle='#fff';ctx.fillRect(0,0,W,H)}
+  ctx.translate(W/2,H/2);
+  ctx.drawImage(img,o.cx,o.cy,o.cw,o.ch,-o.w/2,-o.h/2,o.w,o.h);
+  ctx.restore();
+  clearTimeout(timer);
+  if(mode==='kb'){
+   kbBlob=null;
+   $('stats').textContent='Original: '+img.naturalWidth+' × '+img.naturalHeight+' px, '+Math.round(origSize/1024)+' KB. Enter a target size and press Apply.';
+   return;
+  }
+  timer=setTimeout(function(){
+   cv.toBlob(function(b){
+    if(!b)return;
+    var kb=function(n){return n>1048576?(n/1048576).toFixed(2)+' MB':Math.round(n/1024)+' KB'};
+    $('stats').textContent='Original: '+img.naturalWidth+' × '+img.naturalHeight+' px, '+kb(origSize)+'  →  New: '+W+' × '+H+' px, about '+kb(b.size);
+   },$('fmt').value,$('q').value/100);
+  },200);
+ }
+
+ var ratio=1;
+ $('w').oninput=function(){if(!img)return;ratio=img.naturalWidth/img.naturalHeight;if($('lock').checked)$('h').value=Math.round($('w').value/ratio);render()};
+ $('h').oninput=function(){if(!img)return;ratio=img.naturalWidth/img.naturalHeight;if($('lock').checked)$('w').value=Math.round($('h').value*ratio);render()};
+ $('unit').onchange=function(){var p=$('unit').value==='pct';$('pxBox').style.display=p?'none':'block';$('pctBox').style.display=p?'block':'none';render()};
+ ['pct','fmt'].forEach(function(id){$(id).oninput=render;$(id).onchange=render});
+ $('q').oninput=function(){$('qv').textContent=this.value;render()};
+
+ $('dl').onclick=function(){
+  if(!img)return;
+  if(mode==='kb'){
+   if(!kbBlob){alert('Press "Apply target size" first.');return}
+   var a2=document.createElement('a');a2.href=URL.createObjectURL(kbBlob);
+   a2.download=name+'-'+Math.round(kbBlob.size/1024)+'kb-freeresizer.'+($('fmt').value==='image/webp'?'webp':'jpg');
+   document.body.appendChild(a2);a2.click();a2.remove();return;
+  }
+  var f=$('fmt').value,ext=f==='image/png'?'png':f==='image/webp'?'webp':'jpg';
+  cv.toBlob(function(b){
+   var a=document.createElement('a');a.href=URL.createObjectURL(b);
+   a.download=name+'-freeresizer.'+ext;document.body.appendChild(a);a.click();a.remove();
+  },f,$('q').value/100);
+ };
+
+ function blobAt(scale,q,f){
+  var c=document.createElement('canvas');
+  c.width=Math.max(1,Math.round(img.naturalWidth*scale));c.height=Math.max(1,Math.round(img.naturalHeight*scale));
+  var x=c.getContext('2d');x.fillStyle='#fff';x.fillRect(0,0,c.width,c.height);
+  x.drawImage(img,0,0,c.width,c.height);
+  return new Promise(function(r){c.toBlob(function(b){r({b:b,w:c.width,h:c.height})},f,q)});
+ }
+ $('kbgo').onclick=async function(){
+  if(!img)return;
+  var target=(parseFloat($('kbv').value)||0)*parseFloat($('kbu').value)*1024;
+  if(target<2048){alert('Please enter a target of at least 2 KB.');return}
+  if($('fmt').value==='image/png')$('fmt').value='image/jpeg';
+  var f=$('fmt').value,btn=this;btn.disabled=true;btn.textContent='Working…';
+  var scale=1,best=null,bq=0;
+  try{
+   while(scale>=0.05&&!best){
+    var lo=0.1,hi=0.95,r=await blobAt(scale,lo,f);
+    if(r.b&&r.b.size<=target){
+     best=r;bq=lo;
+     for(var i=0;i<7;i++){
+      var mid=(lo+hi)/2,t=await blobAt(scale,mid,f);
+      if(t.b.size<=target){best=t;bq=mid;lo=mid}else{hi=mid}
+     }
+    }else{scale*=0.85}
+   }
+  }catch(e){}
+  btn.disabled=false;btn.textContent='Apply target size';
+  if(!best){$('stats').textContent='Could not reach that size. Try a larger target.';return}
+  kbBlob=best.b;
+  var kb=Math.round(best.b.size/1024);
+  $('stats').textContent='Result: '+best.w+' × '+best.h+' px, '+kb+' KB (target '+Math.round(target/1024)+' KB), quality '+Math.round(bq*100)+'%. Press Download to save.';
+  var u=URL.createObjectURL(best.b),pi=new Image();
+  pi.onload=function(){cv.width=pi.naturalWidth;cv.height=pi.naturalHeight;ctx.drawImage(pi,0,0)};pi.src=u;
+ };
+ ['kbv','kbu','fmt'].forEach(function(id){$(id).addEventListener('input',function(){kbBlob=null})});
+
+ // ----- theme -----
+ (function(){
+  var PAL={teal:['#0a7d78','#3cc4bd'],blue:['#1d5fd1','#6ea8ff'],purple:['#7c3aed','#b794ff'],orange:['#c2410c','#ff9a5c'],green:['#15803d','#5fd38a'],rose:['#be185d','#ff7eb3']},
+   d=document.documentElement,mq=window.matchMedia?window.matchMedia('(prefers-color-scheme:dark)'):{matches:false},mode2='auto',acc='teal';
+  function get(k){try{return localStorage.getItem(k)}catch(e){return null}}
+  function put(k,v){try{localStorage.setItem(k,v)}catch(e){}}
+  mode2=get('fr-theme')||'auto';acc=get('fr-accent')||'teal';if(!PAL[acc])acc='teal';
+  var pop=$('thpop'),btn=$('thbtn');
+  Object.keys(PAL).forEach(function(k){var c=document.createElement('button');c.type='button';c.className='dot';c.dataset.a=k;c.title=k.charAt(0).toUpperCase()+k.slice(1);c.setAttribute('aria-label',c.title+' color');c.style.background=PAL[k][0];c.setAttribute('aria-pressed','false');$('thcols').appendChild(c)});
+  function apply(){
+   var dark=mode2==='dark'||(mode2==='auto'&&mq.matches);
+   d.dataset.theme=dark?'dark':'light';d.style.setProperty('--accent',PAL[acc][dark?1:0]);
+   [].forEach.call(pop.querySelectorAll('[data-m]'),function(b){b.setAttribute('aria-pressed',b.dataset.m===mode2)});
+   [].forEach.call(pop.querySelectorAll('[data-a]'),function(b){b.setAttribute('aria-pressed',b.dataset.a===acc)});
+  }
+  pop.addEventListener('click',function(e){var m=e.target.dataset&&e.target.dataset.m,a=e.target.dataset&&e.target.dataset.a;
+   if(m){mode2=m;put('fr-theme',m)}if(a){acc=a;put('fr-accent',a)}if(m||a)apply()});
+  btn.addEventListener('click',function(e){e.stopPropagation();var o=pop.hidden;pop.hidden=!o;btn.setAttribute('aria-expanded',o)});
+  document.addEventListener('click',function(e){if(!pop.hidden&&!$('themebox').contains(e.target)){pop.hidden=true;btn.setAttribute('aria-expanded','false')}});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!pop.hidden){pop.hidden=true;btn.setAttribute('aria-expanded','false');btn.focus()}});
+  if(mq.addEventListener)mq.addEventListener('change',apply);else if(mq.addListener)mq.addListener(apply);
+  apply();
+ })();
+
+ // ----- refresh button next to Download -----
+ (function(){
+  var b=$('dl').parentNode,r=document.createElement('button');
+  r.type='button';r.className='btn alt';r.textContent='↻ Refresh';r.onclick=function(){location.reload()};
+  b.appendChild(r);
+ })();
+})();
+</script>
+
+<script>
+(function(){
+var $=function(id){return document.getElementById(id)};
+var cur=null,files=[],wmImg=null,T={},xres=[];
+var FONTS=['Arial','Georgia','Times New Roman','Courier New','Verdana','Trebuchet MS','Impact','Comic Sans MS'];
+function esc(t){return String(t).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function kb(n){return n>1048576?(n/1048576).toFixed(2)+' MB':Math.max(1,Math.round(n/1024))+' KB'}
+function mk(w,h){var c=document.createElement('canvas');c.width=Math.max(1,Math.round(w));c.height=Math.max(1,Math.round(h));return c}
+function cvBlob(c,t,q){return new Promise(function(r){c.toBlob(r,t,q)})}
+function dl(b,n){var a=document.createElement('a');a.href=URL.createObjectURL(b);a.download=n;document.body.appendChild(a);a.click();a.remove()}
+function ext(t){return t==='image/png'?'png':t==='image/webp'?'webp':'jpg'}
+function copy(t){try{navigator.clipboard.writeText(t)}catch(e){}var m=$('xmsg');if(m)m.textContent='Copied '+t}
+function loadImg(f){return new Promise(function(res,rej){var u=URL.createObjectURL(f),i=new Image();i.onload=function(){res({name:f.name.replace(/\.[^.]+$/,''),img:i,file:f,url:u})};i.onerror=function(){rej(f.name)};i.src=u})}
+function bytes(b){return b.arrayBuffer().then(function(a){return new Uint8Array(a)})}
+function rng(id,l,a,b,v){return '<label for="'+id+'">'+l+': <span id="'+id+'v">'+v+'</span></label><input type="range" id="'+id+'" min="'+a+'" max="'+b+'" value="'+v+'" style="width:100%">'}
+function opt(a){return a.map(function(o){return '<option value="'+o[0]+'">'+o[1]+'</option>'}).join('')}
+function watch(ids,fn){ids.forEach(function(id){var e=$(id);if(!e)return;['input','change'].forEach(function(ev){e.addEventListener(ev,function(){var v=$(id+'v');if(v)v.textContent=e.value;fn()})})})}
+var FMT='<label for="xfmt">Save as</label><select id="xfmt">'+opt([['image/jpeg','JPG'],['image/png','PNG'],['image/webp','WebP']])+'</select>';
+var DLB='<p class="stickybar"><button class="btn" id="xdl" type="button">Download</button></p><p class="info" id="xmsg"></p>';
+
+// ---------- ZIP (store, no compression) ----------
+var CT=(function(){var t=[],c,n,k;for(n=0;n<256;n++){c=n;for(k=0;k<8;k++)c=c&1?0xEDB88320^(c>>>1):c>>>1;t[n]=c>>>0}return t})();
+function crc(b){var c=-1,i;for(i=0;i<b.length;i++)c=CT[(c^b[i])&255]^(c>>>8);return(c^-1)>>>0}
+function zip(items){
+ var parts=[],cen=[],off=0,enc=new TextEncoder(),cs=0;
+ items.forEach(function(it){
+  var nm=enc.encode(it.name),cr=crc(it.data),sz=it.data.length,h=new DataView(new ArrayBuffer(30)),c=new DataView(new ArrayBuffer(46));
+  h.setUint32(0,0x04034b50,true);h.setUint16(4,20,true);h.setUint16(6,0x0800,true);h.setUint16(12,0x21,true);h.setUint32(14,cr,true);h.setUint32(18,sz,true);h.setUint32(22,sz,true);h.setUint16(26,nm.length,true);
+  parts.push(h.buffer,nm,it.data);
+  c.setUint32(0,0x02014b50,true);c.setUint16(4,20,true);c.setUint16(6,20,true);c.setUint16(8,0x0800,true);c.setUint16(14,0x21,true);c.setUint32(16,cr,true);c.setUint32(20,sz,true);c.setUint32(24,sz,true);c.setUint16(28,nm.length,true);c.setUint32(42,off,true);
+  cen.push(c.buffer,nm);off+=30+nm.length+sz;cs+=46+nm.length;
+ });
+ var e=new DataView(new ArrayBuffer(22));e.setUint32(0,0x06054b50,true);e.setUint16(8,items.length,true);e.setUint16(10,items.length,true);e.setUint32(12,cs,true);e.setUint32(16,off,true);
+ return new Blob(parts.concat(cen,[e.buffer]),{type:'application/zip'});
+}
+async function saveMany(list,zname){
+ if(!list.length)return;
+ if(list.length===1){dl(list[0].blob,list[0].name);return}
+ var it=[],i;for(i=0;i<list.length;i++)it.push({name:list[i].name,data:await bytes(list[i].blob)});
+ dl(zip(it),zname);
+}
+
+// ---------- PDF writer ----------
+function makePDF(pgs){
+ var enc=new TextEncoder(),ch=[],len=0,offs=[],N=pgs.length,kids=[],i;
+ function put(x){var b=typeof x==='string'?enc.encode(x):x;ch.push(b);len+=b.length}
+ function obj(n,body){offs[n]=len;put(n+' 0 obj\n'+body+'\nendobj\n')}
+ put('%PDF-1.4\n');
+ for(i=0;i<N;i++)kids.push((3+i*3)+' 0 R');
+ obj(1,'<< /Type /Catalog /Pages 2 0 R >>');
+ obj(2,'<< /Type /Pages /Kids ['+kids.join(' ')+'] /Count '+N+' >>');
+ pgs.forEach(function(p,i){
+  var pn=3+i*3,cn=pn+1,im=pn+2,cs='q '+p.dw.toFixed(2)+' 0 0 '+p.dh.toFixed(2)+' '+p.x.toFixed(2)+' '+p.y.toFixed(2)+' cm /Im0 Do Q';
+  obj(pn,'<< /Type /Page /Parent 2 0 R /MediaBox [0 0 '+p.w.toFixed(2)+' '+p.h.toFixed(2)+'] /Resources << /XObject << /Im0 '+im+' 0 R >> >> /Contents '+cn+' 0 R >>');
+  obj(cn,'<< /Length '+cs.length+' >>\nstream\n'+cs+'\nendstream');
+  offs[im]=len;put(im+' 0 obj\n<< /Type /XObject /Subtype /Image /Width '+p.iw+' /Height '+p.ih+' /ColorSpace /DeviceRGB /BitsPerComponent 8 /Filter /DCTDecode /Length '+p.jpg.length+' >>\nstream\n');put(p.jpg);put('\nendstream\nendobj\n');
+ });
+ var total=3+N*3,xs=len;
+ put('xref\n0 '+total+'\n0000000000 65535 f \n');
+ for(i=1;i<total;i++)put(('0000000000'+offs[i]).slice(-10)+' 00000 n \n');
+ put('trailer\n<< /Size '+total+' /Root 1 0 R >>\nstartxref\n'+xs+'\n%%EOF');
+ return new Blob(ch,{type:'application/pdf'});
+}
+async function toPdf(cs,o){
+ var pgs=[],i,c,w,h,pw,ph,m=o.margin*2.835,jc,jb,k;
+ for(i=0;i<cs.length;i++){
+  c=cs[i];jc=mk(c.width,c.height);var x=jc.getContext('2d');x.fillStyle='#fff';x.fillRect(0,0,jc.width,jc.height);x.drawImage(c,0,0);
+  jb=await bytes(await cvBlob(jc,'image/jpeg',o.q));
+  w=c.width;h=c.height;
+  if(o.size==='fit'){pw=w*.75+2*m;ph=h*.75+2*m}
+  else{pw=o.size==='letter'?612:595.28;ph=o.size==='letter'?792:841.89;
+   var land=o.orient==='l'||(o.orient==='auto'&&w>h);if(land){var t=pw;pw=ph;ph=t}}
+  k=Math.min((pw-2*m)/w,(ph-2*m)/h);
+  pgs.push({w:pw,h:ph,jpg:jb,iw:w,ih:h,dw:w*k,dh:h*k,x:(pw-w*k)/2,y:(ph-h*k)/2});
+ }
+ return makePDF(pgs);
+}
+
+// ---------- overlay (text / watermark) ----------
+function ovSize(ctx,W,o){
+ var fs=W*o.size/100,lines=(o.text||'').split('\n'),tw=0,th;
+ if(o.type==='img'){tw=fs;th=tw*o.wm.height/o.wm.width}
+ else{ctx.font=(o.italic?'italic ':'')+(o.bold?'bold ':'')+fs+'px "'+o.font+'",sans-serif';lines.forEach(function(l){tw=Math.max(tw,ctx.measureText(l).width)});th=fs*1.2*lines.length}
+ return{tw:tw,th:th,fs:fs,lines:lines};
+}
+function drawOv(ctx,W,H,o){
+ if(o.type==='img'&&!o.wm)return;
+ if(o.type==='text'&&!(o.text||'').trim())return;
+ var z=ovSize(ctx,W,o),tw=z.tw,th=z.th,fs=z.fs,lines=z.lines;
+ ctx.save();ctx.globalAlpha=o.alpha;
+ function one(cx,cy){
+  ctx.save();ctx.translate(cx,cy);ctx.rotate(o.rot*Math.PI/180);
+  if(o.type==='img')ctx.drawImage(o.wm,-tw/2,-th/2,tw,th);
+  else{
+   ctx.textAlign='center';ctx.textBaseline='middle';ctx.lineJoin='round';
+   if(o.shadow){ctx.shadowColor='rgba(0,0,0,.55)';ctx.shadowBlur=fs/8;ctx.shadowOffsetX=fs/20;ctx.shadowOffsetY=fs/20}
+   lines.forEach(function(l,k){var y=(k-(lines.length-1)/2)*fs*1.2;
+    if(o.ow>0){ctx.lineWidth=fs*o.ow/40;ctx.strokeStyle=o.oc;ctx.strokeText(l,0,y)}
+    ctx.fillStyle=o.color;ctx.fillText(l,0,y)});
+  }
+  ctx.restore();
+ }
+ if(o.tile){
+  var gx=Math.max(20,tw+W*o.gap/100),gy=Math.max(20,th+W*o.gap/100),x,y,r=0;
+  for(y=-th;y<H+th*2;y+=gy,r++)for(x=-tw+(r%2?gx/2:0);x<W+tw*2;x+=gx)one(x,y);
+ }else one(o.x/100*W,o.y/100*H);
+ ctx.restore();
+}
+function ovOpts(){
+ var wm=cur==='wm';
+ return{type:wm&&$('xtype').value==='img'?'img':'text',wm:wmImg,text:$('xt').value,font:$('xf').value,size:+$('xs').value,color:$('xc').value,oc:$('xo').value,ow:+$('xow').value,bold:$('xb').checked,italic:$('xi').checked,shadow:$('xsh').checked,rot:+$('xr').value,alpha:$('xa').value/100,x:+$('xx').value,y:+$('xy').value,tile:wm&&$('xpos').value==='tile',gap:wm?+$('xgap').value:0};
+}
+function ovHtml(wm){
+ return (wm?'<label for="xtype">Watermark type</label><select id="xtype">'+opt([['text','Text'],['img','Image / logo']])+'</select><div id="xwmbox" style="display:none"><label for="xwf">Watermark image</label><input type="file" id="xwf" accept="image/*"></div>':'')
+ +'<div id="xtxt"><label for="xt">Text</label><textarea id="xt" rows="2" style="width:100%;padding:8px;border:1px solid var(--line);border-radius:9px;background:var(--paper);color:var(--ink)">'+(wm?'© freeresizer':'Your text here')+'</textarea>'
+ +'<label for="xf">Font</label><select id="xf">'+FONTS.map(function(f){return '<option>'+f+'</option>'}).join('')+'</select>'
+ +'<div class="row"><div><label for="xc">Color</label><input type="color" id="xc" value="#ffffff"></div><div><label for="xo">Outline</label><input type="color" id="xo" value="#000000"></div></div>'
+ +rng('xow','Outline width',0,10,wm?0:2)
+ +'<label><input type="checkbox" id="xb"'+(wm?'':' checked')+'> Bold</label><label><input type="checkbox" id="xi"> Italic</label><label><input type="checkbox" id="xsh"> Shadow</label></div>'
+ +rng('xs','Size (% of image width)',2,80,wm?14:10)+rng('xr','Rotation (degrees)',-180,180,0)+rng('xa','Opacity (%)',5,100,wm?50:100)
+ +(wm?'<label for="xpos">Position</label><select id="xpos">'+opt([['c','Center'],['tl','Top left'],['tr','Top right'],['bl','Bottom left'],['br','Bottom right'],['tile','Tile across image'],['custom','Custom (use X and Y)']])+'</select>'+rng('xgap','Tile spacing (%)',0,50,10):'')
+ +rng('xx','X position (%)',0,100,50)+rng('xy','Y position (%)',0,100,50);
+}
+function ovSetup(draw){
+ var ids=['xt','xf','xc','xo','xow','xb','xi','xsh','xs','xr','xa','xx','xy'];
+ if(cur==='wm'){
+  ids.push('xtype','xpos','xgap');
+  $('xtype').addEventListener('change',function(){var im=this.value==='img';$('xwmbox').style.display=im?'block':'none';$('xtxt').style.display=im?'none':'block'});
+  $('xwf').onchange=function(){if(this.files[0])loadImg(this.files[0]).then(function(r){wmImg=r.img;draw()})};
+  $('xpos').addEventListener('change',function(){
+   var v=this.value;if(v==='tile'||v==='custom'){draw();return}
+   var c=mk(10,10).getContext('2d'),W=files[0].img.naturalWidth,H=files[0].img.naturalHeight,z=ovSize(c,W,ovOpts()),m=W*.03,
+    L=(z.tw/2+m)/W*100,R=100-L,Tp=(z.th/2+m)/H*100,B=100-Tp;
+   var pos={c:[50,50],tl:[L,Tp],tr:[R,Tp],bl:[L,B],br:[R,B]}[v];
+   $('xx').value=Math.max(0,Math.min(100,pos[0]));$('xy').value=Math.max(0,Math.min(100,pos[1]));
+   $('xxv').textContent=Math.round($('xx').value);$('xyv').textContent=Math.round($('xy').value);draw();
+  });
+  ['xx','xy'].forEach(function(i){$(i).addEventListener('input',function(){if($('xpos').value!=='tile')$('xpos').value='custom'})});
+ }
+ watch(ids,draw);
+}
+
+// ---------- tools ----------
+
+T.wm={title:'Watermark',desc:'Add a text or logo watermark to one or many images. Place it in a corner, in the center, or tile it across the whole image.',canvas:1,multi:1,
+ ctl:function(){return ovHtml(1)+FMT+DLB},
+ setup:function(){
+  var cv=$('xcv');
+  function draw(){var i=files[0].img;cv.width=i.naturalWidth;cv.height=i.naturalHeight;var c=cv.getContext('2d');c.drawImage(i,0,0);drawOv(c,cv.width,cv.height,ovOpts())}
+  T.wm.upd=draw;ovSetup(draw);
+  $('xdl').onclick=async function(){
+   var t=$('xfmt').value,o=ovOpts(),out=[],i,c,x;$('xmsg').textContent='Working…';
+   for(i=0;i<files.length;i++){var im=files[i].img;c=mk(im.naturalWidth,im.naturalHeight);x=c.getContext('2d');x.drawImage(im,0,0);drawOv(x,c.width,c.height,o);out.push({name:files[i].name+'-watermark.'+ext(t),blob:await cvBlob(c,t,.92)})}
+   await saveMany(out,'watermarked-images.zip');$('xmsg').textContent='Done.';
+  };
+ }};
+
+// ---------- color picker ----------
+function hex(r,g,b){return '#'+[r,g,b].map(function(v){return ('0'+v.toString(16)).slice(-2)}).join('').toUpperCase()}
+function hsl(r,g,b){r/=255;g/=255;b/=255;var M=Math.max(r,g,b),m=Math.min(r,g,b),h=0,s=0,l=(M+m)/2,d=M-m;
+ if(d){s=d/(1-Math.abs(2*l-1));h=M===r?((g-b)/d)%6:M===g?(b-r)/d+2:(r-g)/d+4;h=Math.round(h*60);if(h<0)h+=360}
+ return 'hsl('+h+', '+Math.round(s*100)+'%, '+Math.round(l*100)+'%)'}
+T.color={title:'Image Color Picker',desc:'Click anywhere on the image to pick a color, or use the palette of main colors found in the picture. Click a value to copy it.',canvas:1,
+ ctl:function(){return '<div id="xcur" class="sw" style="width:100%;height:60px;margin:0 0 8px;background:#fff;color:#000;text-shadow:none">Click the image</div><div id="xvals"></div><label>Main colors in this image</label><div id="xpal"></div><p class="info" id="xmsg"></p>'},
+ setup:function(){
+  var cv=$('xcv');cv.style.cursor='crosshair';
+  function show(r,g,b){var h=hex(r,g,b),vs=[h,'rgb('+r+', '+g+', '+b+')',hsl(r,g,b)];
+   $('xcur').style.background=h;$('xcur').style.color=(r*.299+g*.587+b*.114)>150?'#000':'#fff';$('xcur').textContent=h;
+   $('xvals').innerHTML=vs.map(function(v){return '<button class="btn alt" style="margin:3px 3px 3px 0;padding:6px 10px" type="button" data-c="'+esc(v)+'">'+esc(v)+'</button>'}).join('')}
+  function px(e){var r=cv.getBoundingClientRect(),x=Math.floor((e.clientX-r.left)*cv.width/r.width),y=Math.floor((e.clientY-r.top)*cv.height/r.height);
+   x=Math.max(0,Math.min(cv.width-1,x));y=Math.max(0,Math.min(cv.height-1,y));return cv.getContext('2d').getImageData(x,y,1,1).data}
+  cv.onclick=function(e){var d=px(e);show(d[0],d[1],d[2])};
+  cv.onpointermove=function(e){if(e.buttons===0&&e.pointerType==='mouse'){var d=px(e);$('xcur').style.background=hex(d[0],d[1],d[2]);$('xcur').textContent=hex(d[0],d[1],d[2]);$('xcur').style.color=(d[0]*.299+d[1]*.587+d[2]*.114)>150?'#000':'#fff'}};
+  $('xctl').onclick=function(e){var c=e.target.dataset&&e.target.dataset.c;if(c)copy(c)};
+  T.color.upd=function(){
+   var i=files[0].img;cv.width=i.naturalWidth;cv.height=i.naturalHeight;cv.getContext('2d').drawImage(i,0,0);
+   var k=Math.min(1,100/Math.max(cv.width,cv.height)),s=mk(cv.width*k,cv.height*k),sx=s.getContext('2d');sx.drawImage(i,0,0,s.width,s.height);
+   var d=sx.getImageData(0,0,s.width,s.height).data,B={},j,key,b;
+   for(j=0;j<d.length;j+=4){if(d[j+3]<128)continue;key=(d[j]>>4)+','+(d[j+1]>>4)+','+(d[j+2]>>4);b=B[key]||(B[key]={n:0,r:0,g:0,b:0});b.n++;b.r+=d[j];b.g+=d[j+1];b.b+=d[j+2]}
+   var arr=Object.keys(B).map(function(q){var z=B[q];return[Math.round(z.r/z.n),Math.round(z.g/z.n),Math.round(z.b/z.n),z.n]}).sort(function(p,q){return q[3]-p[3]}),pick=[];
+   arr.forEach(function(c){if(pick.length<8&&pick.every(function(p){return Math.hypot(p[0]-c[0],p[1]-c[1],p[2]-c[2])>45}))pick.push(c)});
+   $('xpal').innerHTML=pick.map(function(c){var h=hex(c[0],c[1],c[2]);return '<button class="sw" type="button" data-c="'+h+'" style="background:'+h+'">'+h+'</button>'}).join('');
+   if(pick[0])show(pick[0][0],pick[0][1],pick[0][2]);
+  };
+ }};
+
+// ---------- scanner ----------
+var scanRot=0,scanSrc=null;
+function scanBuild(){var i=files[0].img,k=Math.min(1,2500/Math.max(i.naturalWidth,i.naturalHeight)),w=i.naturalWidth*k,h=i.naturalHeight*k,sw=scanRot%180!==0,c=mk(sw?h:w,sw?w:h),x=c.getContext('2d');
+ x.translate(c.width/2,c.height/2);x.rotate(scanRot*Math.PI/180);x.drawImage(i,-w/2,-h/2,w,h);scanSrc=c}
+function scanDraw(){
+ if(!scanSrc)scanBuild();
+ var cv=$('xcv'),W=scanSrc.width,H=scanSrc.height;cv.width=W;cv.height=H;var x=cv.getContext('2d');x.drawImage(scanSrc,0,0);
+ var id=x.getImageData(0,0,W,H),d=id.data,mode=$('xmode').value,br=+$('xbr').value*2.55,ct=+$('xct').value,f=(259*(ct+255))/(255*(259-ct)),i,ch,n=W*H;
+ if(mode==='enh'){
+  for(ch=0;ch<3;ch++){var hist=new Uint32Array(256),lo=0,hi=255,acc=0;
+   for(i=0;i<n;i++)hist[d[i*4+ch]]++;
+   while(lo<254&&(acc+=hist[lo])<n*.01)lo++;acc=0;while(hi>lo+1&&(acc+=hist[hi])<n*.01)hi--;
+   for(i=0;i<n;i++)d[i*4+ch]=(d[i*4+ch]-lo)*255/Math.max(1,hi-lo)}
+ }
+ var g=new Float32Array(n);
+ for(i=0;i<n;i++){
+  var r=d[i*4],gg=d[i*4+1],b=d[i*4+2];
+  if(mode==='gray'||mode==='bw'){r=gg=b=.299*r+.587*gg+.114*b}
+  r=f*(r+br-128)+128;gg=f*(gg+br-128)+128;b=f*(b+br-128)+128;
+  d[i*4]=r;d[i*4+1]=gg;d[i*4+2]=b;g[i]=mode==='bw'?Math.max(0,Math.min(255,r)):0;
+ }
+ if(mode==='bw'){
+  var Wp=W+1,I=new Float64Array(Wp*(H+1)),y,xx,rad=Math.max(7,Math.round(Math.min(W,H)/16)),t=1-(+$('xsens').value)/100;
+  for(y=0;y<H;y++){var rs=0;for(xx=0;xx<W;xx++){rs+=g[y*W+xx];I[(y+1)*Wp+xx+1]=I[y*Wp+xx+1]+rs}}
+  for(y=0;y<H;y++)for(xx=0;xx<W;xx++){
+   var x0=Math.max(0,xx-rad),x1=Math.min(W,xx+rad+1),y0=Math.max(0,y-rad),y1=Math.min(H,y+rad+1),
+    mean=(I[y1*Wp+x1]-I[y0*Wp+x1]-I[y1*Wp+x0]+I[y0*Wp+x0])/((x1-x0)*(y1-y0)),v=g[y*W+xx]<mean*t?0:255,p=(y*W+xx)*4;
+   d[p]=d[p+1]=d[p+2]=v;
+  }
+ }
+ x.putImageData(id,0,0);
+}
+T.scan={title:'Image Scanner',desc:'Turn a photo of a document into a clean scan. Straighten with rotate, boost the contrast, or switch to crisp black and white. Save as an image or PDF.',canvas:1,
+ ctl:function(){return '<label for="xmode">Scan mode</label><select id="xmode">'+opt([['enh','Color, auto-enhanced'],['bw','Black &amp; white document'],['gray','Grayscale'],['color','Original color']])+'</select>'+rng('xbr','Brightness',-100,100,0)+rng('xct','Contrast',-100,100,20)+rng('xsens','Black &amp; white sensitivity',2,40,12)+'<div class="row" style="margin-top:10px"><button class="btn alt" id="xrl" type="button">Rotate left</button><button class="btn alt" id="xrr" type="button">Rotate right</button></div>'+FMT+'<div class="row stickybar"><button class="btn" id="xdl" type="button">Download image</button><button class="btn alt" id="xpdf" type="button">Save as PDF</button></div><p class="info" id="xmsg"></p>'},
+ files:function(){scanRot=0;scanSrc=null},
+ setup:function(){
+  T.scan.upd=scanDraw;watch(['xmode','xbr','xct','xsens'],scanDraw);
+  $('xrl').onclick=function(){scanRot=(scanRot+270)%360;scanBuild();scanDraw()};
+  $('xrr').onclick=function(){scanRot=(scanRot+90)%360;scanBuild();scanDraw()};
+  $('xdl').onclick=async function(){var t=$('xfmt').value;dl(await cvBlob($('xcv'),t,.92),files[0].name+'-scan.'+ext(t))};
+  $('xpdf').onclick=async function(){dl(await toPdf([$('xcv')],{size:'a4',orient:'auto',margin:8,q:.92}),files[0].name+'-scan.pdf')};
+ }};
+
+// ---------- photo to pdf ----------
+T.p2pdf={title:'Photo to PDF',desc:'Put one or many photos into a single PDF. Reorder with the arrows, then choose page size and margins.',multi:1,
+ ctl:function(){return '<div id="xlist"></div><label for="xps">Page size</label><select id="xps">'+opt([['a4','A4'],['letter','US Letter'],['fit','Same as image']])+'</select><label for="xor">Orientation</label><select id="xor">'+opt([['auto','Automatic'],['p','Portrait'],['l','Landscape']])+'</select>'+rng('xmg','Margin (mm)',0,30,10)+rng('xq','JPEG quality (%)',50,100,90)+'<p class="stickybar"><button class="btn" id="xdl" type="button">Create PDF</button></p><p class="info" id="xmsg"></p>'},
+ files:function(){olist($('xlist'),function(){$('xmsg').textContent=files.length+' page(s)'})},
+ setup:function(){
+  T.p2pdf.upd=function(){$('xmsg').textContent=files.length+' page(s)'};
+  $('xdl').onclick=async function(){
+   $('xmsg').textContent='Creating PDF…';var cs=files.map(function(f){var k=Math.min(1,3000/Math.max(f.img.naturalWidth,f.img.naturalHeight)),c=mk(f.img.naturalWidth*k,f.img.naturalHeight*k);c.getContext('2d').drawImage(f.img,0,0,c.width,c.height);return c});
+   var b=await toPdf(cs,{size:$('xps').value,orient:$('xor').value,margin:+$('xmg').value,q:$('xq').value/100});
+   dl(b,'photos.pdf');$('xmsg').textContent='Done: '+files.length+' page(s), '+kb(b.size);
+  };
+ }};
+
+// ---------- pdf to jpg ----------
+var pdfP=null;
+function pdfLib(){
+ return pdfP||(pdfP=new Promise(function(res,rej){
+  var s=document.createElement('script');s.src='https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js';
+  s.onload=function(){fetch('https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js').then(function(r){return r.text()}).then(function(t){window.pdfjsLib.GlobalWorkerOptions.workerSrc=URL.createObjectURL(new Blob([t],{type:'text/javascript'}));res(window.pdfjsLib)}).catch(function(e){pdfP=null;rej(e)})};
+  s.onerror=function(e){pdfP=null;rej(e)};document.head.appendChild(s);
+ }));
+}
+function pageList(str,n){
+ if(!str.trim()){var a=[],i;for(i=1;i<=n;i++)a.push(i);return a}
+ var out=[];str.split(',').forEach(function(p){var m=p.trim().match(/^(\d+)(?:\s*-\s*(\d+))?$/);if(!m)return;var a=+m[1],b=+(m[2]||m[1]);for(;a<=b;a++)if(a>=1&&a<=n&&out.indexOf(a)<0)out.push(a)});
+ return out;
+}
+T.pdf2jpg={title:'PDF to JPG',desc:'Turn every page of a PDF (or the pages you choose) into JPG or PNG images. The PDF is processed on your device.',raw:1,accept:'application/pdf',
+ ctl:function(){return '<label for="xsc">Quality / size</label><select id="xsc">'+opt([['1','Standard (1x)'],['1.5','Good (1.5x)'],['2','High (2x)'],['3','Very high (3x)']])+'</select><label for="xfmt">Save as</label><select id="xfmt">'+opt([['image/jpeg','JPG'],['image/png','PNG']])+'</select>'+rng('xq','JPG quality (%)',50,100,90)+'<label for="xpg">Pages (blank for all, e.g. 1-3,5)</label><input type="text" id="xpg" placeholder="All pages"><p class="stickybar"><button class="btn" id="xgo" type="button">Convert</button> <button class="btn alt" id="xall" type="button" style="display:none">Download all (ZIP)</button></p><p class="info" id="xmsg"></p>'},
+ setup:function(){
+  T.pdf2jpg.upd=function(){$('xinfo').innerHTML='<p>'+esc(files[0].name)+' is ready ('+kb(files[0].size)+'). Press Convert.</p>'};
+  $('xgo').onclick=async function(){
+   var btn=this;btn.disabled=true;xres=[];$('xall').style.display='none';$('xinfo').innerHTML='';
+   try{
+    $('xmsg').textContent='Loading PDF reader…';var lib=await pdfLib();
+    var pdf=await lib.getDocument({data:new Uint8Array(await files[0].arrayBuffer())}).promise,pages=pageList($('xpg').value,pdf.numPages),t=$('xfmt').value,i;
+    if(!pages.length){$('xmsg').textContent='No valid pages in that range. The PDF has '+pdf.numPages+' page(s).';btn.disabled=false;return}
+    for(i=0;i<pages.length;i++){
+     $('xmsg').textContent='Converting page '+pages[i]+' ('+(i+1)+' of '+pages.length+')…';
+     var pg=await pdf.getPage(pages[i]),vp=pg.getViewport({scale:1.333*(+$('xsc').value)}),c=mk(vp.width,vp.height),x=c.getContext('2d');
+     x.fillStyle='#fff';x.fillRect(0,0,c.width,c.height);
+     await pg.render({canvasContext:x,viewport:vp}).promise;
+     var b=await cvBlob(c,t,$('xq').value/100),nm=files[0].name.replace(/\.pdf$/i,'')+'-page-'+pages[i]+'.'+ext(t);
+     xres.push({name:nm,blob:b});
+     var d=document.createElement('div');d.className='grp';d.innerHTML='<img src="'+URL.createObjectURL(b)+'" alt="Page '+pages[i]+'" style="max-width:160px"><br>Page '+pages[i]+' · '+kb(b.size)+'<br>';
+     var a=document.createElement('button');a.className='btn alt sm';a.style.cssText='margin-top:6px';a.textContent='Download';a.onclick=(function(r){return function(){dl(r.blob,r.name)}})(xres[xres.length-1]);d.appendChild(a);
+     $('xinfo').appendChild(d);
+    }
+    $('xmsg').textContent='Done: '+xres.length+' image(s).';if(xres.length>1)$('xall').style.display='inline-block';
+   }catch(e){
+    $('xmsg').textContent=(e&&e.name==='PasswordException')?'This PDF is password protected.':'Could not read this PDF. If it is valid, check your internet connection (the PDF reader loads from a CDN) and try again.';
+   }
+   btn.disabled=false;
+  };
+  $('xall').onclick=function(){saveMany(xres,files[0].name.replace(/\.pdf$/i,'')+'-pages.zip')};
+ }};
+
+// ---------- tool info: steps, size limits, FAQ ----------
+var INFO={};
+var GUIDE={resize:'resize-image-without-losing-quality.html',kb:'resize-image-without-losing-quality.html',convert:'convert-images-jpg-png-webp.html',wm:'watermark-images.html',color:'pick-colors-from-an-image.html',scan:'scan-documents-with-phone.html',p2pdf:'photo-to-pdf.html',pdf2jpg:'pdf-to-jpg.html'};
+function I(k,steps,sub,rows,faq){INFO[k]={steps:steps,sub:sub,rows:rows,faq:faq}}
+I('resize',["Choose Resize, then add your image.","Type a new width or height in pixels, or switch to percentage. Keep the lock on to avoid stretching.","Pick JPG, PNG or WebP and press Download."],
+ "Pixel sizes that popular sites ask for. Always check the current rules on the site you are uploading to.",
+ [["Instagram square post","1080 × 1080 px (1:1)"],["Instagram portrait post","1080 × 1350 px (4:5)"],["Instagram Story or Reel","1080 × 1920 px (9:16)"],["Instagram profile photo","320 × 320 px"],["LinkedIn profile photo","400 × 400 px minimum"],["LinkedIn profile banner","1584 × 396 px (4:1)"],["YouTube thumbnail","1280 × 720 px (16:9)"]],
+ [["How do I resize an image without losing quality?","Making an image smaller keeps it sharp. Keep the aspect ratio locked, and save as PNG or high-quality JPG. Enlarging a small image beyond its original size cannot add real detail."],["How do I resize a photo to exact pixels?","Choose Resize by Pixels, untick Keep aspect ratio if you need an exact width and height, type both values and download."],["How do I resize an image for Instagram?","Use 1080 px wide: 1080 × 1350 for portrait posts, 1080 × 1080 for square, or 1080 × 1920 for Stories."],["Does resizing change the file size?","Yes. Fewer pixels usually means a smaller file. If you need a specific size in KB, use the Resize to KB tool instead."],["Is it safe to resize private photos here?","Yes. The image is resized inside your browser and is not uploaded to our servers."]]);
+I('kb',["Choose Resize to KB and add your image.","Type the file size you need, for example 50 KB or 1 MB, and press Apply target size.","Check the result shown under the preview, then press Download."],
+ "File-size caps you may run into. Forms and portals change their rules, so read the instructions on the page you are filling in.",
+ [["Gmail attachments","25 MB total per email"],["LinkedIn photos","Up to 8 MB"],["YouTube thumbnail","2 MB has been the usual cap; YouTube has been raising it, so stay under 2 MB to be safe"],["Job, exam and government forms","Often 20–50 KB for a photo and 10–20 KB for a signature, but each form differs"],["US passport online photo","JPEG, roughly 240 KB or less, 600–1200 px square"]],
+ [["How do I reduce a photo to 50 KB?","Type 50 in the target box with KB selected and press Apply. The tool lowers the quality first and shrinks the dimensions only if it has to."],["How do I reduce an image to 20 KB or 100 KB?","Enter 20 or 100 as the target. Very small targets on large photos will make the image smaller and softer, so crop or choose a smaller photo first."],["Why is my file still too big after resizing?","PNG files do not shrink with quality settings. This tool switches PNG to JPG automatically so the size target can be met."],["Does the tool make the image blurry?","Slightly, at very low targets. It always picks the highest quality that still fits under your limit."],["Can I increase a file to a minimum size, such as 100 KB?","Some forms need a minimum size. Choose a larger target, or start from a higher-resolution original photo."]]);
+I('convert',["Choose Convert and add your image.","Select JPG, PNG or WebP as the output format.","Press Download to save the converted file."],
+ "Formats accepted by common uploads.",
+ [["LinkedIn profile photo","JPG or PNG (GIF not accepted)"],["Instagram posts","JPG or PNG"],["YouTube thumbnail","JPG, PNG, GIF or BMP"],["Most government and job portals","JPG or JPEG only"],["Modern websites","WebP gives smaller files and works in current browsers"]],
+ [["How do I convert PNG to JPG?","Choose Convert, upload the PNG, select JPG and download. Transparent areas turn white."],["How do I convert JPG to PNG?","Select PNG as the output. The file may get larger, because PNG is lossless."],["Is WebP better than JPG?","WebP is usually 25–35% smaller at similar quality, but some older apps and forms do not accept it. Use JPG when in doubt."],["Why does my PNG lose its transparent background?","JPG has no transparency. Keep PNG or WebP to preserve it."],["Is converting free and private?","Yes. Conversion happens in your browser and nothing is uploaded."]]);
+I('wm',["Choose Watermark and add one or more images.","Pick text or a logo, set size and opacity, then choose a corner, center or tile.","Download. Several images arrive together as a ZIP file."],
+ "Keep watermarked files within the limits of where you will post them.",
+ [["Instagram feed","Width of 1080 px is enough"],["LinkedIn","Up to 8 MB per image"],["Gmail attachments","25 MB total per email"],["YouTube thumbnail","1280 × 720 px, keep the file small"],["Online portfolios","Often 1600–2400 px on the long side"]],
+ [["How do I add a watermark to a photo?","Upload the image, type your text or choose your logo, set position and opacity, and download."],["What opacity should a watermark have?","Between 30% and 50% is a common balance: visible, but not distracting."],["Can I watermark many photos at once?","Yes. Select several files and Download; they are saved in a ZIP file."],["Does a watermark stop people copying my photos?","It discourages copying but can be cropped out. A tiled watermark across the image is harder to remove."],["Can I use my logo as a watermark?","Yes. Choose Image / logo and upload a PNG with a transparent background for the best look."]]);
+I('color',["Choose Color Picker and add your image.","Click any point on the image, or choose one of the main colors in the palette.","Click a HEX, RGB or HSL value to copy it."],
+ "Color and size notes for web and profile images.",
+ [["Color profile for web","sRGB is accepted everywhere"],["LinkedIn profile photo","400 × 400 px minimum, sRGB recommended"],["Instagram profile photo","320 × 320 px"],["Palette scan","Done on a small copy of the image for speed"],["HEX codes","Used in CSS and design tools, for example #1D78C7"]],
+ [["How do I find the color code of a color in an image?","Click it. The HEX, RGB and HSL values appear and can be copied."],["What is the difference between HEX and RGB?","They describe the same color. HEX is a six-character code like #FF0000; RGB lists red, green and blue values from 0 to 255."],["How do I get a color palette from a photo?","Open the photo and look at the main colors list. Click any swatch to copy its code."],["Why does the color look different on another screen?","Screens and color profiles differ. Use sRGB images for the most consistent results."],["Is the color picker accurate?","It reads the exact pixel you click from your image."]]);
+I('scan',["Choose Image Scanner and add a photo of your document.","Pick a scan mode, adjust brightness and contrast, and rotate if needed.","Download as an image or press Save as PDF."],
+ "Scan sizes and typical upload caps for documents.",
+ [["A4 at 150 dpi","1240 × 1754 px"],["A4 at 200 dpi","1654 × 2339 px"],["A4 at 300 dpi","2480 × 3508 px"],["Gmail attachments","25 MB total per email"],["Many online portals","Often 100 KB–2 MB per document, so check the instructions"]],
+ [["How do I scan a document with my phone camera?","Photograph the page in good light, upload it here, choose Black & white document and save as image or PDF."],["How do I make a scan look clean and white?","Use Black & white document mode and raise the sensitivity until the background turns white and text stays dark."],["Can I save a scan as a PDF?","Yes. Press Save as PDF for an A4 page."],["Which dpi is best for scanning documents?","150–200 dpi is enough for reading and uploads; 300 dpi suits printing."],["Does this tool fix perspective?","No. It improves contrast and color and lets you rotate. Take the photo straight above the page for best results."]]);
+I('p2pdf',["Choose Photo to PDF and add your photos.","Reorder the pages and choose page size, orientation and margin.","Press Create PDF to download."],
+ "Page sizes and document limits.",
+ [["A4 page","595 × 842 points (210 × 297 mm)"],["US Letter page","612 × 792 points (8.5 × 11 in)"],["Gmail attachments","25 MB total per email"],["Many job and government portals","Often 1–5 MB per PDF, so lower the JPEG quality if needed"],["Photos in the PDF","Each photo becomes one page"]],
+ [["How do I convert a JPG to PDF?","Add the JPG, choose a page size and press Create PDF."],["How do I combine several photos into one PDF?","Add them all, put them in order with the arrows and create the PDF."],["How do I make the PDF file smaller?","Lower JPEG quality. 70–85% still looks good and can cut the size a lot."],["Which page size should I choose?","A4 for most countries and US Letter for the United States and Canada. Same as image keeps each photo whole."],["Are my photos uploaded?","No. The PDF is created on your device."]]);
+I('pdf2jpg',["Choose PDF to JPG and add your PDF.","Pick quality, JPG or PNG, and optionally a page range such as 1-3,5.","Press Convert, then download pages one by one or all as a ZIP."],
+ "How big the images will be for an A4 page.",
+ [["Standard (1x)","About 794 × 1123 px"],["High (2x)","About 1588 × 2246 px"],["Very high (3x)","About 2381 × 3369 px"],["LinkedIn images","Up to 8 MB"],["Gmail attachments","25 MB total per email"]],
+ [["How do I convert PDF pages to JPG?","Add the PDF, press Convert and download the images."],["How do I convert only some pages?","Type a range such as 2-4,7 in the Pages box."],["Which quality should I choose?","Use 1x or 1.5x for screens and 2x or 3x for printing or zooming in."],["Why can’t my PDF be opened?","It may be password protected or damaged. Remove the password and try again."],["Does it need an internet connection?","Yes, to load the PDF reader library the first time. The file itself stays on your device."]]);
+function renderInfo(k,title){
+ var d=INFO[k],el=$('toolinfo');if(!d||!el)return;
+ el.innerHTML='<h2>How to use '+esc(title)+'</h2><ol class="steps">'+d.steps.map(function(x){return '<li>'+esc(x)+'</li>'}).join('')+'</ol>'
+  +'<h2>Common photo upload size limits</h2><p class="info">'+esc(d.sub)+'</p><div style="overflow-x:auto"><table class="tbl">'+d.rows.map(function(r){return '<tr><th>'+esc(r[0])+'</th><td>'+esc(r[1])+'</td></tr>'}).join('')+'</table></div>'
+  +'<h2>Frequently asked questions</h2><div class="faq">'+d.faq.map(function(q){return '<h3>'+esc(q[0])+'</h3><p>'+esc(q[1])+'</p>'}).join('')+'</div>'
+  +(GUIDE[k]?'<p class="note"><strong>Go deeper:</strong> <a href="guides/'+GUIDE[k]+'">read the full guide</a> for the numbers, limits and edge cases behind this tool.</p>':'');
+}
+document.querySelectorAll('.tool').forEach(function(c){c.addEventListener('click',function(){renderInfo(c.dataset.mode||c.dataset.x,c.querySelector('strong').textContent)})});
+renderInfo('resize','Resize');
+
+// ---------- ordering list ----------
+function olist(el,cb){
+ el.innerHTML='';
+ files.forEach(function(f,i){
+  var r=document.createElement('div');r.className='ol';
+  r.innerHTML='<img src="'+f.url+'" alt=""><span>'+esc(f.name)+'</span><button type="button" data-a="u" aria-label="Move up">↑</button><button type="button" data-a="d" aria-label="Move down">↓</button><button type="button" data-a="x" aria-label="Remove">✕</button>';
+  r.onclick=function(e){var a=e.target.dataset&&e.target.dataset.a;if(!a)return;
+   if(a==='u'&&i>0)files.splice(i-1,0,files.splice(i,1)[0]);
+   else if(a==='d'&&i<files.length-1)files.splice(i+1,0,files.splice(i,1)[0]);
+   else if(a==='x'&&files.length>1)files.splice(i,1);
+   olist(el,cb);cb();};
+  el.appendChild(r);
+ });
+}
+
+// ---------- framework ----------
+function openTool(key){
+ cur=key;var t=T[key];files=[];wmImg=null;xres=[];
+ $('xtitle').textContent=t.title.replace('&amp;','&');$('xdesc').textContent=t.desc;
+ var f=$('xfile');f.multiple=!!t.multi;f.accept=t.accept||'image/*';
+ $('xpick').textContent=t.multi?'Choose files':'Choose file';
+ var cardIcon=document.querySelector('.tool[data-x="'+key+'"] .ic');
+ $('xicon').textContent=cardIcon?cardIcon.textContent:(t.raw?'📕':'🖼️');
+ $('xnames').textContent='Or drag files here. Everything stays on your device.';
+ $('xctl').innerHTML=t.ctl();$('xinfo').innerHTML='';
+ $('xpv').style.display=t.canvas?'flex':'none';
+ var cv=$('xcv');cv.onclick=cv.onpointerdown=cv.onpointermove=cv.onpointerup=cv.onpointercancel=null;cv.style.cursor='';cv.style.touchAction='';
+ $('xgrid').style.display='none';$('xdrop').classList.remove('slim');$('xwrap').style.display='block';
+ $('drop').style.display='none';$('work').style.display='none';
+ t.setup();
+ var tb=document.createElement('div');tb.className='xbar';
+ var b1=document.createElement('button');
+ b1.type='button';b1.className='btn alt sm';
+ b1.textContent='↻ Refresh';
+ b1.onclick=function(){location.reload()};
+ tb.appendChild(b1);$('xctl').insertBefore(tb,$('xctl').firstChild);
+ var m=$('xmsg');if(m)m.textContent='';
+}
+async function onFiles(list){
+ var t=T[cur],fl=[].slice.call(list);if(!fl.length)return;
+ var n;
+ try{n=t.raw?fl:await Promise.all(fl.map(loadImg))}catch(e){alert('Could not open '+e+'. Please choose a valid file.');return}
+ files=t.multi?files.concat(n):n;
+ $('xgrid').style.display='grid';$('xdrop').classList.add('slim');
+ if(t.files)t.files();
+ t.upd();
+ $('xnames').textContent=files.length+' file(s) loaded'+(t.multi?'. Choose more files to add to the list.':'. Choose another file to replace it.');
+}
+$('xpick').onclick=function(){$('xfile').click()};
+$('xfile').onchange=function(){var l=[].slice.call(this.files);this.value='';onFiles(l)};
+var xd=$('xdrop');
+['dragenter','dragover'].forEach(function(e){xd.addEventListener(e,function(ev){ev.preventDefault();xd.classList.add('hot')})});
+['dragleave','drop'].forEach(function(e){xd.addEventListener(e,function(ev){ev.preventDefault();xd.classList.remove('hot')})});
+xd.addEventListener('drop',function(ev){onFiles(ev.dataTransfer.files)});
+document.querySelectorAll('.tool[data-x]').forEach(function(c){
+ c.addEventListener('click',function(){
+  document.querySelectorAll('.tool').forEach(function(x){x.setAttribute('aria-pressed',x===c)});
+  openTool(c.dataset.x);
+ });
+});
+document.querySelectorAll('.tool[data-mode]').forEach(function(c){
+ c.addEventListener('click',function(){$('xwrap').style.display='none';$('drop').style.display='';$('work').style.display='';cur=null});
+});
+window.__fr={T:T,files:function(){return files}};
+})();
+</script>
+</body>
+</html>
