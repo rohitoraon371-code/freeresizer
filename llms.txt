@@ -1,0 +1,8 @@
+# FreeResizer
+
+An online utility tool designed for quick, free, and secure image and file resizing directly in the browser. 
+
+## Information
+- URL: https://freeresizer.online
+- Purpose: Image compression, file resizing, and format conversion.
+- Tech Stack: Pure client-side static web application hosted on GitHub Pages.
